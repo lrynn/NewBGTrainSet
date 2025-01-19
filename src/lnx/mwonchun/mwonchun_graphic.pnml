@@ -1,0 +1,37 @@
+/*------------------------------------------------------------------------------
+    lnx-mwonchun Graphics
+------------------------------------------------------------------------------*/
+
+spriteset(set_MWONCHUN_purchase, "./src/lnx/mwonchun/368K_MWONCHUN.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_MWONCHUN_engineH, "./src/lnx/mwonchun/368K_MWONCHUN.png") {
+    tmpl_standard(80, 0)
+}
+spriteset(set_MWONCHUN_engineH_r, "./src/lnx/mwonchun/368K_MWONCHUN.png") {
+    tmpl_standard_r(80, 0)
+}
+spriteset(set_MWONCHUN_wagon_1, "./src/lnx/mwonchun/368K_MWONCHUN.png") {
+    tmpl_standard(80, 30)
+}
+spriteset(set_MWONCHUN_wagon_2, "./src/lnx/mwonchun/368K_MWONCHUN.png") {
+    tmpl_standard(80, 60)
+}
+spriteset(set_MWONCHUN_wagon_3, "./src/lnx/mwonchun/368K_MWONCHUN.png") {
+    tmpl_standard(80, 90)
+}
+spriteset(set_MWONCHUN_wagon_4, "./src/lnx/mwonchun/368K_MWONCHUN.png") {
+    tmpl_standard(80, 120)
+}
+spriteset(set_MWONCHUN_wagon_5, "./src/lnx/mwonchun/368K_MWONCHUN.png") {
+    tmpl_standard(80, 150)
+}
+spriteset(set_MWONCHUN_wagon_6, "./src/lnx/mwonchun/368K_MWONCHUN.png") {
+    tmpl_standard(80, 180)
+}
+spriteset(set_MWONCHUN_engineT, "./src/lnx/mwonchun/368K_MWONCHUN.png") {
+    tmpl_standard(80, 210)
+}
+spriteset(set_MWONCHUN_engineT_r, "./src/lnx/mwonchun/368K_MWONCHUN.png") {
+    tmpl_standard_r(80, 210)
+}

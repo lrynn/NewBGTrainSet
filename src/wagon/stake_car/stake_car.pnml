@@ -1,0 +1,103 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * STAKE_CAR
+ */
+SPEED_GENERAL(STAKE_CAR)
+COST(STAKE_CAR)
+RUNNING(STAKE_CAR)
+CAPACITY(STAKE_CAR)
+// CAPACITY_PURCHASE(STAKE_CAR)
+LOADING(STAKE_CAR)
+
+// Graphics
+#include "stake_car_graphic.pnml"
+
+// Switch
+#include "stake_car_switch.pnml"
+
+// Item
+item(FEAT_TRAINS, ko_train_STAKE_CAR, 5914) {
+    property {
+        // Common properties
+        name:                           string(STR_STAKE_CAR_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_STAKE_CAR_INTRODUCTION;
+        track_type:                     RAIL;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        length:                         6;
+
+        // Spec
+        power:                          0 kW;
+        weight:                         var_STAKE_CAR_WEIGHT;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 25;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [BUBL, COPR, ENSP, FMSP, PAPR, PIPE, STSE, STEL, VPTS, VENG, VBOD,
+                                         VEHI, WDPR, WOOD, WOOL, FICR, STAL, ALUM, STCB, CSTI, IRON, STST,
+                                         STSH, STWR, ZINC, TYRE, METL];
+        cargo_disallow_refit:           [];
+        loading_speed:                  5;
+
+        // Costs
+        cost_factor:                    10;
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
+        running_cost_factor:            1;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_CARGO;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
+        bitmask_vehicle_info:           0;
+    }
+    graphics {
+        BUBL:                           sw_STAKE_CAR_BUBL_wagon;
+        COPR:                           sw_STAKE_CAR_COPR_wagon;
+        ENSP:                           sw_STAKE_CAR_ENSP_wagon;
+        FMSP:                           sw_STAKE_CAR_FMSP_wagon;
+        PAPR:                           sw_STAKE_CAR_PAPR_wagon;
+        PIPE:                           sw_STAKE_CAR_PIPE_wagon;
+        STSE:                           sw_STAKE_CAR_PIPE_wagon;
+        STEL:                           sw_STAKE_CAR_STEL_wagon;
+        STAL:                           sw_STAKE_CAR_STEL_wagon;
+        ALUM:                           sw_STAKE_CAR_STEL_wagon;
+        STCB:                           sw_STAKE_CAR_STEL_wagon;
+        CSTI:                           sw_STAKE_CAR_STEL_wagon;
+        IRON:                           sw_STAKE_CAR_STEL_wagon;
+        STST:                           sw_STAKE_CAR_STEL_wagon;
+        STSH:                           sw_STAKE_CAR_STEL_wagon;
+        STWR:                           sw_STAKE_CAR_STEL_wagon;
+        METL:                           sw_STAKE_CAR_STEL_wagon;
+        TYRE:                           sw_STAKE_CAR_TYRE_wagon;
+        ZINC:                           sw_STAKE_CAR_STEL_wagon;
+        VENG:                           sw_STAKE_CAR_STEL_wagon;
+        VBOD:                           sw_STAKE_CAR_VBOD_wagon;
+        VEHI:                           sw_STAKE_CAR_VEHI_wagon;
+        WDPR:                           sw_STAKE_CAR_WDPR_wagon;
+        WOOD:                           sw_STAKE_CAR_WOOD_wagon;
+        WOOL:                           sw_STAKE_CAR_WOOL_wagon;
+        FERT:                           sw_STAKE_CAR_WOOL_wagon;
+        FICR:                           sw_STAKE_CAR_WOOL_wagon;
+        default:                        sw_STAKE_CAR_wagon;
+        purchase:                       sw_STAKE_CAR_purchase;
+
+        speed:                          sw_STAKE_CAR_speed;
+        cost_factor:                    sw_STAKE_CAR_cost;
+        running_cost_factor:            sw_STAKE_CAR_runningcost;
+        cargo_capacity:                 sw_STAKE_CAR_capacity;
+        loading_speed:                  sw_STAKE_CAR_loadingspeed;
+
+        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+    }
+}

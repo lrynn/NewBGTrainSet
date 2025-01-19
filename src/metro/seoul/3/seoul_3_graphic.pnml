@@ -1,0 +1,140 @@
+/*------------------------------------------------------------------------------
+    SEOUL - LINE 3 Graphics
+------------------------------------------------------------------------------*/
+
+// 3K_SMETRO_CHOPPER
+spriteset(set_SEOUL_3_CHOPPER_WIDE_engineH, "./src/metro/seoul/3/3K_SMETRO_CHOPPER.png") {
+    tmpl_standard(80, 0)
+}
+spriteset(set_SEOUL_3_CHOPPER_WIDE_wagon_panto, "./src/metro/seoul/3/3K_SMETRO_CHOPPER.png") {
+    tmpl_standard(80, 30)
+}
+spriteset(set_SEOUL_3_CHOPPER_WIDE_wagon, "./src/metro/seoul/3/3K_SMETRO_CHOPPER.png") {
+    tmpl_standard(80, 60)
+}
+spriteset(set_SEOUL_3_CHOPPER_WIDE_engineT, "./src/metro/seoul/3/3K_SMETRO_CHOPPER.png") {
+    tmpl_standard_r(80, 90)
+}
+spriteset(set_SEOUL_3_CHOPPER_WIDE_purchase, "./src/metro/seoul/3/3K_SMETRO_CHOPPER.png") {
+    tmpl_purchase_common(0, 0)
+}
+
+// 3K_SMETRO_CHOPPER_MODIFIED
+spriteset(set_SEOUL_3_CHOPPER_MODIFIED_engineH, "./src/metro/seoul/3/3K_SMETRO_CHOPPER_MODIFIED.png") {
+    tmpl_standard(80, 0)
+}
+spriteset(set_SEOUL_3_CHOPPER_MODIFIED_wagon_panto, "./src/metro/seoul/3/3K_SMETRO_CHOPPER_MODIFIED.png") {
+    tmpl_standard(80, 30)
+}
+spriteset(set_SEOUL_3_CHOPPER_MODIFIED_wagon, "./src/metro/seoul/3/3K_SMETRO_CHOPPER_MODIFIED.png") {
+    tmpl_standard(80, 60)
+}
+spriteset(set_SEOUL_3_CHOPPER_MODIFIED_engineT, "./src/metro/seoul/3/3K_SMETRO_CHOPPER_MODIFIED.png") {
+    tmpl_standard_r(80, 90)
+}
+spriteset(set_SEOUL_3_CHOPPER_MODIFIED_purchase, "./src/metro/seoul/3/3K_SMETRO_CHOPPER_MODIFIED.png") {
+    tmpl_purchase_common(0, 0)
+}
+
+// 3K_SMETRO_VVVF_1ST
+spriteset(set_SEOUL_3_VVVF_1ST_engineH, "./src/metro/seoul/3/3K_SMETRO_VVVF_1ST.png") {
+    tmpl_standard(80, 0)
+}
+spriteset(set_SEOUL_3_VVVF_1ST_wagon_panto, "./src/metro/seoul/3/3K_SMETRO_VVVF_1ST.png") {
+    tmpl_standard(80, 30)
+}
+spriteset(set_SEOUL_3_VVVF_1ST_wagon, "./src/metro/seoul/3/3K_SMETRO_VVVF_1ST.png") {
+    tmpl_standard(80, 60)
+}
+spriteset(set_SEOUL_3_VVVF_1ST_engineT, "./src/metro/seoul/3/3K_SMETRO_VVVF_1ST.png") {
+    tmpl_standard_r(80, 90)
+}
+spriteset(set_SEOUL_3_VVVF_1ST_purchase, "./src/metro/seoul/3/3K_SMETRO_VVVF_1ST.png") {
+    tmpl_purchase_common(0, 0)
+}
+
+// 3K_SMETRO_VVVF_2ND
+spriteset(set_SEOUL_3_VVVF_2ND_engineH, "./src/metro/seoul/3/3K_SMETRO_VVVF_2ND.png") {
+    tmpl_standard(80, 0)
+}
+spriteset(set_SEOUL_3_VVVF_2ND_wagon_panto, "./src/metro/seoul/3/3K_SMETRO_VVVF_2ND.png") {
+    tmpl_standard(80, 30)
+}
+spriteset(set_SEOUL_3_VVVF_2ND_wagon, "./src/metro/seoul/3/3K_SMETRO_VVVF_2ND.png") {
+    tmpl_standard(80, 60)
+}
+spriteset(set_SEOUL_3_VVVF_2ND_engineT, "./src/metro/seoul/3/3K_SMETRO_VVVF_2ND.png") {
+    tmpl_standard_r(80, 90)
+}
+spriteset(set_SEOUL_3_VVVF_2ND_purchase, "./src/metro/seoul/3/3K_SMETRO_VVVF_2ND.png") {
+    tmpl_purchase_common(0, 0)
+}
+
+
+// 3K_VVVF_1ST_1
+spriteset(set_SEOUL_3_KORAIL_VVVF_1ST_1_engineH, "./src/metro/seoul/3/3K_VVVF_1ST_1.png") {
+    tmpl_standard(80, 0)
+}
+spriteset(set_SEOUL_3_KORAIL_VVVF_1ST_1_wagon_panto, "./src/metro/seoul/3/3K_VVVF_1ST_1.png") {
+    tmpl_standard(80, 30)
+}
+spriteset(set_SEOUL_3_KORAIL_VVVF_1ST_1_wagon, "./src/metro/seoul/3/3K_VVVF_1ST_1.png") {
+    tmpl_standard(80, 60)
+}
+spriteset(set_SEOUL_3_KORAIL_VVVF_1ST_1_engineT, "./src/metro/seoul/3/3K_VVVF_1ST_1.png") {
+    tmpl_standard_r(80, 90)
+}
+spriteset(set_SEOUL_3_KORAIL_VVVF_1ST_1_purchase, "./src/metro/seoul/3/3K_VVVF_1ST_1.png") {
+    tmpl_purchase_common(0, 0)
+}
+
+// 3K_VVVF_1ST_2
+spriteset(set_SEOUL_3_KORAIL_VVVF_1ST_2_engineH, "./src/metro/seoul/3/3K_VVVF_1ST_2.png") {
+    tmpl_standard(80, 0)
+}
+spriteset(set_SEOUL_3_KORAIL_VVVF_1ST_2_wagon_panto, "./src/metro/seoul/3/3K_VVVF_1ST_2.png") {
+    tmpl_standard(80, 30)
+}
+spriteset(set_SEOUL_3_KORAIL_VVVF_1ST_2_wagon, "./src/metro/seoul/3/3K_VVVF_1ST_2.png") {
+    tmpl_standard(80, 60)
+}
+spriteset(set_SEOUL_3_KORAIL_VVVF_1ST_2_engineT, "./src/metro/seoul/3/3K_VVVF_1ST_2.png") {
+    tmpl_standard_r(80, 90)
+}
+spriteset(set_SEOUL_3_KORAIL_VVVF_1ST_2_purchase, "./src/metro/seoul/3/3K_VVVF_1ST_2.png") {
+    tmpl_purchase_common(0, 0)
+}
+
+// LINE_3_2022
+spriteset(set_SEOUL_3_KORAIL_2022_engineH, "./src/metro/seoul/3/LINE_3_2022.png") {
+    tmpl_standard_longnose(80, 0)
+}
+spriteset(set_SEOUL_3_KORAIL_2022_wagon_panto, "./src/metro/seoul/3/LINE_3_2022.png") {
+    tmpl_standard(80, 30)
+}
+spriteset(set_SEOUL_3_KORAIL_2022_wagon, "./src/metro/seoul/3/LINE_3_2022.png") {
+    tmpl_standard(80, 60)
+}
+spriteset(set_SEOUL_3_KORAIL_2022_engineT, "./src/metro/seoul/3/LINE_3_2022.png") {
+    tmpl_standard_longnose_r(80, 90)
+}
+spriteset(set_SEOUL_3_KORAIL_2022_purchase, "./src/metro/seoul/3/LINE_3_2022.png") {
+    tmpl_purchase_common(0, 0)
+}
+
+// LINE_3_2022_W
+spriteset(set_SEOUL_3_KORAIL_2022_W_engineH, "./src/metro/seoul/3/LINE_3_2022_W.png") {
+    tmpl_standard_longnose(80, 0)
+}
+spriteset(set_SEOUL_3_KORAIL_2022_W_wagon_panto, "./src/metro/seoul/3/LINE_3_2022_W.png") {
+    tmpl_standard(80, 30)
+}
+spriteset(set_SEOUL_3_KORAIL_2022_W_wagon, "./src/metro/seoul/3/LINE_3_2022_W.png") {
+    tmpl_standard(80, 60)
+}
+spriteset(set_SEOUL_3_KORAIL_2022_W_engineT, "./src/metro/seoul/3/LINE_3_2022_W.png") {
+    tmpl_standard_longnose_r(80, 90)
+}
+spriteset(set_SEOUL_3_KORAIL_2022_W_purchase, "./src/metro/seoul/3/LINE_3_2022_W.png") {
+    tmpl_purchase_common(0, 0)
+}

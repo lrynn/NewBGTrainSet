@@ -1,0 +1,46 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+// For unit
+#define POWER_IN_KW(POWER)     power
+
+// Cost
+#define COST(VEHICLEID) \
+switch(FEAT_TRAINS, SELF, sw_ ## VEHICLEID ## _cost, 1) { \
+    return var_ ## VEHICLEID ## _COST; \
+}
+
+// Running cost (Do not rename this as 'RUNNINGCOST')
+#define RUNNING(VEHICLEID) \
+switch(FEAT_TRAINS, SELF, sw_ ## VEHICLEID ## _runningcost, 1) { \
+    return var_ ## VEHICLEID ## _RUNNINGCOST; \
+} \
+switch(FEAT_TRAINS, SELF, sw_ ## VEHICLEID ## _M_runningcost, 1) { \
+    return var_ ## VEHICLEID ## _RUNNINGCOST; \
+}
+
+// Capacity
+#define CAPACITY(VEHICLEID) \
+switch(FEAT_TRAINS, SELF, sw_ ## VEHICLEID ## _capacity, 1) { \
+    return var_ ## VEHICLEID ## _CAPACITY; \
+}
+
+// Purchase capacity
+#define CAPACITY_PURCHASE(VEHICLEID) \
+switch(FEAT_TRAINS, SELF, sw_ ## VEHICLEID ## _purchase_capacity, 1) { \
+    return var_ ## VEHICLEID ## _CAPACITY; \
+}
+
+// Loading speed
+#define LOADING(VEHICLEID) \
+switch(FEAT_TRAINS, SELF, sw_ ## VEHICLEID ## _loadingspeed, 1) { \
+    return var_ ## VEHICLEID ## _LOADINGSPEED; \
+}
+
+// Speed
+#define SPEED_GENERAL(VEHICLEID) \
+switch(FEAT_TRAINS, SELF, sw_ ## VEHICLEID ## _speed, 1) { \
+    return var_ ## VEHICLEID ## _SPEED; \
+}

@@ -1,0 +1,36 @@
+/*------------------------------------------------------------------------------
+    A'REX
+------------------------------------------------------------------------------*/
+
+// Graphics
+#include "arex_graphic.pnml"
+
+/*--------------------------------------------------------------------
+열차정보 그룹
+--------------------------------------------------------------------*/
+item(FEAT_TRAINS, group_arex, 8101) {
+    property {
+        name:                           string(STR_group_arex_NAME);
+        climates_available:             NO_CLIMATE;
+        track_type:                     ELRL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        power:                          1 kW;
+        
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
+        bitmask_vehicle_info:           0;
+    }
+
+    graphics {
+        purchase:                       set_AREX_2K_purchase;
+    }
+}
+
+/*--------------------------------------------------------------------
+열차 리스트
+--------------------------------------------------------------------*/
+#include "arex_1000.pnml"
+#include "arex_2000_1.pnml"
+#include "arex_2000_4.pnml"

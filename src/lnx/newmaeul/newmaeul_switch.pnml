@@ -1,0 +1,50 @@
+/*------------------------------------------------------------------------------
+  lnx-newmaeul Switches
+------------------------------------------------------------------------------*/
+
+// Cargo Subtypes
+// None
+
+// Train Composition
+switch (FEAT_TRAINS, SELF, sw_NEWMAEUL, position_in_vehid_chain % 6) {
+    1:set_NEWMAEUL_wagonH;
+    2:set_NEWMAEUL_wagon;
+    3:set_NEWMAEUL_wagon;
+    4:set_NEWMAEUL_wagonT;
+    5:set_NEWMAEUL_engineT;
+    set_NEWMAEUL_engineH;
+}
+switch (FEAT_TRAINS, SELF, sw_NEWMAEUL_r, position_in_vehid_chain % 6) {
+    1:set_NEWMAEUL_wagonH;
+    2:set_NEWMAEUL_wagon;
+    3:set_NEWMAEUL_wagon;
+    4:set_NEWMAEUL_wagonT;
+    5:set_NEWMAEUL_engineT;
+    set_NEWMAEUL_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_NEWMAEUL_flipped, vehicle_is_flipped){
+    0: sw_NEWMAEUL_r;
+    sw_NEWMAEUL;
+}
+switch(FEAT_TRAINS, PARENT, sw_NEWMAEUL_reversed, vehicle_is_reversed){
+    0: sw_NEWMAEUL;
+    sw_NEWMAEUL_flipped;
+}
+
+// to set length of composition
+switch (FEAT_TRAINS, SELF, sw_articulated_NEWMAEUL, extra_callback_info1) {
+    1..5: NEWMAEUL;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// allow attatchment
+switch(FEAT_TRAINS, SELF, sw_NEWMAEUL_attach, vehicle_type_id) {
+    NEWMAEUL: return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}
+
+// Sounds
+switch(FEAT_TRAINS, SELF, sw_NEWMAEUL_sound, extra_callback_info1) {
+    SOUND_EVENT_START: sound("sounds/TOSHIBAStart.wav");
+    return CB_RESULT_NO_SOUND;
+}

@@ -1,0 +1,66 @@
+/*------------------------------------------------------------------------------
+    Noriro
+------------------------------------------------------------------------------*/
+
+// Graphics
+#include "noriro_graphic.pnml"
+
+// Switch
+#include "noriro_switch.pnml"
+
+item(FEAT_TRAINS, NORIRO, 2004) {
+    property {
+        // Common properties
+        name:                           string(STR_NORIRO_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_NORIRO_INTRODUCTION;
+        track_type:                     ELRL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+
+        // Spec
+        power:                          var_NORIRO_POWER;
+        weight:                         var_NORIRO_WEIGHT;
+        tractive_effort_coefficient:    0.25;
+        air_drag_coefficient:           0.01;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 1;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+
+        // Costs
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+    }
+    graphics {
+        default:                        sw_NORIRO_reversed;
+        articulated_part:               sw_articulated_NORIRO;
+        purchase:                       set_NORIRO_purchase;
+
+        speed:                          var_NORIRO_SPEED;
+        cost_factor:                    var_NORIRO_COST;
+        running_cost_factor:            var_NORIRO_RUNNINGCOST;
+        cargo_capacity:                 var_NORIRO_CAPACITY;
+        purchase_cargo_capacity:        var_NORIRO_CAPACITY;
+        loading_speed:                  var_NORIRO_LOADINGSPEED;
+
+        can_attach_wagon:               sw_NORIRO_attach;
+        cargo_subtype_text:             sw_NORIRO_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
+
+        sound_effect:                   sw_NORIRO_sound;
+    }
+}

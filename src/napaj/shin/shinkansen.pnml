@@ -1,0 +1,18 @@
+/*------------------------------------------------------------------------------
+  Shinkansen
+------------------------------------------------------------------------------*/
+
+// Attach
+switch(FEAT_TRAINS, SELF, sw_SHIN_E5_attach, vehicle_type_id) {
+    SHIN_E6:           return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}
+switch(FEAT_TRAINS, SELF, sw_SHIN_E6_attach, vehicle_type_id) {
+    SHIN_E5:           return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}
+
+#include "E5/E5.pnml"
+#include "E6/E6.pnml"
+#include "N700/N700.pnml"
+#include "N700S/N700S.pnml"

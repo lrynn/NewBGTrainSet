@@ -1,0 +1,115 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * HOPPER_CAR
+ */
+SPEED_GENERAL(HOPPER_CAR)
+COST(HOPPER_CAR)
+RUNNING(HOPPER_CAR)
+CAPACITY(HOPPER_CAR)
+// CAPACITY_PURCHASE(HOPPER_CAR)
+LOADING(HOPPER_CAR)
+
+// Graphics
+#include "hopper_car_graphic.pnml"
+
+// Switch
+#include "hopper_car_switch.pnml"
+
+// Item
+item(FEAT_TRAINS, ko_train_HOPPER_CAR, 5911) {
+    property {
+        // Common properties
+        name:                           string(STR_HOPPER_CAR_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_HOPPER_CAR_INTRODUCTION;
+        track_type:                     RAIL;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+
+        // Spec
+        power:                          0 kW;
+        weight:                         var_HOPPER_CAR_WEIGHT;
+        length:                         6;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 25;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [COAL, IORE, WHEA, FRUT, MAIZ, CORE, CTCD, SUGR, TOFF, AORE, BEAN,
+                                         CLAY, COAL, CORE, FRUT, GOLD, GRAI, GRVL, IORE, POTA, LIME, MNO2,
+                                         PHOS, PORE, RCYC, SALT, SAND, SCMT, SLAG, FERT, NITR, CMNT, SASH,
+                                         SGBT, QLME, PLAS, FECR, CBLK, CASS, BDMT, PEAT, COKE, KAOL];
+        cargo_disallow_refit:           [];
+        loading_speed:                  5;
+
+        // Costs
+        cost_factor:                    10;
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
+        running_cost_factor:            1;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_CARGO;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
+        bitmask_vehicle_info:           0;
+    }
+    graphics {
+        AORE:                           sw_HOPPER_CAR_AORE_wagon;
+        BEAN:                           sw_HOPPER_CAR_BEAN_wagon;
+        SGBT:                           sw_HOPPER_CAR_BEAN_wagon;
+        CASS:                           sw_HOPPER_CAR_BEAN_wagon;
+        PEAT:                           sw_HOPPER_CAR_BEAN_wagon;
+        CLAY:                           sw_HOPPER_CAR_CLAY_wagon;
+        COAL:                           sw_HOPPER_CAR_COAL_wagon;
+        COKE:                           sw_HOPPER_CAR_COAL_wagon;
+        CBLK:                           sw_HOPPER_CAR_COAL_wagon;
+        CORE:                           sw_HOPPER_CAR_CORE_wagon;
+        FRUT:                           sw_HOPPER_CAR_FRUT_wagon;
+        GOLD:                           sw_HOPPER_CAR_GOLD_wagon;
+        SULP:                           sw_HOPPER_CAR_GOLD_wagon;
+        GRAI:                           sw_HOPPER_CAR_GRAI_wagon;
+        MAIZ:                           sw_HOPPER_CAR_GRAI_wagon;
+        WHEA:                           sw_HOPPER_CAR_GRAI_wagon;
+        FERT:                           sw_HOPPER_CAR_GRAI_wagon;
+        GRVL:                           sw_HOPPER_CAR_GRVL_wagon;
+        CMNT:                           sw_HOPPER_CAR_GRVL_wagon;
+        IORE:                           sw_HOPPER_CAR_IORE_wagon;
+        LIME:                           sw_HOPPER_CAR_LIME_wagon;
+        QLME:                           sw_HOPPER_CAR_LIME_wagon;
+        PLAS:                           sw_HOPPER_CAR_LIME_wagon;
+        MNO2:                           sw_HOPPER_CAR_MNO2_wagon;
+        FECR:                           sw_HOPPER_CAR_MNO2_wagon;
+        PHOS:                           sw_HOPPER_CAR_PHOS_wagon;
+        PORE:                           sw_HOPPER_CAR_PORE_wagon;
+        RCYC:                           sw_HOPPER_CAR_RCYC_wagon;
+        SALT:                           sw_HOPPER_CAR_SALT_wagon;
+        SASH:                           sw_HOPPER_CAR_SALT_wagon;
+        SUGR:                           sw_HOPPER_CAR_SALT_wagon;
+        KAOL:                           sw_HOPPER_CAR_SALT_wagon;
+        SAND:                           sw_HOPPER_CAR_SAND_wagon;
+        NITR:                           sw_HOPPER_CAR_SAND_wagon;
+        BDMT:                           sw_HOPPER_CAR_SAND_wagon;
+        SCMT:                           sw_HOPPER_CAR_SCMT_wagon;
+        SLAG:                           sw_HOPPER_CAR_SLAG_wagon;
+        default:                        sw_HOPPER_CAR_wagon;
+        purchase:                       sw_HOPPER_CAR_purchase;
+
+        speed:                          sw_HOPPER_CAR_speed;
+        cost_factor:                    sw_HOPPER_CAR_cost;
+        running_cost_factor:            sw_HOPPER_CAR_runningcost;
+        cargo_capacity:                 sw_HOPPER_CAR_capacity;
+        loading_speed:                  sw_HOPPER_CAR_loadingspeed;
+
+        cargo_subtype_text:             sw_HOPPER_CAR_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
+    }
+}

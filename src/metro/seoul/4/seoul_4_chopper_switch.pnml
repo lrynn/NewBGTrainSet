@@ -1,0 +1,27 @@
+/*------------------------------------------------------------------------------
+    SEOUL - LINE 4
+    Switches - CHOPPER
+------------------------------------------------------------------------------*/
+
+// Cargo Subtypes
+// None
+
+// Train Composition
+switch (FEAT_TRAINS, SELF, sw_SEOUL_4_CHOPPER, position_in_vehid_chain % 10) {
+    1:set_SEOUL_3_CHOPPER_WIDE_wagon;
+    2:set_SEOUL_3_CHOPPER_WIDE_wagon_panto;
+    3:set_SEOUL_3_CHOPPER_WIDE_wagon;
+    4:set_SEOUL_3_CHOPPER_WIDE_wagon_panto;
+    5:set_SEOUL_3_CHOPPER_WIDE_wagon;
+    6:set_SEOUL_3_CHOPPER_WIDE_wagon;
+    7:set_SEOUL_3_CHOPPER_WIDE_wagon;
+    8:set_SEOUL_3_CHOPPER_WIDE_wagon_panto;
+    9:set_SEOUL_3_CHOPPER_WIDE_engineT;
+    set_SEOUL_3_CHOPPER_WIDE_engineH; //default
+}
+
+// to set length of composition
+switch (FEAT_TRAINS, SELF, sw_articulated_SEOUL_4_CHOPPER, extra_callback_info1) {
+    1..9: SEOUL_4_chopper;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}

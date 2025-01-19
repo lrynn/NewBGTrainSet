@@ -1,0 +1,41 @@
+/*------------------------------------------------------------------------------
+    Seoul - Line 1
+------------------------------------------------------------------------------*/
+
+// Graphics
+#include "seoul_1_graphic.pnml"
+
+// Switch
+#include "seoul_1_switch.pnml"
+
+/*--------------------------------------------------------------------
+열차정보 그룹
+--------------------------------------------------------------------*/
+item(FEAT_TRAINS, group_seoul_1, 3111) {
+    property {
+        name:                           string(STR_group_seoul_1_NAME);
+        climates_available:             NO_CLIMATE;
+        track_type:                     ELRL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        power:                          1 kW;
+        
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
+        bitmask_vehicle_info:           0;
+    }
+
+    graphics {
+        purchase:                       set_LINE_1_2022_W_purchase;
+    }
+}
+
+/*--------------------------------------------------------------------
+열차 리스트
+--------------------------------------------------------------------*/
+#include "seoul_1_4car.pnml"
+#include "seoul_1_6car.pnml"
+#include "seoul_1_10car.pnml"
+#include "seoul_1_resist.pnml"
+#include "seoul_1_metro.pnml"

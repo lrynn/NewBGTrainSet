@@ -1,0 +1,93 @@
+/*------------------------------------------------------------------------------
+  7x00 Switches
+------------------------------------------------------------------------------*/
+// Cargo subtype
+switch(FEAT_TRAINS, SELF, sw_7x00_loco, cargo_subtype) {
+    0:    set_7x00_RED_WHITE_BLUE;
+    1:    set_7x00_CARGO;
+    2:    set_7x00_GREEN_YELLOW;
+    3:    set_7x00_BLUE_WHITE;
+    4:    set_7x00_BLACK_ORANGE;
+    5:    set_7x00_KWANKWANG;
+    // 6:    set_ERRSPRITE;    // RESERVED
+    // 8:    set_ERRSPRITE;    // RESERVED
+    // 9:    set_ERRSPRITE;    // RESERVED
+    20:   set_7x00_HAERANG;
+    21:   set_7x00_S_TRAIN;
+    22:   set_7x00_S_TRAIN;
+    23:   set_7x00_G_TRAIN;
+    set_7x00_RED_WHITE_BLUE;
+}
+switch(FEAT_TRAINS, SELF, sw_7x00_cargo_subtype_text, cargo_subtype) {
+    0:    return string(STR_REFIT_LIVERY_THESEDAYS);
+    1:    return string(STR_REFIT_LIVERY_7x00_CARGO);
+    2:    return string(STR_REFIT_LIVERY_GREEN_YELLOW);
+    3:    return string(STR_REFIT_LIVERY_7x00_FIRST_KORAIL);
+    4:    return string(STR_REFIT_LIVERY_7x00_BLACK_ORANGE);
+    5:    return string(STR_REFIT_LIVERY_KWANKWANG);
+    // 6:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
+    // 8:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
+    // 9:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
+    20:    return string(STR_REFIT_LIVERY_HAERANG);
+    21:   return string(STR_REFIT_LIVERY_S_TRAIN1);
+    22:   return string(STR_REFIT_LIVERY_S_TRAIN2);
+    23:   return string(STR_REFIT_LIVERY_G_TRAIN);
+    return string(STR_REFIT_LIVERY_THESEDAYS);
+}
+
+// MUGUNGHWA_CAR
+switch(FEAT_TRAINS, SELF, sw_7x00_MUGUNGHWA_CAR_wagon, cargo_subtype) {
+    20:   sw_MUGUNGHWA_CAR_wagon_HAERANG;    // Haerang
+    21:   sw_MUGUNGHWA_CAR_wagon_S_TRAIN_1;    // S-train#1
+    22:   sw_MUGUNGHWA_CAR_wagon_S_TRAIN_2;    // S-train#2
+    23:   sw_MUGUNGHWA_CAR_wagon_G_TRAIN;    // G-train
+    sw_MUGUNGHWA_CAR_wagon;     // etc
+}
+switch(FEAT_TRAINS, SELF, sw_7x00_MUGUNGHWA_CAR_cargo_subtype_text, cargo_subtype) {
+    20:   return string(STR_REFIT_LIVERY_HAERANG);
+    21:   return string(STR_REFIT_LIVERY_S_TRAIN1);
+    22:   return string(STR_REFIT_LIVERY_S_TRAIN2);
+    23:   return string(STR_REFIT_LIVERY_G_TRAIN);
+    sw_MUGUNGHWA_CAR_subtype_text;
+}
+
+// SAEMAEUL_CAR
+switch(FEAT_TRAINS, SELF, sw_7x00_SAEMAEUL_CAR_wagon, cargo_subtype) {
+    2:   set_SAEMAEUL_CAR_2;
+    3:   set_SAEMAEUL_CAR_wagon_KWANKWANG;    // Kwankwang-ho
+    sw_SAEMAEUL_CAR_wagon;     // etc
+}
+switch(FEAT_TRAINS, SELF, sw_7x00_SAEMAEUL_CAR_cargo_subtype_text, cargo_subtype) {
+    2:    return string(STR_REFIT_LIVERY_GREEN_YELLOW);
+    3:    return string(STR_REFIT_LIVERY_7x00_FIRST_KORAIL);
+    sw_SAEMAEUL_CAR_subtype_text;
+}
+
+// CAFE_CAR
+switch(FEAT_TRAINS, SELF, sw_7x00_CAFE_CAR_KWANKWANG_wagon, cargo_subtype) {
+    2:   set_CAFE_CAR_DHC_2;
+    3:   set_CAFE_CAR_KWANKWANG_wagon;    // Kwankwang-ho
+    sw_CAFE_CAR_wagon;     // etc
+}
+switch(FEAT_TRAINS, SELF, sw_7x00_CAFE_CAR_KWANKWANG_cargo_subtype_text, cargo_subtype) {
+    2:    return string(STR_REFIT_LIVERY_GREEN_YELLOW);
+    3:    return string(STR_REFIT_LIVERY_7x00_FIRST_KORAIL);
+    sw_CAFE_CAR_cargo_subtype_text;
+}
+
+// GENERATOR_CAR
+switch(FEAT_TRAINS, SELF, sw_7x00_GENERATOR_CAR_KWANKWANG_wagon, cargo_subtype) {
+    3:   set_GENERATOR_CAR_KWANKWANG_wagon;    // Kwankwang-ho
+    sw_GENERATOR_CAR_wagon;     // etc
+}
+switch(FEAT_TRAINS, SELF, sw_7x00_GENERATOR_CAR_KWANKWANG_cargo_subtype_text, cargo_subtype) {
+    3:   return string(STR_REFIT_LIVERY_7x00_FIRST_KORAIL);
+    sw_GENERATOR_CAR_cargo_subtype_text;
+}
+
+// Sound Effects
+switch(FEAT_TRAINS, SELF, sw_7x00_sound, extra_callback_info1) {
+    SOUND_EVENT_START: sound("sounds/GT26CWDieselStart.wav");
+    SOUND_EVENT_STOPPED: sound("sounds/GT26CWDIESELIdle.wav");
+    return CB_RESULT_NO_SOUND;
+}

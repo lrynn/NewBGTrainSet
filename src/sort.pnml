@@ -1,0 +1,152 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+/*
+    *** 차량번호 명명 규칙 ***
+
+    첫 자리: 열차의 성격 구분.
+    |
+    |   1: 고속철도.
+    |   2: 간선철도.
+    |   3: 광역/도시철도.
+    |   4: 기관차.
+    |   5: 객차.
+    |   6: 외국열차.
+    |   7: 경전철.
+    |   8: 독립된 운행계통.
+
+    둘째 자리: 열차의 운행계통 구분.
+    |
+    |   7x: 지역 회선번호 첫 자리.
+    |   81: 공항철도.
+    
+    셋째 자리: 동일 운행계통 내 열차 모델 또는 세대 구분.
+
+    넷째 자리: 동일 모델 내 편성 구분.
+    |
+    |   편성의 량 수의 1의 자리에 맞추되, 단일 편성은 0으로 통일.
+    |   동일 모델을 묶는 용도인 그룹 열차는 1로 통일.
+*/
+
+// Sort
+sort(FEAT_TRAINS, [
+    ko_train_4400,                    // 4440
+    group_7x00,                       // 4711
+    ko_train_7000,                    // 4700
+    ko_train_7x00,                    // 4710
+    ko_train_7600,                    // 4720
+    group_8x00,                       // 4811
+    ko_train_8000,                    // 4800
+    ko_train_8x00,                    // 4810
+    ko_train_8500,                    // 4820
+
+    group_sux,                        // 1001
+    SUX1,                             // 1000
+    SUX2,                             // 1100
+    SUXK,                             // 1500
+    SUX3,                             // 1600
+
+    MWONCHUN,                         // 2368
+    NEWMAEUL,                         // 2106
+    group_simjung,                    // 2201
+    SIMJUNG_4car,                     // 2204
+    SIMJUNG_6car,                     // 2206
+    NORIRO,                           // 2004
+
+    DHC,                              // 2090
+
+    group_seoul_1,                    // 3111
+    SEOUL_1_metro_resist,             // 3120
+    SEOUL_1_metro_vvvf,               // 3121
+    SEOUL_1_resist,                   // 3100
+    SEOUL_1_4car,                     // 3114
+    SEOUL_1_6car,                     // 3116
+    SEOUL_1_10car,                    // 3110
+
+    group_seoul_2,                    // 3221
+    SEOUL_2_resist_4car,              // 3204
+    SEOUL_2_resist_6car,              // 3206
+    SEOUL_2_resist_10car,             // 3200
+    SEOUL_2_melco,                    // 3210
+    SEOUL_2_chopper,                  // 3211
+    SEOUL_2_vvvf_4car,                // 3224
+    SEOUL_2_vvvf_6car,                // 3226
+    SEOUL_2_vvvf_10car,               // 3220
+
+    group_seoul_3,                    // 3311
+    SEOUL_3_chopper_wide,             // 3300
+    SEOUL_3_chopper_modified,         // 3305
+    SEOUL_3_vvvf,                     // 3310
+    SEOUL_3_korail,                   // 3320
+
+    group_seoul_4,                    // 3401
+    SEOUL_4_chopper,                  // 3400
+    SEOUL_4_vvvf_1,                   // 3420
+    SEOUL_4_vvvf_3,                   // 3423
+    SEOUL_4_korail,                   // 3410
+
+    SEOUL_5,                          // 3500
+
+    SEOUL_6,                          // 3600
+
+    // SEOUL_7,                          // 3700
+
+    // SEOUL_8,                          // 3800
+
+    // SEOUL_9,                          // 3900
+
+    group_arex,                       // 8101
+    AREX_1000,                        // 8111
+    AREX_2000_1,                      // 8121
+    AREX_2000_4,                      // 8124
+
+    RTX_A,                            // 2400
+
+    // 왜국                            : 61xx
+
+    SHIN_E5,                          // 6125
+    SHIN_E6,                          // 6126
+    group_SHIN_N700,                  // 6170
+    SHIN_N700_8,                      // 6178
+    SHIN_N700_16,                     // 6176
+    group_SHIN_N700S,                 // 6171
+    SHIN_N700S_6,                     // 6177
+    SHIN_N700S_16,                    // 6179
+
+    KSEI_AE,                          // 6208
+
+    // 중국고속열차                     : 66xx
+
+    group_CR400AF,                    // 6641
+    CR400AF_8CAR,                     // 6648
+    CR400AF_16CAR,                    // 6646
+    CR400AF_17CAR,                    // 6647
+
+    // 여기서부터는 경전철입니다
+
+    SILLIM,                           // 7203
+    GIMPO_GOAL,                       // 7302
+
+    // 여기서부터는 객차입니다
+
+    ko_train_SAEMAEUL_CAR,           // 5601
+    ko_train_MUGUNGHWA_CAR,          // 5602
+    ko_train_CAFE_CAR,               // 5603
+    ko_train_TONGIL_CAR,             // 5604
+    ko_train_BIDULGI_CAR,            // 5605
+    ko_train_SLEEPING_CAR,           // 5606
+    ko_train_GENERATOR_CAR,          // 5610
+
+    ko_train_MAIL_CAR,               // 5915
+    ko_train_FLAT_CAR,               // 5910
+    ko_train_HOPPER_CAR,             // 5911
+    ko_train_BOX_CAR,                // 5916
+    ko_train_BAGGAGE_CAR,            // 5912
+    ko_train_TANK_CAR,               // 5913
+    ko_train_BULK_CEMENT_CAR,        // 5917
+    ko_train_STAKE_CAR,              // 5914
+    ko_train_CABOOSE,                // 5918
+]);

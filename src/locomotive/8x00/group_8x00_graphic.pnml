@@ -1,0 +1,9 @@
+/*--------------------------------------------------------------------
+  8x00 구매 페이지
+--------------------------------------------------------------------*/
+spriteset(set_8x00_RED_WHITE_BLUE_group, "./src/locomotive/8x00/8x00.png") {
+    tmpl_purchase_common(0, 0)
+}
+switch(FEAT_TRAINS, SELF, sw_8x00_group, cargo_subtype) {
+    set_8x00_RED_WHITE_BLUE_group;
+}

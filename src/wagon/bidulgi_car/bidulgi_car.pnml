@@ -1,0 +1,74 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * Bidulgi passenger car
+ */
+// SPEED_GENERAL(BIDULGI_CAR)
+COST(BIDULGI_CAR)
+RUNNING(BIDULGI_CAR)
+CAPACITY(BIDULGI_CAR)
+// CAPACITY_PURCHASE(BIDULGI_CAR)
+LOADING(BIDULGI_CAR)
+
+// Graphics
+#include "bidulgi_car_graphic.pnml"
+
+// Switch
+#include "bidulgi_car_switch.pnml"
+
+// Item
+item(FEAT_TRAINS, ko_train_BIDULGI_CAR, 5605) {
+    property {
+        // Common properties
+        name:                           string(STR_BIDULGI_CAR_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_BIDULGI_CAR_INTRODUCTION;
+        track_type:                     RAIL;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+
+        // Spec
+        power:                          0 kW;
+        weight:                         var_BIDULGI_CAR_WEIGHT;
+
+        // Model
+        model_life:                     50;   // 1957~2000
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 1;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+        loading_speed:                  5;
+
+        // Costs
+        cost_factor:                    10;
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
+        running_cost_factor:            1;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
+        bitmask_vehicle_info:           0;
+    }
+    graphics {
+        default:                        sw_BIDULGI_CAR_wagon;
+        purchase:                       sw_BIDULGI_CAR_purchase;
+
+        cost_factor:                    sw_BIDULGI_CAR_cost;
+        running_cost_factor:            sw_BIDULGI_CAR_runningcost;
+        cargo_capacity:                 sw_BIDULGI_CAR_capacity;
+        purchase_cargo_capacity:        sw_BIDULGI_CAR_capacity;
+        loading_speed:                  sw_BIDULGI_CAR_loadingspeed;
+
+        cargo_subtype_text:             sw_BIDULGI_CAR_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
+    }
+}

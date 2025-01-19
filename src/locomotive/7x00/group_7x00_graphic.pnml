@@ -1,0 +1,9 @@
+/*--------------------------------------------------------------------
+  7x00 구매 페이지
+--------------------------------------------------------------------*/
+spriteset(set_7x00_RED_WHITE_BLUE_group, "./src/locomotive/7x00/7x00.png") {
+    tmpl_purchase_common(0, 0)
+}
+switch(FEAT_TRAINS, SELF, sw_7x00_group, cargo_subtype) {
+    set_7x00_RED_WHITE_BLUE_group;
+}

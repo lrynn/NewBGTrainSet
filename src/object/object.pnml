@@ -1,0 +1,116 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+spriteset(set_BUFFER, "./src/object/object.png") {
+    [0, 0, 5, 12, -2,  -11]
+    [0, 0, 5, 12,  14, -25]
+    [5, 0, 5, 12, -17, -25]
+    [5, 0, 5, 12,  14,  -9]
+}
+
+spritelayout sply_buffer_SW {
+    ground {
+        sprite: LOAD_TEMP(0);
+    }
+    building {
+        sprite: set_BUFFER(0);
+        xextent: 1;
+        yextent: 3;
+        zextent: 12;
+        xoffset: 15; // from NE edge
+        yoffset: 7;  // from NW edge
+        zoffset: 0;
+    }
+}
+spritelayout sply_buffer_NW {
+    ground {
+        sprite: LOAD_TEMP(0);
+    }
+    building {
+        sprite: set_BUFFER(1);
+        xextent: 5;
+        yextent: 5;
+        zextent: 12;
+        xoffset: 10;
+        yoffset: 10;
+        zoffset: 0;
+    }
+}
+spritelayout sply_buffer_NE {
+    ground {
+        sprite: LOAD_TEMP(0);
+    }
+    building {
+        sprite: set_BUFFER(2);
+        xextent: 5;
+        yextent: 5;
+        zextent: 12;
+        xoffset: 10;
+        yoffset: 10;
+        zoffset: 0;
+    }
+}
+spritelayout sply_buffer_SE {
+    ground {
+        sprite: LOAD_TEMP(0);
+    }
+    building {
+        sprite: set_BUFFER(3);
+        xextent: 5;
+        yextent: 5;
+        zextent: 12;
+        xoffset: 10;
+        yoffset: 10;
+        zoffset: 0;
+    }
+}
+
+// Graphics by views
+switch(FEAT_OBJECTS, SELF, sw_buffer_by_view, view) {
+    1: sply_buffer_SW;
+    2: sply_buffer_NW;
+    3: sply_buffer_NE;
+    sply_buffer_SE;
+}
+
+// Graphics by terrains
+switch(FEAT_OBJECTS, SELF, sw_buffer, [
+    STORE_TEMP(GROUNDSPRITE_NORMAL, 0),
+    STORE_TEMP(terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : LOAD_TEMP(0), 0),
+    STORE_TEMP(terrain_type == TILETYPE_SNOW   ? GROUNDSPRITE_SNOW : LOAD_TEMP(0), 0),
+]) {
+    sw_buffer_by_view;
+}
+
+// Purchase graphics by terrains
+switch(FEAT_OBJECTS, SELF, sw_buffer_purchase, [
+    STORE_TEMP(GROUNDSPRITE_NORMAL, 0),
+]) {
+    sw_buffer_by_view;
+}
+
+// Item
+item(FEAT_OBJECTS, ko_train_objects_buffer) {
+    property {
+        class:                  "KTSR";
+        classname:              string(STR_OBJ_BUFFER_KTSR);
+        name:                   string(STR_OBJ_BUFFER_KTSR);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  1;
+        remove_cost_multiplier: 1;
+        introduction_date:      date(1971,1,1);
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           bitmask(OBJ_FLAG_REMOVE_IS_INCOME, OBJ_FLAG_ALLOW_BRIDGE, OBJ_FLAG_ONLY_INGAME);
+        height:                 1;
+        num_views:              4;
+    }
+    graphics {
+        default: sw_buffer;
+        purchase: sw_buffer_purchase;
+        tile_check: CB_RESULT_LOCATION_ALLOW;
+    }
+}

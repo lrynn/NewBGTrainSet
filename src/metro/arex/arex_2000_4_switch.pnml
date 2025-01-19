@@ -1,0 +1,45 @@
+/*------------------------------------------------------------------------------
+    A'REX 2000 Series 4th Gen. Switches
+------------------------------------------------------------------------------*/
+
+// Cargo Subtypes
+// None
+
+// Train Composition
+switch (FEAT_TRAINS, SELF, sw_AREX_2000_4, position_in_vehid_chain % 6) {
+    1:set_AREX_2000_4_wagon;
+    2:set_AREX_2000_4_wagon;
+    3:set_AREX_2000_4_wagon;
+    4:set_AREX_2000_4_wagon;
+    5:set_AREX_2000_4_engineT;
+    set_AREX_2000_4_engineH;
+}
+switch (FEAT_TRAINS, SELF, sw_AREX_2000_4_r, position_in_vehid_chain % 6) {
+    1:set_AREX_2000_4_wagon;
+    2:set_AREX_2000_4_wagon;
+    3:set_AREX_2000_4_wagon;
+    4:set_AREX_2000_4_wagon;
+    5:set_AREX_2000_4_engineT;
+    set_AREX_2000_4_engineH;
+    }
+switch(FEAT_TRAINS, SELF, sw_AREX_2000_4_flipped, vehicle_is_flipped){
+    0: sw_AREX_2000_4_r;
+    sw_AREX_2000_4;
+}
+switch(FEAT_TRAINS, PARENT, sw_AREX_2000_4_reversed, vehicle_is_reversed){
+    0: sw_AREX_2000_4;
+    sw_AREX_2000_4_flipped;
+}
+
+// to set length of composition
+switch (FEAT_TRAINS, SELF, sw_articulated_AREX_2000_4, extra_callback_info1) {
+    1..5: AREX_2000_4;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Sounds
+switch(FEAT_TRAINS, SELF, sw_AREX_2000_4_sound, extra_callback_info1) {
+    SOUND_EVENT_START: sound("sounds/HYUNDAIROTEMIGBTIPM1Kstart.wav");
+    SOUND_EVENT_LOAD_UNLOAD: sound("sounds/osfx_20.wav");
+    return CB_RESULT_NO_SOUND;
+}

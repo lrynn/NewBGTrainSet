@@ -1,0 +1,59 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+spriteset(set_TONGIL_CAR_1_purchase, "./src/wagon/tongil_car/TONGIL_CAR.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_TONGIL_CAR_1_wagon, "./src/wagon/tongil_car/TONGIL_CAR.png") {
+    tmpl_standard(80, 0)
+}
+
+spriteset(set_TONGIL_CAR_2_purchase, "./src/wagon/tongil_car/TONGIL_CAR.png") {
+    tmpl_purchase_common(0, 30)
+}
+spriteset(set_TONGIL_CAR_2_wagon, "./src/wagon/tongil_car/TONGIL_CAR.png") {
+    tmpl_standard(80, 30)
+}
+
+spriteset(set_TONGIL_CAR_3A_purchase, "./src/wagon/tongil_car/TONGIL_CAR.png") {
+    tmpl_purchase_common(0, 60)
+}
+spriteset(set_TONGIL_CAR_3A_wagon, "./src/wagon/tongil_car/TONGIL_CAR.png") {
+    tmpl_standard(80, 60)
+}
+
+spriteset(set_TONGIL_CAR_3B_purchase, "./src/wagon/tongil_car/TONGIL_CAR.png") {
+    tmpl_purchase_common(0, 90)
+}
+spriteset(set_TONGIL_CAR_3B_wagon, "./src/wagon/tongil_car/TONGIL_CAR.png") {
+    tmpl_standard(80, 90)
+}
+
+spriteset(set_TONGIL_CAR_4_purchase, "./src/wagon/tongil_car/TONGIL_CAR.png") {
+    tmpl_purchase_common(0, 120)
+}
+spriteset(set_TONGIL_CAR_4_wagon, "./src/wagon/tongil_car/TONGIL_CAR.png") {
+    tmpl_standard(80, 120)
+}
+
+spriteset(set_TONGIL_CAR_5_purchase, "./src/wagon/tongil_car/TONGIL_CAR.png") {
+    tmpl_purchase_common(0, 150)
+}
+spriteset(set_TONGIL_CAR_5_wagon, "./src/wagon/tongil_car/TONGIL_CAR.png") {
+    tmpl_standard(80, 150)
+}
+
+spriteset(set_TONGIL_CAR_6_purchase, "./src/wagon/tongil_car/TONGIL_CAR.png") {
+    tmpl_purchase_common(0, 180)
+}
+spriteset(set_TONGIL_CAR_6_wagon, "./src/wagon/tongil_car/TONGIL_CAR.png") {
+    tmpl_standard(80, 180)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_TONGIL_CAR_purchase, cargo_subtype) {
+    set_TONGIL_CAR_6_purchase;
+}

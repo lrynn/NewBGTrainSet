@@ -1,0 +1,26 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Colours
+#include "flat_car_graphic_blue.pnml"
+#include "flat_car_graphic_black.pnml"
+#include "flat_car_graphic_brown.pnml"
+
+// Purchase
+spriteset(set_FLAT_CAR_BLUE_purchase, "./src/wagon/flat_car/FLAT_CAR_BLUE.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_FLAT_CAR_BROWN_purchase, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_FLAT_CAR_BLACK_purchase, "./src/wagon/flat_car/FLAT_CAR_BLACK.png") {
+    tmpl_purchase_common(0, 0)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, set_FLAT_CAR_purchase, cargo_subtype) {
+    set_FLAT_CAR_BLUE_purchase;
+}

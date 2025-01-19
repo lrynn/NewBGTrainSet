@@ -1,0 +1,67 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Graphic
+spriteset(set_SAEMAEUL_CAR_1_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_SAEMAEUL_CAR_1, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+    tmpl_standard(80, 0)
+}
+
+spriteset(set_SAEMAEUL_CAR_executive_1_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+    tmpl_purchase_common(0, 30)
+}
+spriteset(set_SAEMAEUL_CAR_executive_1, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+    tmpl_standard(80, 30)
+}
+
+spriteset(set_SAEMAEUL_CAR_2_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+    tmpl_purchase_common(0, 60)
+}
+spriteset(set_SAEMAEUL_CAR_2, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+    tmpl_standard(80, 60)
+}
+
+spriteset(set_SAEMAEUL_CAR_executive_2_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+    tmpl_purchase_common(0, 90)
+}
+spriteset(set_SAEMAEUL_CAR_executive_2, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+    tmpl_standard(80, 90)
+}
+
+spriteset(set_SAEMAEUL_CAR_3_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+    tmpl_purchase_common(0, 120)
+}
+spriteset(set_SAEMAEUL_CAR_3, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+    tmpl_standard(80, 120)
+}
+
+spriteset(set_SAEMAEUL_CAR_executive_3_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+    tmpl_purchase_common(0, 150)
+}
+spriteset(set_SAEMAEUL_CAR_executive_3, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+    tmpl_standard(80, 150)
+}
+
+spriteset(set_SAEMAEUL_CAR_ITX_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+    tmpl_purchase_common(0, 180)
+}
+spriteset(set_SAEMAEUL_CAR_ITX, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+    tmpl_standard(80, 180)
+}
+
+spriteset(set_SAEMAEUL_CAR_wagon_KWANKWANG_purchase, "./src/wagon/saemaeul_car/KWANKWANG_CAR.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_SAEMAEUL_CAR_wagon_KWANKWANG, "./src/wagon/saemaeul_car/KWANKWANG_CAR.png") {
+    tmpl_standard(80, 0)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_SAEMAEUL_CAR_purchase, cargo_subtype) {
+    set_SAEMAEUL_CAR_3_purchase;
+}

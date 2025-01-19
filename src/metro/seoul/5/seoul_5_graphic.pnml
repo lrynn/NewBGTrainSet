@@ -1,0 +1,63 @@
+/*------------------------------------------------------------------------------
+    Seoul - Line 5 Graphics
+------------------------------------------------------------------------------*/
+
+// SMETRO_5K_1ST_2ND
+spriteset(set_SMETRO_5K_1ST_2ND_engineH, "./src/metro/seoul/5/seoul_5_1_2.png") {
+    tmpl_standard(80, 0)
+}
+spriteset(set_SMETRO_5K_1ST_2ND_wagon_panto, "./src/metro/seoul/5/seoul_5_1_2.png") {
+    tmpl_standard(80, 30)
+}
+spriteset(set_SMETRO_5K_1ST_2ND_wagon, "./src/metro/seoul/5/seoul_5_1_2.png") {
+    tmpl_standard(80, 60)
+}
+spriteset(set_SMETRO_5K_1ST_2ND_engineT, "./src/metro/seoul/5/seoul_5_1_2.png") {
+    tmpl_standard_r(80, 90)
+}
+spriteset(set_SMETRO_5K_1ST_2ND_purchase, "./src/metro/seoul/5/seoul_5_1_2.png") {
+    tmpl_purchase_common(0, 0)
+}
+
+// SMETRO_5K_3RD
+spriteset(set_SMETRO_5K_3RD_engineH, "./src/metro/seoul/5/seoul_5_3.png") {
+    tmpl_standard(80, 0)
+}
+spriteset(set_SMETRO_5K_3RD_wagon_panto, "./src/metro/seoul/5/seoul_5_3.png") {
+    tmpl_standard(80, 30)
+}
+spriteset(set_SMETRO_5K_3RD_wagon, "./src/metro/seoul/5/seoul_5_3.png") {
+    tmpl_standard(80, 60)
+}
+spriteset(set_SMETRO_5K_3RD_engineT, "./src/metro/seoul/5/seoul_5_3.png") {
+    tmpl_standard_r(80, 90)
+}
+spriteset(set_SMETRO_5K_3RD_purchase, "./src/metro/seoul/5/seoul_5_3.png") {
+    tmpl_purchase_common(0, 0)
+}
+
+// SMETRO_5K_4TH
+spriteset(set_SMETRO_5K_4TH_engineH, "./src/metro/seoul/5/seoul_5_4.png") {
+    tmpl_standard(80, 0)
+}
+spriteset(set_SMETRO_5K_4TH_wagon_panto_A, "./src/metro/seoul/5/seoul_5_4.png") {
+    tmpl_standard(80, 30)
+}
+spriteset(set_SMETRO_5K_4TH_wagon_panto_B, "./src/metro/seoul/5/seoul_5_4.png") {
+    tmpl_standard(80, 60)
+}
+spriteset(set_SMETRO_5K_4TH_wagon_A, "./src/metro/seoul/5/seoul_5_4.png") {
+    tmpl_standard(80, 90)
+}
+spriteset(set_SMETRO_5K_4TH_wagon_B, "./src/metro/seoul/5/seoul_5_4.png") {
+    tmpl_standard(80, 120)
+}
+spriteset(set_SMETRO_5K_4TH_engineT, "./src/metro/seoul/5/seoul_5_4.png") {
+    tmpl_standard_r(80, 150)
+}
+// spriteset(set_SMETRO_5K_4TH_engineT_without_S, "./src/metro/seoul/5/seoul_5_4.png") {
+//     tmpl_standard_r(80, 180)
+// }
+spriteset(set_SMETRO_5K_4TH_purchase, "./src/metro/seoul/5/seoul_5_4.png") {
+    tmpl_purchase_common(0, 0)
+}

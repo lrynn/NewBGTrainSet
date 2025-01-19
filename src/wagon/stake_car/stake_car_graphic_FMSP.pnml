@@ -1,0 +1,36 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * Stake car (Farm Supplies)
+ */
+
+// Graphics when loads Farm Supplies
+spriteset(set_STAKE_CAR_FMSP_full_A_wagon, "./src/wagon/stake_car/cargo_FMSP.png") {
+    tmpl_stake_car_8dir(0, 0)
+}
+spriteset(set_STAKE_CAR_FMSP_full_B_wagon, "./src/wagon/stake_car/cargo_FMSP.png") {
+    tmpl_stake_car_8dir(0, 30)
+}
+spritegroup sg_STAKE_CAR_FMSP_A_wagon {
+    loading: [
+        set_STAKE_CAR_empty_without_stake_8dir_wagon,
+        set_STAKE_CAR_FMSP_full_A_wagon
+    ];
+    loaded: [
+        set_STAKE_CAR_empty_without_stake_8dir_wagon,
+        set_STAKE_CAR_FMSP_full_A_wagon
+    ];
+}
+spritegroup sg_STAKE_CAR_FMSP_B_wagon {
+    loading: [
+        set_STAKE_CAR_empty_without_stake_8dir_wagon,
+        set_STAKE_CAR_FMSP_full_B_wagon
+    ];
+    loaded: [
+        set_STAKE_CAR_empty_without_stake_8dir_wagon,
+        set_STAKE_CAR_FMSP_full_B_wagon
+    ];
+}

@@ -1,0 +1,81 @@
+/*------------------------------------------------------------------------------
+  SUX Series
+------------------------------------------------------------------------------*/
+
+// Template
+template tmpl_KTXloco_power(x, y) {
+    [x+0,     y,     8,    22,    -3,   -11]
+    [x+20,    y,    20,    16,   -14,    -7]
+    [x+50,    y,    31,    12,   -16,    -8]
+    [x+90,    y,    20,    16,    -5,    -7]
+    [x+120,   y,     8,    22,    -3,   -11]
+    [x+140,   y,    20,    16,   -14,    -7]
+    [x+170,   y,    31,    12,   -16,    -8]
+    [x+210,   y,    20,    16,    -5,    -7]
+}
+template tmpl_KTXloco_wagon(x, y) {
+    [x+0,     y,     8,    22,    -3,   -11]
+    [x+20,    y,    20,    16,   -14,    -7]
+    [x+50,    y,    31,    11,   -16,    -7]
+    [x+90,    y,    20,    16,    -5,    -7]
+    [x+120,   y,     8,    22,    -3,   -11]
+    [x+140,   y,    20,    16,   -14,    -7]
+    [x+170,   y,    31,    11,   -16,    -7]
+    [x+210,   y,    20,    16,    -5,    -7]
+}
+template tmpl_KTXloco_wagon_r(x, y) {
+    [x+120,   y,     8,    22,    -3,   -11]
+    [x+140,   y,    20,    16,   -14,    -7]
+    [x+170,   y,    31,    11,   -16,    -7]
+    [x+210,   y,    20,    16,    -5,    -7]
+    [x+0,     y,     8,    22,    -3,   -11]
+    [x+20,    y,    20,    16,   -14,    -7]
+    [x+50,    y,    31,    11,   -16,    -7]
+    [x+90,    y,    20,    16,    -5,    -7]
+}
+
+// Attach
+switch(FEAT_TRAINS, SELF, sw_SUX2_attach, vehicle_type_id) {
+    SUX2:           return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}
+switch(FEAT_TRAINS, SELF, sw_SUXK_attach, vehicle_type_id) {
+    SUXK:           return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}
+switch(FEAT_TRAINS, SELF, sw_SUX3_attach, vehicle_type_id) {
+    SUX3:           return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}
+
+/*--------------------------------------------------------------------
+열차정보 그룹
+--------------------------------------------------------------------*/
+spriteset(set_sux_logo, "src/sux/sux.png") {
+    tmpl_purchase_common(0, 0)
+}
+
+item(FEAT_TRAINS, group_sux, 1001) {
+    property {
+        name:                           string(STR_group_sux_NAME);
+        climates_available:             NO_CLIMATE;
+        track_type:                     ELRL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        power:                          1 kW;
+        
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
+        bitmask_vehicle_info:           0;
+    }
+
+    graphics {
+        purchase:                       set_sux_logo;
+    }
+}
+
+#include "sux1/sux1.pnml"
+#include "sux2/sux2.pnml"
+#include "suxk/suxk.pnml"
+#include "sux3/sux3.pnml"

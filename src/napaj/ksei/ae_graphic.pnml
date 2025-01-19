@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------------
+    KEISEI AE Series - Graphics
+--------------------------------------------------------------------*/
+
+spriteset(set_KSEI_AE_engineH, "./src/napaj/ksei/Keisei_AE_series.png"){
+    DTS_temp(80, 0)
+}
+spriteset(set_KSEI_AE_2car_wagon, "./src/napaj/ksei/Keisei_AE_series.png"){
+    DTS_temp(80, 27)
+}
+spriteset(set_KSEI_AE_3car_wagon, "./src/napaj/ksei/Keisei_AE_series.png"){
+    DTS_temp(80, 54)
+}
+spriteset(set_KSEI_AE_4car_wagon, "./src/napaj/ksei/Keisei_AE_series.png") {
+    DTS_temp(80, 81)
+}
+spriteset(set_KSEI_AE_5car_wagon, "./src/napaj/ksei/Keisei_AE_series.png") {
+    DTS_temp(80, 108)
+}
+spriteset(set_KSEI_AE_engineT, "./src/napaj/ksei/Keisei_AE_series.png"){
+    DTS_temp(80, 135)
+}
+
+spriteset(set_KSEI_AE_purchase, "./src/napaj/ksei/Keisei_AE_series.png"){
+    tmpl_purchase(0, 0)
+}

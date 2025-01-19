@@ -1,0 +1,58 @@
+/*------------------------------------------------------------------------------
+    SEOUL - LINE 1
+    4 CARS Switches
+------------------------------------------------------------------------------*/
+
+// Cargo Subtypes
+
+switch(FEAT_TRAINS, SELF, sw_SEOUL_1_4CAR_engineH, cargo_subtype) {
+    set_3XXK_ST_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_SEOUL_1_4CAR_engineH_r, cargo_subtype) {
+    set_3XXK_ST_engineH_r;
+}
+switch(FEAT_TRAINS, SELF, sw_SEOUL_1_4CAR_wagon, cargo_subtype) {
+    set_3XXK_ST_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_SEOUL_1_4CAR_wagon_panto, cargo_subtype) {
+    set_3XXK_ST_wagon_panto;
+}
+switch(FEAT_TRAINS, SELF, sw_SEOUL_1_4CAR_engineT, cargo_subtype) {
+    set_3XXK_ST_engineT;
+}
+switch(FEAT_TRAINS, SELF, sw_SEOUL_1_4CAR_engineT_r, cargo_subtype) {
+    set_3XXK_ST_engineT_r;
+}
+
+
+
+// 자전거열차: 선두차가 파란색, 후부가 주황색.
+// 그래픽 파일에 주황색 engineH도 있으므로 engineT에 활용
+
+// Train Composition
+switch (FEAT_TRAINS, SELF, sw_SEOUL_1_4CAR, position_in_vehid_chain % 4) {
+    1:sw_SEOUL_1_4CAR_wagon_panto;
+    2:sw_SEOUL_1_4CAR_wagon_panto;
+    3:sw_SEOUL_1_4CAR_engineT_r;
+    sw_SEOUL_1_4CAR_engineH; //default
+    }
+switch (FEAT_TRAINS, SELF, sw_SEOUL_1_4CAR_r, position_in_vehid_chain % 4) {
+    1:sw_SEOUL_1_4CAR_wagon_panto;
+    2:sw_SEOUL_1_4CAR_wagon_panto;
+    3:sw_SEOUL_1_4CAR_engineT_r;
+    sw_SEOUL_1_4CAR_engineH; //default
+    }
+switch(FEAT_TRAINS, SELF, sw_SEOUL_1_4CAR_flipped, vehicle_is_flipped){
+    0: sw_SEOUL_1_4CAR_r;
+    sw_SEOUL_1_4CAR;
+}
+switch(FEAT_TRAINS, PARENT, sw_SEOUL_1_4CAR_reversed, vehicle_is_reversed){
+    0: sw_SEOUL_1_4CAR;
+    sw_SEOUL_1_4CAR_flipped;
+}
+
+// to set length of composition
+switch (FEAT_TRAINS, SELF, sw_articulated_SEOUL_1_4car, extra_callback_info1) {
+    1..3: SEOUL_1_4car;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}

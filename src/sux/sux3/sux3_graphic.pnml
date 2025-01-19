@@ -1,0 +1,48 @@
+/*------------------------------------------------------------------------------
+    SUX3 Graphics
+------------------------------------------------------------------------------*/
+
+spriteset(set_SUX3_purchase, "./src/sux/sux3/sux3.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_SUX3_engineH, "./src/sux/sux3/sux3.png") {
+    tmpl_standard(80, 0)
+}
+spriteset(set_SUX3_wagon_2, "./src/sux/sux3/sux3.png") { // 팬터ㄴ
+    tmpl_standard(80, 30)
+}
+spriteset(set_SUX3_wagon_3, "./src/sux/sux3/sux3.png") { // 민둥이
+    tmpl_standard(80, 60)
+}
+spriteset(set_SUX3_wagon_4, "./src/sux/sux3/sux3.png") { // 팬터
+    tmpl_standard(80, 90)
+}
+spriteset(set_SUX3_engineT, "./src/sux/sux3/sux3.png") {
+    tmpl_standard_r(80, 120)
+}
+spriteset(set_SUX3_wagon_3_without_panto, "./src/sux/sux3/sux3.png") { // 민둥이 리버스
+    tmpl_standard(80, 150)
+}
+
+// Enhanced graphic using 32bpp
+alternative_sprites(set_SUX3_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "./src/sux/sux3/sux3_32bpp.png") {
+    tmpl_purchase_common(0, 0)
+}
+alternative_sprites(set_SUX3_engineH, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "./src/sux/sux3/sux3_32bpp.png") {
+    tmpl_standard(80, 0)
+}
+alternative_sprites(set_SUX3_wagon_2, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "./src/sux/sux3/sux3_32bpp.png") {
+    tmpl_standard(80, 30)
+}
+alternative_sprites(set_SUX3_wagon_3, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "./src/sux/sux3/sux3_32bpp.png") {
+    tmpl_standard(80, 60)
+}
+alternative_sprites(set_SUX3_wagon_4, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "./src/sux/sux3/sux3_32bpp.png") {
+    tmpl_standard(80, 90)
+}
+alternative_sprites(set_SUX3_engineT, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "./src/sux/sux3/sux3_32bpp.png") {
+    tmpl_standard_r(80, 120)
+}
+alternative_sprites(set_SUX3_wagon_3_without_panto, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "./src/sux/sux3/sux3_32bpp.png") {
+    tmpl_standard(80, 150)
+}

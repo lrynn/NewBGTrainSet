@@ -1,0 +1,68 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * Hopper car
+ */
+
+// Template
+template tmpl_hopper_car(x, y) {
+    [x+0,    y,     8,    19,     -3,    -11]
+    [x+20,   y,    20,    15,    -13,     -7]
+    [x+50,   y,    25,    10,     -9,     -6]
+    [x+90,   y,    20,    15,     -4,     -6]
+    [x+0,    y,     8,    19,     -3,     -8]
+    [x+20,   y,    20,    15,    -15,     -6]
+    [x+50,   y,    25,    10,    -17,     -6]
+    [x+90,   y,    20,    15,     -6,     -7]
+}
+
+// Graphic
+spriteset(set_HOPPER_CAR_A_purchase, "./src/wagon/hopper_car/HOPPER_CAR.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_HOPPER_CAR_empty_A_wagon, "./src/wagon/hopper_car/HOPPER_CAR.png") {
+    tmpl_hopper_car(80, 0)
+}
+
+spriteset(set_HOPPER_CAR_B_purchase, "./src/wagon/hopper_car/HOPPER_CAR.png") {
+    tmpl_purchase_common(0, 30)
+}
+spriteset(set_HOPPER_CAR_empty_B_wagon, "./src/wagon/hopper_car/HOPPER_CAR.png") {
+    tmpl_hopper_car(80, 30)
+}
+
+spriteset(set_HOPPER_CAR_C_purchase, "./src/wagon/hopper_car/HOPPER_CAR.png") {
+    tmpl_purchase_common(0, 60)
+}
+spriteset(set_HOPPER_CAR_empty_C_wagon, "./src/wagon/hopper_car/HOPPER_CAR.png") {
+    tmpl_hopper_car(80, 60)
+}
+
+// Include
+#include "hopper_car_AORE_graphic.pnml"
+#include "hopper_car_BEAN_graphic.pnml"
+#include "hopper_car_CLAY_graphic.pnml"
+#include "hopper_car_COAL_graphic.pnml"
+#include "hopper_car_CORE_graphic.pnml"
+#include "hopper_car_FRUT_graphic.pnml"
+#include "hopper_car_GOLD_graphic.pnml"
+#include "hopper_car_GRAI_graphic.pnml"
+#include "hopper_car_GRVL_graphic.pnml"
+#include "hopper_car_IORE_graphic.pnml"
+#include "hopper_car_LIME_graphic.pnml"
+#include "hopper_car_MNO2_graphic.pnml"
+#include "hopper_car_PHOS_graphic.pnml"
+#include "hopper_car_PORE_graphic.pnml"
+#include "hopper_car_RCYC_graphic.pnml"
+#include "hopper_car_SALT_graphic.pnml"
+#include "hopper_car_SAND_graphic.pnml"
+#include "hopper_car_SCMT_graphic.pnml"
+#include "hopper_car_SLAG_graphic.pnml"
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_HOPPER_CAR_purchase, cargo_subtype) {
+    set_HOPPER_CAR_C_purchase;
+}

@@ -1,0 +1,19 @@
+/*------------------------------------------------------------------------------
+    Seoul - Line 6 Graphics
+------------------------------------------------------------------------------*/
+
+spriteset(set_SEOUL_6_engineH, "./src/metro/seoul/6/seoul_6.png") {
+    tmpl_standard(80, 0)
+}
+spriteset(set_SEOUL_6_wagon_panto, "./src/metro/seoul/6/seoul_6.png") {
+    tmpl_standard(80, 30)
+}
+spriteset(set_SEOUL_6_wagon, "./src/metro/seoul/6/seoul_6.png") {
+    tmpl_standard(80, 60)
+}
+spriteset(set_SEOUL_6_engineT, "./src/metro/seoul/6/seoul_6.png") {
+    tmpl_standard_r(80, 90)
+}
+spriteset(set_SEOUL_6_purchase, "./src/metro/seoul/6/seoul_6.png") {
+    tmpl_purchase_common(0, 0)
+}

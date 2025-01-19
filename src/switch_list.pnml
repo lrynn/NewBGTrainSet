@@ -1,0 +1,84 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Attach for Kxxxx locomotives
+switch(FEAT_TRAINS, SELF, sw_Kxxxx_attach, vehicle_type_id) {
+    ko_train_7x00:                                      return CB_RESULT_ATTACH_ALLOW;
+    ko_train_7000:                                      return CB_RESULT_ATTACH_ALLOW;
+    ko_train_7600:                                      return CB_RESULT_ATTACH_ALLOW;
+    ko_train_8000:                                      return CB_RESULT_ATTACH_ALLOW;
+    ko_train_8x00:                                      return CB_RESULT_ATTACH_ALLOW;
+    ko_train_8500:                                      return CB_RESULT_ATTACH_ALLOW;
+    ko_train_MUGUNGHWA_CAR:                           return CB_RESULT_ATTACH_ALLOW;
+    ko_train_SAEMAEUL_CAR:                            return CB_RESULT_ATTACH_ALLOW;
+    ko_train_TONGIL_CAR:                              return CB_RESULT_ATTACH_ALLOW;
+    ko_train_BIDULGI_CAR:                             return CB_RESULT_ATTACH_ALLOW;
+    ko_train_SLEEPING_CAR:                            return CB_RESULT_ATTACH_ALLOW;
+    ko_train_GENERATOR_CAR:                           return CB_RESULT_ATTACH_ALLOW;
+    ko_train_BULK_CEMENT_CAR:                         return CB_RESULT_ATTACH_ALLOW;
+    ko_train_CAFE_CAR:                                return CB_RESULT_ATTACH_ALLOW;
+    ko_train_FLAT_CAR:                                return CB_RESULT_ATTACH_ALLOW;
+    ko_train_HOPPER_CAR:                              return CB_RESULT_ATTACH_ALLOW;
+    ko_train_BOX_CAR:                                 return CB_RESULT_ATTACH_ALLOW;
+    ko_train_BAGGAGE_CAR:                             return CB_RESULT_ATTACH_ALLOW;
+    ko_train_TANK_CAR:                                return CB_RESULT_ATTACH_ALLOW;
+    ko_train_STAKE_CAR:                               return CB_RESULT_ATTACH_ALLOW;
+    ko_train_MAIL_CAR:                                return CB_RESULT_ATTACH_ALLOW;
+    ko_train_CABOOSE:                                 return CB_RESULT_ATTACH_ALLOW;
+    // ko_train_SEOUL_METRO_1..ko_train_GWANGJU_METRO_1: return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}
+switch(FEAT_TRAINS, SELF, sw_Kxxxx_attach_global, 1) {
+    1: return CB_RESULT_ATTACH_ALLOW;
+    sw_Kxxxx_attach;
+}
+
+// Attach for Narrow gauge
+// switch(FEAT_TRAINS, SELF, sw_NARROW_attach, vehicle_type_id) {
+//     ko_train_NARROW_DIESEL_CAR:                       return CB_RESULT_ATTACH_ALLOW;
+//     ko_train_HOKEY7:                                  return CB_RESULT_ATTACH_ALLOW;
+//     ko_train_NARROW_GAUGE_WAGON:                      return CB_RESULT_ATTACH_ALLOW;
+//     ko_train_NARROW_BOXCAR:                           return CB_RESULT_ATTACH_ALLOW;
+//     ko_train_NARROW_HOPPERCAR:                        return CB_RESULT_ATTACH_ALLOW;
+//     return string(STR_ERROR_NO_ATTACH);
+// }
+// switch(FEAT_TRAINS, SELF, sw_NARROW_attach_global, bool_no_vehicle_attachment_restrictions) {
+//     1: return CB_RESULT_ATTACH_ALLOW;
+//     sw_NARROW_attach;
+// }
+
+// // Attach for Metro
+switch(FEAT_TRAINS, SELF, sw_METRO_attach, vehicle_type_id) {
+    return string(STR_ERROR_NO_ATTACH);
+}
+switch(FEAT_TRAINS, SELF, sw_METRO_attach_global, bool_no_vehicle_attachment_restrictions) {
+    return string(STR_ERROR_NO_ATTACH);
+}
+
+// It should be more than 4 cars including engines
+switch(FEAT_TRAINS, SELF, sw_ko_train_start_stop_least4, num_vehs_in_consist) {
+    1 .. 4: return string(STR_ERROR_NOT_ENOUGH_LENGTH4);
+    return CB_RESULT_NO_TEXT;
+}
+// It should be less than 4 cars including engines
+switch(FEAT_TRAINS, SELF, sw_ko_train_start_stop_less4, num_vehs_in_consist) {
+    1 .. 4: return CB_RESULT_NO_TEXT;
+    return string(STR_ERROR_TOO_LONG_LENGTH4);
+}
+// It should be less than 6 cars including engines
+switch(FEAT_TRAINS, SELF, sw_ko_train_start_stop_less6, num_vehs_in_consist) {
+    1 .. 6: return CB_RESULT_NO_TEXT;
+    return string(STR_ERROR_TOO_LONG_LENGTH6);
+}
+// It should be less than 10 cars including engines
+switch(FEAT_TRAINS, SELF, sw_ko_train_start_stop_less10, num_vehs_in_consist) {
+    1 .. 10: return CB_RESULT_NO_TEXT;
+    return string(STR_ERROR_TOO_LONG_LENGTH10);
+}
+
+switch(FEAT_TRAINS, SELF, sw_ko_train_start_stop_global, 0) {
+    return CB_RESULT_NO_TEXT;
+}

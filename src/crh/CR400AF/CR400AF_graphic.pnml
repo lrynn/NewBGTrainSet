@@ -1,0 +1,52 @@
+/*--------------------------------------------------------------------
+Graphics - AF
+--------------------------------------------------------------------*/
+spriteset(set_CR400AF_engineH, "./src/crh/CR400AF/CR400AF.png"){
+    DTS_temp(80, 0)
+}
+
+spriteset(set_CR400AF_panto_wagon, "./src/crh/CR400AF/CR400AF.png"){
+    DTS_temp(80, 27)
+}
+
+spriteset(set_CR400AF_wagon, "./src/crh/CR400AF/CR400AF.png") {
+    DTS_temp(80, 54)
+}
+
+spriteset(set_CR400AF_panto_wagon_r, "./src/crh/CR400AF/CR400AF.png"){
+    DTS_temp(80, 81)
+}
+
+spriteset(set_CR400AF_engineT, "./src/crh/CR400AF/CR400AF.png"){
+    DTS_temp(80, 108)
+}
+
+/*--------------------------------------------------------------------
+Graphics - AF
+--------------------------------------------------------------------*/
+spriteset(set_CR400AF_Z_engineH, "./src/crh/CR400AF/CR400AF_Z.png"){
+    DTS_temp(80, 0)
+}
+
+spriteset(set_CR400AF_Z_panto_wagon, "./src/crh/CR400AF/CR400AF_Z.png"){
+    DTS_temp(80, 27)
+}
+
+spriteset(set_CR400AF_Z_wagon, "./src/crh/CR400AF/CR400AF_Z.png") {
+    DTS_temp(80, 54)
+}
+
+spriteset(set_CR400AF_Z_panto_wagon_r, "./src/crh/CR400AF/CR400AF_Z.png"){
+    DTS_temp(80, 81)
+}
+
+spriteset(set_CR400AF_Z_engineT, "./src/crh/CR400AF/CR400AF_Z.png"){
+    DTS_temp(80, 108)
+}
+
+/*--------------------------------------------------------------------
+구매정보
+--------------------------------------------------------------------*/
+spriteset(set_CR400AF_purchase, "./src/crh/CR400AF/CR400AF.png"){
+    tmpl_purchase(0, 0)
+}

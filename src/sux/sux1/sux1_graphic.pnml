@@ -1,0 +1,40 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// SUX1
+spriteset(set_SUX1_engineH, "./src/sux/sux1/sux1.png") {   // PC1
+    tmpl_standard(80, 0)
+}
+spriteset(set_SUX1_engineH_r, "./src/sux/sux1/sux1.png") {   // PC1
+    tmpl_standard_r(80, 0)
+}
+spriteset(set_SUX1_wagon_1, "./src/sux/sux1/sux1.png") {   // T01
+    tmpl_standard(80, 30)
+}
+spriteset(set_SUX1_wagon_express, "./src/sux/sux1/sux1.png") {   // T02, express car
+    tmpl_standard(80, 60)
+}
+spriteset(set_SUX1_wagon_express_r, "./src/sux/sux1/sux1.png") {   // T02, express car (reverse)
+    tmpl_standard_r(80, 60)
+}
+spriteset(set_SUX1_wagon_middle1, "./src/sux/sux1/sux1.png") {   // T05 ~ T09
+    tmpl_standard(80, 90)
+}
+spriteset(set_SUX1_wagon_middle2, "./src/sux/sux1/sux1.png") {   // T10 ~ T17
+    tmpl_standard(80, 120)
+}
+spriteset(set_SUX1_wagon_18, "./src/sux/sux1/sux1.png") {   // T18
+    tmpl_standard(80, 150)
+}
+spriteset(set_SUX1_engineT, "./src/sux/sux1/sux1.png") {   // PC2
+    tmpl_standard(80, 180)
+}
+spriteset(set_SUX1_engineT_r, "./src/sux/sux1/sux1.png") {   // PC2
+    tmpl_standard_r(80, 180)
+}
+spriteset(set_SUX1_purchase, "./src/sux/sux1/sux1.png") {
+    tmpl_purchase_common(0, 0)
+}

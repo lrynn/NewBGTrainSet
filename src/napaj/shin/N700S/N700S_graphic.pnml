@@ -1,0 +1,40 @@
+/*--------------------------------------------------------------------
+Graphics
+--------------------------------------------------------------------*/
+spriteset(set_N700S_T_engineH, "src/napaj/shin/N700S/N700S.png"){
+    DTS_temp(80, 0)
+}
+spriteset(set_N700S_T_panto_wagon, "src/napaj/shin/N700S/N700S.png"){
+    DTS_temp(80, 27)
+}
+spriteset(set_N700S_T_panto_wagon_r, "src/napaj/shin/N700S/N700S.png"){
+    DTS_temp_r(80, 27)
+}
+spriteset(set_N700S_T_wagon, "src/napaj/shin/N700S/N700S.png") {
+    DTS_temp(80, 54)
+}
+spriteset(set_N700S_T_engineT, "src/napaj/shin/N700S/N700S.png"){
+    DTS_temp(80, 81)
+}
+spriteset(set_N700S_purchase, "src/napaj/shin/N700S/N700S.png"){
+    tmpl_purchase(0, 0)
+}
+
+spriteset(set_N700S_K_engineH, "src/napaj/shin/N700S/N700S_K.png"){
+    DTS_temp(80, 0)
+}
+spriteset(set_N700S_K_panto_wagon, "src/napaj/shin/N700S/N700S_K.png"){
+    DTS_temp(80, 27)
+}
+spriteset(set_N700S_K_panto_wagon_r, "src/napaj/shin/N700S/N700S_K.png"){
+    DTS_temp_r(80, 27)
+}
+spriteset(set_N700S_K_wagon, "src/napaj/shin/N700S/N700S_K.png") {
+    DTS_temp(80, 54)
+}
+spriteset(set_N700S_K_engineT, "src/napaj/shin/N700S/N700S_K.png"){
+    DTS_temp(80, 81)
+}
+spriteset(set_N700S_K_purchase, "src/napaj/shin/N700S/N700S_K.png"){
+    tmpl_purchase(0, 0)
+}

@@ -1,0 +1,35 @@
+/*--------------------------------------------------------------------
+  7x00호대 디젤 기관차
+--------------------------------------------------------------------*/
+
+#include "group_7x00_graphic.pnml"
+
+/*--------------------------------------------------------------------
+열차정보 그룹
+--------------------------------------------------------------------*/
+item(FEAT_TRAINS, group_7x00, 4711) {
+    property {
+        name:                           string(STR_group_7x00_NAME);
+        climates_available:             NO_CLIMATE;
+        track_type:                     ELRL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        power:                          1 kW;
+        
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
+        bitmask_vehicle_info:           0;
+    }
+
+    graphics {
+        purchase:                       sw_7x00_group;
+    }
+}
+
+/*--------------------------------------------------------------------
+열차 리스트
+--------------------------------------------------------------------*/
+#include "7000/7000.pnml"
+#include "7x00/7x00.pnml"
+#include "7600/7600.pnml"

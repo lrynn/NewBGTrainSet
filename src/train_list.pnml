@@ -1,0 +1,50 @@
+/*------------------------------------------------------------------------------
+  Train Lists
+------------------------------------------------------------------------------*/
+
+// Common wagons
+#include "wagon/saemaeul_car/saemaeul_car.pnml"
+#include "wagon/mugunghwa_car/mugunghwa_car.pnml"
+#include "wagon/tongil_car/tongil_car.pnml"
+#include "wagon/bidulgi_car/bidulgi_car.pnml"
+#include "wagon/generator_car/generator_car.pnml"
+#include "wagon/cafe_car/cafe_car.pnml"
+#include "wagon/sleeping_car/sleeping_car.pnml"
+
+#include "locomotive/4400/4400.pnml"
+#include "locomotive/7x00/group_7x00.pnml"
+#include "locomotive/8x00/group_8x00.pnml"
+
+#include "locomotive/dhc/dhc.pnml"
+
+#include "sux/sux.pnml"
+
+#include "lnx/mwonchun/mwonchun.pnml"
+#include "lnx/newmaeul/newmaeul.pnml"
+#include "lnx/simjung/simjung.pnml"
+#include "noriro/noriro.pnml"
+
+#include "metro/metro.pnml"
+
+#include "lrt/sillim/sillim.pnml"
+#include "lrt/gimpo_goal/gimpo_goal.pnml"
+
+#include "napaj/shin/shinkansen.pnml"
+#include "napaj/ksei/ae.pnml"
+
+#include "crh/CR400AF/CR400AF.pnml"
+
+// Wagons
+#include "wagon/flat_car/flat_car.pnml"
+#include "wagon/mail_car/mail_car.pnml"
+#include "wagon/hopper_car/hopper_car.pnml"
+#include "wagon/box_car/box_car.pnml"
+#include "wagon/baggage_car/baggage_car.pnml"
+#include "wagon/tank_car/tank_car.pnml"
+#include "wagon/bulk_cement_car/bulk_cement_car.pnml"
+#include "wagon/stake_car/stake_car.pnml"
+// #include "wagon/LRT_wagon/LRT_wagon.pnml"
+#include "wagon/caboose/caboose.pnml"
+
+// Sorting
+#include "sort.pnml"

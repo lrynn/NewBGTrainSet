@@ -1,0 +1,67 @@
+/*------------------------------------------------------------------------------
+  SUX-3
+------------------------------------------------------------------------------*/
+
+// Graphics
+#include "sux3_graphic.pnml"
+
+// Switches
+#include "sux3_switch.pnml"
+
+item(FEAT_TRAINS, SUX3, 1600) {
+    property {
+        // Common properties
+        name:                           string(STR_SUX3_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_SUX3_INTRODUCTION;
+        track_type:                     ELRL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        variant_group:                  group_sux;
+
+        // Spec
+        speed:                          var_SUX3_SPEED;
+        power:                          var_SUX3_POWER;
+        weight:                         var_SUX3_WEIGHT;
+        tractive_effort_coefficient:    0.4;
+        air_drag_coefficient:           0.01;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 1;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+
+        // Costs
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_DIESEL;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
+    }
+    graphics {
+        default:                        sw_SUX3_reversed;
+        articulated_part:               sw_articulated_SUX3;
+        purchase:                       set_SUX3_purchase;
+
+        speed:                          var_SUX3_SPEED;
+        cost_factor:                    var_SUX3_COST;
+        running_cost_factor:            var_SUX3_RUNNINGCOST;
+        cargo_capacity:                 var_SUX3_CAPACITY;
+        purchase_cargo_capacity:        var_SUX3_CAPACITY;
+        loading_speed:                  var_SUX3_LOADINGSPEED;
+
+        can_attach_wagon:               sw_SUX3_attach;
+        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+
+        sound_effect:                   sw_SUX3_sound;
+    }
+}

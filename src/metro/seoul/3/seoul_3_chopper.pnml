@@ -1,0 +1,122 @@
+/*------------------------------------------------------------------------------
+    SEOUL - LINE 3
+    CHOPPER
+------------------------------------------------------------------------------*/
+
+#include "seoul_3_chopper_switch.pnml"
+
+// Item
+
+// wide
+item(FEAT_TRAINS, SEOUL_3_chopper_wide, 3300) {
+    property {
+        // Common properties
+        name:                           string(STR_SEOUL_3_CHOPPER_WIDE_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1985, 1, 1);
+        track_type:                     ELRL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        variant_group:                  group_seoul_3;
+
+        // Spec
+        power:                          var_METRO_10CAR_POWER;
+        weight:                         var_METRO_10CAR_WEIGHT;
+        tractive_effort_coefficient:    0.25;
+        air_drag_coefficient:           0.01;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 1;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+
+        // Costs
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_2CC, TRAIN_FLAG_SPRITE_STACK);
+    }
+    graphics {
+        default:                        sw_SEOUL_3_CHOPPER_WIDE_reversed;
+        articulated_part:               sw_articulated_SEOUL_3_CHOPPER_WIDE;
+        purchase:                       set_SEOUL_3_CHOPPER_WIDE_purchase;
+
+        speed:                          var_METRO_SPEED;
+        cost_factor:                    var_METRO_10CAR_COST;
+        running_cost_factor:            var_METRO_10CAR_RUNNINGCOST;
+        cargo_capacity:                 var_METRO_CAPACITY;
+        purchase_cargo_capacity:        var_METRO_CAPACITY;
+        loading_speed:                  var_METRO_LOADINGSPEED;
+
+        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+
+        sound_effect:                   sw_SEOUL_3_chopper_sound;
+    }
+}
+
+// modified
+item(FEAT_TRAINS, SEOUL_3_chopper_modified, 3305) {
+    property {
+        // Common properties
+        name:                           string(STR_SEOUL_3_CHOPPER_MODIFIED_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(2010, 1, 1);
+        track_type:                     ELRL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        variant_group:                  group_seoul_3;
+
+        // Spec
+        power:                          var_METRO_10CAR_POWER;
+        weight:                         var_METRO_10CAR_WEIGHT;
+        tractive_effort_coefficient:    0.25;
+        air_drag_coefficient:           0.01;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 1;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+
+        // Costs
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_2CC, TRAIN_FLAG_SPRITE_STACK);
+    }
+    graphics {
+        default:                        sw_SEOUL_3_CHOPPER_MODIFIED_reversed;
+        articulated_part:               sw_articulated_SEOUL_3_CHOPPER_MODIFIED;
+        purchase:                       set_SEOUL_3_CHOPPER_MODIFIED_purchase;
+
+        speed:                          var_METRO_SPEED;
+        cost_factor:                    var_METRO_10CAR_COST;
+        running_cost_factor:            var_METRO_10CAR_RUNNINGCOST;
+        cargo_capacity:                 var_METRO_CAPACITY;
+        purchase_cargo_capacity:        var_METRO_CAPACITY;
+        loading_speed:                  var_METRO_LOADINGSPEED;
+
+        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+
+        sound_effect:                   sw_SEOUL_3_chopper_sound;
+    }
+}

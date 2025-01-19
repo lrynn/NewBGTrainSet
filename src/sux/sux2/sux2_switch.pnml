@@ -1,0 +1,92 @@
+/*------------------------------------------------------------------------------
+    SUX-2 Switches
+------------------------------------------------------------------------------*/
+
+// Cargo Subtypes
+switch(FEAT_TRAINS, SELF, sw_SUX2_cargo_subtype_text, cargo_subtype) {
+    1: return string(STR_REFIT_LIVERY_SANCHEON); // 산천
+    2: return string(STR_REFIT_LIVERY_KTX2N_PYEONGCHANG); // 평창
+    3: return string(STR_REFIT_LIVERY_SRT); // SRT
+    return string(STR_REFIT_LIVERY_SANCHEON);
+}
+switch(FEAT_TRAINS, SELF, sw_SUX2_engineH, cargo_subtype) {
+    1: return set_SUX2_engineH;
+    2: return set_SUX2_PYEONGCHANG_engineH;
+    3: return set_SRT_engineH;
+    return set_SUX2_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_SUX2_wagon_1, cargo_subtype) {
+    1: return set_SUX2_wagon_1;
+    3: return set_SRT_wagon_1;
+    return set_SUX2_wagon_1;
+}
+switch(FEAT_TRAINS, SELF, sw_SUX2_wagon_express, cargo_subtype) {
+    1: return set_SUX2_wagon_express;
+    3: return set_SRT_wagon_express;
+    return set_SUX2_wagon_express;
+}
+switch(FEAT_TRAINS, SELF, sw_SUX2_wagon_express_r, cargo_subtype) {
+    1: return set_SUX2_wagon_express_r;
+    3: return set_SRT_wagon_express_r;
+    return set_SUX2_wagon_express_r;
+}
+switch(FEAT_TRAINS, SELF, sw_SUX2_wagon_middle, cargo_subtype) {
+    1: return set_SUX2_wagon_middle;
+    3: return set_SRT_wagon_middle;
+    return set_SUX2_wagon_middle;
+}
+switch(FEAT_TRAINS, SELF, sw_SUX2_wagon_8, cargo_subtype) {
+    1: return set_SUX2_wagon_8;
+    3: return set_SRT_wagon_8;
+    return set_SUX2_wagon_8;
+}
+switch(FEAT_TRAINS, SELF, sw_SUX2_engineT, cargo_subtype) {
+    1: return set_SUX2_engineT;
+    2: return set_SUX2_PYEONGCHANG_engineT;
+    3: return set_SRT_engineT;
+    return set_SUX2_engineT;
+}
+
+// Train Composition
+switch (FEAT_TRAINS, SELF, sw_SUX2, position_in_vehid_chain % 10) {
+    1:sw_SUX2_wagon_1;
+    2:sw_SUX2_wagon_middle;
+    3:sw_SUX2_wagon_express;
+    4..7:sw_SUX2_wagon_middle;
+    8:sw_SUX2_wagon_8;
+    9:sw_SUX2_engineT;
+    sw_SUX2_engineH;
+    }
+switch (FEAT_TRAINS, SELF, sw_SUX2_r, position_in_vehid_chain % 10) {
+    1:sw_SUX2_wagon_1;
+    2:sw_SUX2_wagon_middle;
+    3:sw_SUX2_wagon_express;
+    4..7:sw_SUX2_wagon_middle;
+    8:sw_SUX2_wagon_8;
+    9:sw_SUX2_engineT;
+    sw_SUX2_engineH;
+    }
+switch(FEAT_TRAINS, SELF, sw_SUX2_flipped, vehicle_is_flipped){
+    0: sw_SUX2_r;
+    sw_SUX2;
+}
+switch(FEAT_TRAINS, PARENT, sw_SUX2_reversed, vehicle_is_reversed){
+    0: sw_SUX2;
+    sw_SUX2_flipped;
+}
+
+// to set length of composition
+switch (FEAT_TRAINS, SELF, sw_articulated_SUX2, extra_callback_info1) {
+    1..9: SUX2;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Sounds
+switch(FEAT_TRAINS, SELF, sw_SUX2_sound_by_generation, cargo_subtype) {
+    2: return sound("sounds/KTXSC140000start.wav");
+    return sound("sounds/KTXSCstart.wav");
+}
+switch(FEAT_TRAINS, SELF, sw_SUX2_sound, extra_callback_info1) {
+    SOUND_EVENT_START: sw_SUX2_sound_by_generation;
+    return CB_RESULT_NO_SOUND;
+}

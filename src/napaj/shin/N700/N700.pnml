@@ -1,0 +1,145 @@
+/*------------------------------------------------------------------------------
+    Shinkansen N700 Series
+------------------------------------------------------------------------------*/
+
+// Graphics
+#include "N700_graphic.pnml"
+
+// Switch
+#include "N700_switch.pnml"
+
+/*--------------------------------------------------------------------
+열차정보 그룹
+--------------------------------------------------------------------*/
+
+item(FEAT_TRAINS, group_SHIN_N700, 6170) {
+    property {
+        name:                           string(STR_group_N700_NAME);
+        climates_available:             NO_CLIMATE;
+        track_type:                     ELRL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        power:                          1 kW;
+        
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
+        bitmask_vehicle_info:           0;
+    }
+
+    graphics {
+        purchase:                       set_Shinkansen_N700_Tokaido_Sanyo_purchase;
+    }
+}
+
+/*--------------------------------------------------------------------
+열차 리스트
+--------------------------------------------------------------------*/
+
+item(FEAT_TRAINS, SHIN_N700_8, 6178) {
+    property {
+        // Common properties
+        name:                           string(STR_SHIN_N700_8_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_SHIN_N700_8_INTRODUCTION;
+        track_type:                     ELRL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        variant_group:                  group_SHIN_N700;
+
+        // Spec
+        power:                          var_SHIN_N700_8_POWER;
+        weight:                         var_SHIN_N700_8_WEIGHT;
+        tractive_effort_coefficient:    0.25;
+        air_drag_coefficient:           0.01;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 1;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+
+        // Costs
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
+    }
+    graphics {
+        default:                        sw_SHIN_N700_8car;
+        articulated_part:               sw_articulated_SHIN_N700_8car;
+        purchase:                       set_Shinkansen_N700_Sanyo_Kyushu_purchase;
+
+        speed:                          var_SHIN_N700_8_SPEED;
+        cost_factor:                    var_SHIN_N700_8_COST;
+        running_cost_factor:            var_SHIN_N700_8_RUNNINGCOST;
+        cargo_capacity:                 var_SHIN_N700_8_CAPACITY;
+        purchase_cargo_capacity:        var_SHIN_N700_8_CAPACITY;
+        loading_speed:                  var_SHIN_N700_8_LOADINGSPEED;
+
+        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+    }
+}
+
+item(FEAT_TRAINS, SHIN_N700_16, 6176) {
+    property {
+        // Common properties
+        name:                           string(STR_SHIN_N700_16_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_SHIN_N700_16_INTRODUCTION;
+        track_type:                     ELRL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        variant_group:                  group_SHIN_N700;
+
+        // Spec
+        power:                          var_SHIN_N700_16_POWER;
+        weight:                         var_SHIN_N700_16_WEIGHT;
+        tractive_effort_coefficient:    0.25;
+        air_drag_coefficient:           0.01;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 1;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+
+        // Costs
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
+    }
+    graphics {
+        default:                        sw_SHIN_N700_16car;
+        articulated_part:               sw_articulated_SHIN_N700_16car;
+        purchase:                       set_Shinkansen_N700_Tokaido_Sanyo_purchase;
+
+        speed:                          var_SHIN_N700_16_SPEED;
+        cost_factor:                    var_SHIN_N700_16_COST;
+        running_cost_factor:            var_SHIN_N700_16_RUNNINGCOST;
+        cargo_capacity:                 var_SHIN_N700_16_CAPACITY;
+        purchase_cargo_capacity:        var_SHIN_N700_16_CAPACITY;
+        loading_speed:                  var_SHIN_N700_16_LOADINGSPEED;
+
+        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+    }
+}

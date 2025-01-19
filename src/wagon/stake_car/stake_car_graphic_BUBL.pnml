@@ -1,0 +1,33 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * Stake car (Bubbles)
+ */
+
+// Graphics when loads Bubbles
+spriteset(set_STAKE_CAR_BUBL_loading_1_wagon, "./src/wagon/stake_car/cargo_BUBL.png") {
+    tmpl_stake_car(0, 0)
+}
+spriteset(set_STAKE_CAR_BUBL_loading_2_wagon, "./src/wagon/stake_car/cargo_BUBL.png") {
+    tmpl_stake_car(0, 30)
+}
+spriteset(set_STAKE_CAR_BUBL_full_wagon, "./src/wagon/stake_car/cargo_BUBL.png") {
+    tmpl_stake_car(0, 60)
+}
+spritegroup sg_STAKE_CAR_BUBL_A_wagon {
+    loading: [
+        set_STAKE_CAR_empty_without_stake_8dir_wagon,
+        set_STAKE_CAR_BUBL_loading_1_wagon,
+        set_STAKE_CAR_BUBL_loading_2_wagon,
+        set_STAKE_CAR_BUBL_full_wagon
+    ];
+    loaded: [
+        set_STAKE_CAR_empty_without_stake_8dir_wagon,
+        set_STAKE_CAR_BUBL_loading_1_wagon,
+        set_STAKE_CAR_BUBL_loading_2_wagon,
+        set_STAKE_CAR_BUBL_full_wagon
+    ];
+}

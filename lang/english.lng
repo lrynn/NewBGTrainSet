@@ -1,0 +1,451 @@
+##grflangid 0x3A
+##gender m f
+
+# GRF name and description
+STR_GRF_NAME                                                :새 빌갤공화국 열차 세트
+STR_GRF_NAME_WITH_VER                                       :새 빌갤공화국 열차 세트 {VERSION}
+STR_GRF_DESC                                                :{BLACK}퍼거 에 감염 안된 섭장이 선사하는 완전 새로운 트타 열차 세트{}{}(최근 업데이트: {RECENT_UPDATED})
+STR_GRF_URL                                                 :https://cafe.naver.com/5pcraft
+
+
+# Vehicles
+#   Locomotive
+STR_group_4x00_NAME                                         :중형 디젤기관차
+STR_4400_NAME                                               :EMD GT18B-M {GREEN}{TINYFONT}(4400호대 디젤기관차)
+
+STR_group_7x00_NAME                                         :특대형 디젤기관차
+STR_7000_NAME                                               :EMD FT36HCW-2 {GREEN}{TINYFONT}(7000호대 디젤기관차)
+STR_7x00_NAME                                               :EMD GT26CW {GREEN}{TINYFONT}(7x00호대 디젤기관차)
+STR_7600_NAME                                               :GE PowerHawl {GREEN}{TINYFONT}(7600호대 디젤기관차)
+
+STR_group_8x00_NAME                                         :전기기관차
+STR_8000_NAME                                               :구형 전기기관차 {GREEN}{TINYFONT}(8000호대 전기기관차)
+STR_8x00_NAME                                               :SIEMENS Eurosprinter {GREEN}{TINYFONT}(8x00호대 전기기관차)
+STR_8500_NAME                                               :화물용 전기기관차 {GREEN}{TINYFONT}(8500호대 전기기관차)
+
+STR_DHC_NAME                                                :DHC 디젤동차
+
+STR_group_sux_NAME                                          :SUX (빌갤고속철도)
+STR_SUX1_NAME                                               :{PUSH_COLOUR}{GREEN}[20량] {POP_COLOUR}SUX-1
+STR_SUX2_NAME                                               :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}SUX-출발
+STR_SUXK_NAME                                               :{PUSH_COLOUR}{GREEN}[6량] {POP_COLOUR}SUX-끊음
+STR_SUX3_NAME                                               :{PUSH_COLOUR}{GREEN}[8량] {POP_COLOUR}SUX-뭔룡
+
+STR_MWONCHUN_NAME                                           :{PUSH_COLOUR}{GREEN}[8량] {POP_COLOUR}lnx-뭔춘
+STR_L_NEWMAEUL_NAME                                         :{PUSH_COLOUR}{GREEN}[6량] {POP_COLOUR}lnx-새로운마을
+STR_group_SIMJUNG_NAME                                      :lnx-심정
+STR_SIMJUNG_4CAR_NAME                                       :{PUSH_COLOUR}{GREEN}[4량] {POP_COLOUR}lnx-심정
+STR_SIMJUNG_6CAR_NAME                                       :{PUSH_COLOUR}{GREEN}[6량] {POP_COLOUR}lnx-심정
+STR_NORIRO_NAME                                             :{PUSH_COLOUR}{GREEN}[4량] {POP_COLOUR}노리로
+
+#   Metro
+STR_group_seoul_1_NAME                                      :수도권 전철 1호선
+STR_SEOUL_1_RESIST_NAME                                     :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}랙레일 1000호대 저항제어 전동차
+STR_SEOUL_1_4CAR_NAME                                       :{PUSH_COLOUR}{GREEN}[4량] {POP_COLOUR}랙레일 319000호대 전동차
+STR_SEOUL_1_6CAR_NAME                                       :{PUSH_COLOUR}{GREEN}[6량] {POP_COLOUR}랙레일 319000호대 전동차
+STR_SEOUL_1_10CAR_NAME                                      :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}랙레일 31x000호대 VVVF 전동차
+STR_SEOUL_1_METRO_RESIST_NAME                               :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}서울교통공사 1000호대 저항제어 전동차
+STR_SEOUL_1_METRO_VVVF_NAME                                 :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}서울교통공사 1000호대 VVVF 전동차
+
+STR_group_seoul_2_NAME                                      :서울 지하철 2호선
+STR_SEOUL_2_4CAR_RESIST_NAME                                :{PUSH_COLOUR}{GREEN}[4량] {POP_COLOUR}서울교통공사 2000호대 저항제어 전동차
+STR_SEOUL_2_6CAR_RESIST_NAME                                :{PUSH_COLOUR}{GREEN}[6량] {POP_COLOUR}서울교통공사 2000호대 저항제어 전동차
+STR_SEOUL_2_10CAR_RESIST_NAME                               :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}서울교통공사 2000호대 저항제어 전동차
+STR_SEOUL_2_MELCO_NAME                                      :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}서울교통공사 2000호대 직각형 초퍼제어 전동차
+STR_SEOUL_2_CHOPPER_NAME                                    :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}서울교통공사 2000호대 광폭형 초퍼제어 전동차
+STR_SEOUL_2_4CAR_VVVF_NAME                                  :{PUSH_COLOUR}{GREEN}[4량] {POP_COLOUR}서울교통공사 2000호대 VVVF 전동차
+STR_SEOUL_2_6CAR_VVVF_NAME                                  :{PUSH_COLOUR}{GREEN}[6량] {POP_COLOUR}서울교통공사 2000호대 VVVF 전동차
+STR_SEOUL_2_10CAR_VVVF_NAME                                 :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}서울교통공사 2000호대 VVVF 전동차
+
+STR_group_seoul_3_NAME                                      :수도권 전철 3호선
+STR_SEOUL_3_CHOPPER_WIDE_NAME                               :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}서울교통공사 3000호대 광폭형 GEC 초퍼제어 전동차
+STR_SEOUL_3_CHOPPER_MODIFIED_NAME                           :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}서울교통공사 3000호대 개조형 GEC 초퍼제어 전동차
+STR_SEOUL_3_VVVF_NAME                                       :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}서울교통공사 3000호대 VVVF 전동차
+STR_SEOUL_3_KORAIL_NAME                                     :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}랙레일 3000호대 전동차
+
+STR_group_seoul_4_NAME                                      :수도권 전철 4호선
+STR_SEOUL_4_CHOPPER_NAME                                    :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}서울특별시지하철공사 4000호대 초퍼제어 전동차
+STR_SEOUL_4_VVVF_1_NAME                                     :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}서울교통공사 4000호대 VVVF 전동차 1·2차분
+STR_SEOUL_4_VVVF_3_NAME                                     :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}서울교통공사 4000호대 VVVF 전동차 3·4·5차분
+STR_SEOUL_4_KORAIL_NAME                                     :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}랙레일 341000호대 전동차
+
+STR_SEOUL_5_NAME                                            :{PUSH_COLOUR}{GREEN}[8량] {POP_COLOUR}서울교통공사 5000호대 전동차
+
+STR_SEOUL_6_NAME                                            :{PUSH_COLOUR}{GREEN}[8량] {POP_COLOUR}서울교통공사 6000호대 전동차
+
+STR_SEOUL_7_NAME                                            :{PUSH_COLOUR}{GREEN}[8량] {POP_COLOUR}서울 지하철 7000호대 전동차
+
+STR_SEOUL_8_NAME                                            :{PUSH_COLOUR}{GREEN}[6량] {POP_COLOUR}서울교통공사 8000호대 전동차
+
+STR_SEOUL_9_NAME                                            :{PUSH_COLOUR}{GREEN}[6량] {POP_COLOUR}서울 지하철 9000호대 전동차
+
+STR_group_arex_NAME                                         :공항철도
+STR_AREX_1K_NAME                                            :{PUSH_COLOUR}{GREEN}[6량] {POP_COLOUR}공항철도주식회사 1000호대 전동차
+STR_AREX_2K_1_NAME                                          :{PUSH_COLOUR}{GREEN}[6량] {POP_COLOUR}공항철도주식회사 2000호대 전동차 1·2·3차분
+STR_AREX_2K_4_NAME                                          :{PUSH_COLOUR}{GREEN}[6량] {POP_COLOUR}공항철도주식회사 2000호대 전동차 4차분
+
+STR_RTX_A_NAME                                              :{PUSH_COLOUR}{GREEN}[8량] {POP_COLOUR}RTX-A
+
+#   LRT
+STR_SILLIM_NAME                                             :{PUSH_COLOUR}{GREEN}[3량] {POP_COLOUR}신림선 SL000호대 전동차
+STR_GIMPO_GOAL_NAME                                         :{PUSH_COLOUR}{GREEN}[2량] {POP_COLOUR}김포 골때리는 전동차
+
+#   Wagon
+STR_SAEMAEUL_CAR_NAME                                      :새로운마을호 객차
+STR_MUGUNGHWA_CAR_NAME                                     :무궁화호 객차
+STR_TONGIL_CAR_NAME                                        :통일호 객차
+STR_BIDULGI_CAR_NAME                                       :비둘기호 객차
+STR_GENERATOR_CAR_NAME                                     :발전차
+STR_CAFE_CAR_NAME                                          :카페/식당차
+STR_SLEEPING_CAR_NAME                                      :침대차
+
+STR_FLAT_CAR_NAME                                          :컨테이너 평판화차
+STR_HOPPER_CAR_NAME                                        :무개화차
+STR_BOX_CAR_NAME                                           :유개화차
+STR_BAGGAGE_CAR_NAME                                       :수화물차
+STR_TANK_CAR_NAME                                          :유조차
+STR_BULK_CEMENT_CAR_NAME                                   :벌크시멘트 화차
+STR_STAKE_CAR_NAME                                         :평판화차
+STR_MAIL_CAR_NAME                                          :우편차
+STR_CABOOSE_NAME                                           :차장차
+
+
+# Liveries
+STR_REFIT_LIVERY_SANCHEON                                  : (KTX-산천)
+STR_REFIT_LIVERY_SRT                                       : (SRT)
+STR_REFIT_LIVERY_THESEDAYS                                 : (현재 도색)
+STR_REFIT_LIVERY_2x00_BLACK                                : (미군 도색: 검정)
+STR_REFIT_LIVERY_2x00_BLACK_ORANGE_1                       : (철도청 초기 도색: 검정 & 좁은 주황)
+STR_REFIT_LIVERY_2x00_BLACK_ORANGE_2                       : (철도청 초기 도색: 검정 & 넓은 주황)
+STR_REFIT_LIVERY_4x00_BLACK_ORANGE_LOWER_AIR_CHAMBER       : (철도청 구 도색: 검정 & 주황, 낮은 공기함실)
+STR_REFIT_LIVERY_4x00_GREEN_YELLOW_LOWER_AIR_CHAMBER       : (철도청 구 도색: 녹색 & 황색, 낮은 공기함실)
+STR_REFIT_LIVERY_4300_BLUE_WHITE                           : (철도청: 4300호대 청색 & 백색)
+STR_REFIT_LIVERY_6000_BLACK_ORANGE                         : (철도청: 6000호대 검정 & 주황)
+STR_REFIT_LIVERY_6100_BLACK_ORANGE                         : (철도청: 6100호대 검정 & 주황)
+STR_REFIT_LIVERY_6200_BLACK_ORANGE                         : (철도청: 6200호대 검정 & 주황)
+STR_REFIT_LIVERY_6300_BLACK_ORANGE                         : (철도청: 6300호대 검정 & 주황)
+STR_REFIT_LIVERY_6300_BLUE_WHITE                           : (철도청: 6300호대 청색 & 백색)
+STR_REFIT_LIVERY_6300_KWANKWANG                            : (철도청: 6300호대 관광호)
+STR_REFIT_LIVERY_7000_SILVER_BLUE                          : (철도청 구 도색: 은색 & 청색)
+STR_REFIT_LIVERY_7x00_CARGO                                : (화물 도색)
+STR_REFIT_LIVERY_7x00_BLACK_ORANGE                         : (철도청 초기 도색: 검정 & 주황)
+STR_REFIT_LIVERY_7x00_FIRST_KORAIL                         : (철도청 초기 도색: 청색 & 백색)
+STR_REFIT_LIVERY_BLACK_ORANGE                              : (철도청 구 도색: 검정 & 주황)
+STR_REFIT_LIVERY_GREEN_YELLOW                              : (철도청 구 도색: 녹색 & 황색)
+STR_REFIT_LIVERY_BLUE_WHITE                                : (철도청 구 도색: 청색 & 백색)
+STR_REFIT_LIVERY_KWANKWANG                                 : (관광호)
+STR_REFIT_LIVERY_HAERANG                                   : (해랑)
+STR_REFIT_LIVERY_S_TRAIN1                                  : (S-train - 파랑)
+STR_REFIT_LIVERY_S_TRAIN2                                  : (S-train - 분홍)
+STR_REFIT_LIVERY_G_TRAIN                                   : (G-train)
+STR_REFIT_LIVERY_7600_A_TRAIN                              : (정선 아리랑 열차)
+STR_REFIT_LIVERY_V_TRAIN                                   : (V-train)
+STR_REFIT_LIVERY_NURIRO                                    : (기본)
+STR_REFIT_LIVERY_O_TRAIN                                   : (O-train)
+STR_REFIT_LIVERY_NURIRO_KOREAN_WAVE                        : (한류관광열차)
+STR_REFIT_LIVERY_NURIRO_SANTA                              : (동해산타열차)
+STR_REFIT_LIVERY_NURIRO_2022                               : (2022년 도색)
+STR_REFIT_LIVERY_KTX2N                                     : (일반 도색)
+STR_REFIT_LIVERY_KTX2N_PYEONGCHANG                         : (2018 평창동계올림픽 도색)
+STR_REFIT_LIVERY_CDC_GARDEN                                : (꽃동산 테마)
+STR_REFIT_LIVERY_CDC_DOLPHIN                               : (돌고래 테마)
+STR_REFIT_LIVERY_CDC_SEASIDE_BLUE                          : (바다관광열차: 청색)
+STR_REFIT_LIVERY_CDC_SEASIDE_RED_WHITE                     : (바다관광열차: 적색 & 흰색)
+STR_REFIT_LIVERY_CDC_BAEKJE                                : (백제 왕관 기념 도색)
+STR_REFIT_LIVERY_CDC_DMZTRAIN                              : (DMZ-train)
+STR_REFIT_LIVERY_CDC_MUGUNGHWA                             : (RDC 무궁화 도색)
+STR_REFIT_LIVERY_CDC_GYEONGBUK1                            : (경북관광순환테마열차, 구 도색)
+STR_REFIT_LIVERY_CDC_GYEONGBUK2                            : (경북관광순환테마열차, 신 도색)
+STR_REFIT_PASSWAGON_NORMALCAR                              : (일반 객차)
+STR_REFIT_PASSWAGON_FIRSTCAR                               : (특실 객차)
+
+# Refit (Saemaeul car)
+STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_SILVER_BLUE            : (철도청 구 도색 특실, 1970~1983년)
+STR_REFIT_LIVERY_SAEMAEUL_1970_1983                        : (1970~1983년 도색, 적색 & 은색)
+STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_GREEN_YELLOW           : (철도청 구 도색 특실, 녹색 & 황색)
+STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_THESEDAYS              : (Korail 현 도색 특실)
+STR_REFIT_LIVERY_SAEMAEUL_ITX                              : (lnx-새로운마을 도색)
+
+# Refit (Mugunghwa car)
+STR_REFIT_LIVERY_MUGUNGHWA_1970_1983                       : (우등 녹색 / 1970~1983년 도색)
+STR_REFIT_LIVERY_MUGUNGHWA_1970_1983_B                     : (우등 갈색 / 1970~1983년 도색)
+STR_REFIT_LIVERY_MUGUNGHWA_1984_1984                       : (무궁화호 / 1984년 도색)
+STR_REFIT_LIVERY_MUGUNGHWA_1985_1989                       : (무궁화호 / 1985~1989년 도색)
+STR_REFIT_LIVERY_MUGUNGHWA_1990_1999                       : (무궁화호 / 1990~1999년 도색)
+STR_REFIT_LIVERY_MUGUNGHWA_2000_2002                       : (무궁화호 / 2000~2002년 도색)
+STR_REFIT_LIVERY_MUGUNGHWA_STREAMLINE                      : (유선형 구 특실 전용)
+STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_HAETAE_1              : (특실 / 해태중공업 구 도색)
+STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_HAETAE_2              : (특실 / 해태중공업 현 도색)
+STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_HANJIN_1              : (특실 / 한진중공업)
+STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_STREAMLINE            : (특실 / 유선형 구 특실 전용)
+
+# Refit (Tongil car)
+STR_REFIT_LIVERY_TONGIL_1963_1968                          : (도색 A: 1963~1968년, 적색)
+STR_REFIT_LIVERY_TONGIL_1974_1981                          : (도색 B: 1974~1981년, 초기 녹색)
+STR_REFIT_LIVERY_TONGIL_1984_1984                          : (도색 C: 1984년, 냉방기 없는 녹색)
+STR_REFIT_LIVERY_TONGIL_1984_1988                          : (도색 D: 1984~1988, 냉방기 있는 녹색)
+STR_REFIT_LIVERY_TONGIL_1994_1997                          : (도색 E: 1994~1997, 남색 & 황색)
+STR_REFIT_LIVERY_TONGIL_1997_2004                          : (도색 F: 1997~2004, 녹색 & 황색)
+
+# Refit (Bidulgi)
+STR_REFIT_LIVERY_BIDULGI_3RD_CLASS                         : (3등 객차 다9형)
+STR_REFIT_LIVERY_BIDULGI_DC_TRAILER                        : (DC동차 부수차)
+STR_REFIT_LIVERY_BIDULGI_1960                              : (적색 도색: 1962~1974년)
+STR_REFIT_LIVERY_BIDULGI_1970                              : (적색 도색: 1974~1983년)
+STR_REFIT_LIVERY_BIDULGI_1980                              : (청색 도색: 1984~1994년)
+STR_REFIT_LIVERY_BIDULGI_1990                              : (녹색 도색: 1994~2000년)
+STR_REFIT_LIVERY_BIDULGI_BAGGAGE_CAR                       : (비둘기호 도색)
+STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1980                 : (통일호 도색: 1980년대)
+STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1990                 : (통일호 도색: 1990년대)
+STR_REFIT_LIVERY_BIDULGI_MUGUNGHWA                         : (무궁화호 도색)
+STR_REFIT_LIVERY_BIDULGI_NARROW_BLUE                       : (청색 도색: 1974년~)
+
+# Refit (Generator car)
+STR_REFIT_LIVERY_GENERATOR_CAR_TONGIL_OLD                  : (구형 / 통일호 구 도색)
+STR_REFIT_LIVERY_GENERATOR_CAR_TONGIL                      : (구형 / 통일호 현 도색)
+STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_YELLOW_RED        : (구형 / 무궁화호 노랑 & 빨강)
+STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_YELLOW_RED_K      : (구형 / 무궁화호 노랑 & 빨강 + 코레일 로고)
+STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_BLUE_RED          : (구형 / 무궁화호 파랑 & 빨강)
+STR_REFIT_LIVERY_GENERATOR_CAR_LONG_SAEMAEUL_BLUE_RED      : (장대형 / 새마을호 파랑 & 빨강)
+# STR_REFIT_LIVERY_GENERATOR_CAR_RESERVED                  : (reserved)
+# STR_REFIT_LIVERY_GENERATOR_CAR_RESERVED                  : (reserved)
+# STR_REFIT_LIVERY_GENERATOR_CAR_RESERVED                  : (reserved)
+STR_REFIT_LIVERY_GENERATOR_CAR_LONG_YELLOW_RED             : (장대형 / 무궁화호 노랑 & 빨강)
+STR_REFIT_LIVERY_GENERATOR_CAR_LONG_ORANGE_RED             : (장대형 / 무궁화호 주황 & 빨강)
+STR_REFIT_LIVERY_GENERATOR_CAR_LONG_BLUE_RED               : (장대형 / 무궁화호 파랑 & 빨강)
+STR_REFIT_LIVERY_GENERATOR_CAR_LONG_SAEMAEUL_2             : (장대형 / 새마을호 구 도색)
+STR_REFIT_LIVERY_GENERATOR_CAR_LONG_SAEMAEUL_3             : (장대형 / 새마을호 현 도색)
+
+# Refit (Baggage car)
+STR_REFIT_BAGGAGE_CAR_1999_DARKBLUE                        : (1999년: 어두운 파랑)
+STR_REFIT_BAGGAGE_CAR_1999_DARKGREEN                       : (1999년: 어두운 녹색)
+STR_REFIT_BAGGAGE_CAR_1999_BLUE                            : (1999년: 파랑)
+STR_REFIT_BAGGAGE_CAR_1998_DARKBLUE                        : (1998년: 어두운 파랑)
+STR_REFIT_BAGGAGE_CAR_1998_DARKGREEN                       : (1998년: 어두운 녹색)
+STR_REFIT_BAGGAGE_CAR_1998_BLUE                            : (1998년: 파랑)
+STR_REFIT_BAGGAGE_CAR_BOX_DARKBLUE                         : (유개차 개조: 어두운 파랑)
+STR_REFIT_BAGGAGE_CAR_BOX_GREEN                            : (유개차 개조: 녹색)
+STR_REFIT_BAGGAGE_CAR_BOX_ORANGE                           : (유개차 개조: 주황)
+
+# Refit (Box car)
+STR_REFIT_LIVERY_BOX_2003                                  : (2003년)
+STR_REFIT_LIVERY_BOX_1998_DARKBLUE                         : (1998년: 어두운 파랑)
+STR_REFIT_LIVERY_BOX_1998_GREEN                            : (1998년: 녹색)
+STR_REFIT_LIVERY_BOX_1998_BLUE                             : (1998년: 파랑)
+STR_REFIT_LIVERY_BOX_1996_DARKBLUE                         : (1996년: 어두운 파랑)
+STR_REFIT_LIVERY_BOX_1996_GREEN                            : (1996년: 녹색)
+STR_REFIT_LIVERY_BOX_1996_BLUE                             : (1996년: 파랑)
+STR_REFIT_LIVERY_BOX_1972                                  : (1972년)
+STR_REFIT_LIVERY_BOX_1966_DARKBLUE                         : (1966년: 어두운 파랑)
+STR_REFIT_LIVERY_BOX_1966_GREEN                            : (1966년: 녹색)
+STR_REFIT_LIVERY_BOX_1966_BLUE                             : (1966년: 파랑)
+STR_REFIT_LIVERY_BOX_1966_BLACK                            : (1966년: 검은색)
+
+# Refit (Cafe car)
+STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_RED                    : (새마을호 식당차 / 철도청: 청색 & 적색)
+STR_REFIT_LIVERY_CAFE_SAEMAEUL_GREEN_YELLOW                : (새마을호 식당차 / 철도청: 녹색 & 황색)
+STR_REFIT_LIVERY_RESTAURENT_SAEMAEUL_BLUE_YELLOW           : (새마을호 식당차 / Korail 현 도색)
+STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_YELLOW                 : (새마을호 카페차 / Korail 현 도색)
+STR_REFIT_LIVERY_CAFE_RED_YELLOW_WHITE                     : (도색 F: 2000~2002년 도색 / 카페 객차 도색)
+
+# Refit (Sleeping car)
+STR_REFIT_LIVERY_SLEEPING_1966_GREEN                       : (1966~1984년 도색 / 통일호 침대차)
+STR_REFIT_LIVERY_SLEEPING_1966_GREEN_COOLER                : (1984~1997년 도색 / 통일호 냉난방 개조 침대차)
+# STR_REFIT_LIVERY_SLEEPING_RESERVED                       : (reserved)
+# STR_REFIT_LIVERY_SLEEPING_RESERVED                       : (reserved)
+STR_REFIT_LIVERY_SLEEPING_1977_GREEN                       : (1977~1983년 도색 / 우등 침대차)
+STR_REFIT_LIVERY_SLEEPING_1977_RED                         : (1983~1994년 도색 / 무궁화호 침대차)
+STR_REFIT_LIVERY_SLEEPING_1977_YELLOW_RED                  : (1994~2001년 도색 / 무궁화호 침대차)
+STR_REFIT_LIVERY_SLEEPING_2001_YELLOW_RED                  : (2001~2005년 도색 / 무궁화호 침대차)
+
+# Refit (NDC)
+STR_REFIT_LIVERY_NDC_1                                     : (1984~1994년 도색 / 무궁화호)
+STR_REFIT_LIVERY_NDC_2                                     : (1994~2009년 도색 / 무궁화호)
+STR_REFIT_LIVERY_NDC_BUSINESS                              : (비즈니스 동차)
+
+# Refit (DEC)
+STR_REFIT_LIVERY_DEC_1                                     : (1980~1986년 도색 / 새마을호)
+STR_REFIT_LIVERY_DEC_2                                     : (1986~1994년 도색 / 무궁화호)
+STR_REFIT_LIVERY_DEC_3                                     : (1994~1999년 도색 / 무궁화호)
+
+# Refit (EEC)
+STR_REFIT_LIVERY_EEC_1                                     : (1980~1994년 도색 / 우등 & 무궁화호)
+STR_REFIT_LIVERY_EEC_2                                     : (1994~1998년 도색 / 무궁화호)
+STR_REFIT_LIVERY_EEC_3                                     : (1998~2001년 도색 / 통일호)
+
+# Refit (Mail car)
+STR_REFIT_LIVERY_MAIL_CAR_1                                : (1973~1975년 도색)
+STR_REFIT_LIVERY_MAIL_CAR_2                                : (1975년 이후 도색)
+STR_REFIT_LIVERY_MAIL_CAR_3                                : (1996년 이후 무궁화 구 도색)
+STR_REFIT_LIVERY_MAIL_CAR_4                                : (2005년 이후 무궁화 신 도색)
+STR_REFIT_LIVERY_MAIL_CAR_5                                : (2018년 이후 수화물차 개조 도색)
+STR_REFIT_LIVERY_SUX_TXONG                                 : (SUX 특송)
+
+# Refit (Caboose)
+STR_REFIT_CABOOSE_BAGGAGE_YELLOW                           : (소화물차 개조 / 노랑)
+STR_REFIT_CABOOSE_2AXLE_YELLOW                             : (2축 / 노랑)
+STR_REFIT_CABOOSE_2AXLE_ORANGE                             : (2축 / 주황)
+STR_REFIT_CABOOSE_BOX_ORANGE                               : (유개차 개조 / 주황)
+STR_REFIT_CABOOSE_BOX_BLACK                                : (유개차 개조 / 검은색)
+
+# Refit (etc)
+STR_REFIT_COLOUR_BLACK                                     : (검은색)
+STR_REFIT_COLOUR_BLUE                                      : (파란색)
+STR_REFIT_COLOUR_SKYBLUE                                   : (하늘색)
+STR_REFIT_COLOUR_DARKBLUE                                  : (짙은 파란색)
+STR_REFIT_COLOUR_BROWN                                     : (갈색)
+STR_REFIT_COLOUR_RED                                       : (빨간색)
+STR_REFIT_COLOUR_ORANGE                                    : (주황색)
+STR_REFIT_COLOUR_DARKGREEN                                 : (짙은 녹색)
+STR_REFIT_COLOUR_OLIVE                                     : (올리브색)
+STR_REFIT_COLOUR_SILVER                                    : (은색)
+STR_REFIT_COLOUR_WHITE                                     : (흰색)
+
+# Refit (Seoul metropolitan Line 1)
+STR_REFIT_METRO_1K_RHEO_FIRST_1_NAME                       : (초저항 / 초기 도색) {TINYFONT}1974~1986
+STR_REFIT_METRO_1K_RHEO_FIRST_2_NAME                       : (초저항 / 철도청 도색) {TINYFONT}1974~1986
+STR_REFIT_METRO_1K_RHEO_SECOND_1_NAME                      : (중저항 / 초기 도색) {TINYFONT}1986~1992
+STR_REFIT_METRO_1K_RHEO_SECOND_2_NAME                      : (중저항 / 철도청 도색) {TINYFONT}1986~1992
+STR_REFIT_METRO_1K_RHEO_SECOND_3_NAME                      : (중저항 / 자석 도색) {TINYFONT}1986~1992
+STR_REFIT_METRO_1K_RHEO_LAST_1_NAME                        : (신저항 / 철도청 도색) {TINYFONT}1994~1997
+STR_REFIT_METRO_1K_RHEO_LAST_2_NAME                        : (신저항 / 자석 도색) {TINYFONT}1994~1997
+
+STR_REFIT_METRO_311K_1_1_NAME                              : (납작이 - 현대로템 / 초기 자석 도색) {TINYFONT}1996~1999
+STR_REFIT_METRO_311K_1_2_NAME                              : (납작이 - 현대로템 / 자석 도색) {TINYFONT}1996~1999
+STR_REFIT_METRO_311K_2_1_NAME                              : (동글이 - 현대로템 / 초기 도색) {TINYFONT}2002~2004
+STR_REFIT_METRO_311K_2_2_NAME                              : (동글이 - 현대로템 / 자석 도색) {TINYFONT}2002~2004
+STR_REFIT_METRO_3XXK_ST_NAME                               : (뱀눈이 - 현대로템 스테인리스 스틸) {TINYFONT}2005~2016
+STR_REFIT_METRO_3XXK_AL_NAME                               : (뱀눈이 - 현대로템 알루미늄) {TINYFONT}2005~2016
+STR_REFIT_METRO_LINE_1_2019_NAME                           : (주둥이 중기형 - 현대로템) {TINYFONT}2019~2020
+STR_REFIT_METRO_LINE_1_2021_NAME                           : (주둥이 후기형 - 현대로템) {TINYFONT}2021~2023
+STR_REFIT_METRO_LINE_1_2022_W_NAME                         : (큐브 - 우진산전) {TINYFONT}2022~2024
+
+STR_REFIT_METRO_SMETRO_1K_RHEO_FIRST_NAME                  : (초저항)
+STR_REFIT_METRO_SMETRO_1K_RHEO_MODIFIED_NAME               : (개조저항)
+
+# Refit (Seoul Line 2)
+STR_REFIT_METRO_2K_VVVF_1ST_NAME                           : (1차분 - 로템) {TINYFONT}2005
+STR_REFIT_METRO_2K_VVVF_2ND_NAME                           : (2차분 - 현대로템) {TINYFONT}2007~2008
+STR_REFIT_METRO_2K_VVVF_35_NAME                            : (3, 5차분 - 다원시스) {TINYFONT}2017~2018/2020~2022
+STR_REFIT_METRO_2K_VVVF_4TH_NAME                           : (4차분 - 현대로템) {TINYFONT}2019~2020
+STR_REFIT_METRO_2K_VVVF_5TH_NAME                           : (5차분 - 다원시스) {TINYFONT}2020~2022
+
+# Refit (Seoul metropolitan 3)
+STR_REFIT_METRO_3K_SMETRO_VVVF_1ST_NAME                    : (1차분 - 현대로템) {TINYFONT}2009~2010
+STR_REFIT_METRO_3K_SMETRO_VVVF_2ND_NAME                    : (2차분 - 다원시스) {TINYFONT}2021~2022
+
+STR_REFIT_METRO_3K_VVVF_1ST_1_NAME                         : (1차분 - 현대정공 / 구 도색) {TINYFONT}1995~1997
+STR_REFIT_METRO_3K_VVVF_1ST_2_NAME                         : (1차분 - 현대정공 / 현 도색) {TINYFONT}1995~1997
+STR_REFIT_METRO_LINE_3_2022_NAME                           : (2차분 - 현대로템) {TINYFONT}2022~2023
+STR_REFIT_METRO_LINE_3_2022_W_NAME                         : (3차분 - 우진산전) {TINYFONT}2022~2024
+
+# Refit (Seoul metropolitan 4)
+STR_REFIT_METRO_LINE_4_1ST_NAME                            : (1차분 - 현대정공) {TINYFONT}1993~1994
+STR_REFIT_METRO_LINE_4_2ND_NAME                            : (2차분 - 대우중공업) {TINYFONT}1994~1995
+STR_REFIT_METRO_LINE_4_3RD_NAME                            : (3차분 - 현대로템) {TINYFONT}2020
+STR_REFIT_METRO_LINE_4_4TH_NAME                            : (4차분 - 다원시스) {TINYFONT}2023~2025
+STR_REFIT_METRO_LINE_4_5TH_NAME                            : (5차분 - 우진산전) {TINYFONT}2024~2025
+STR_REFIT_METRO_LINE_4_6TH_NAME                            : 미정
+
+STR_REFIT_METRO_LINE_4_1_1_NAME                            : (납작이 / 초기 도색) {TINYFONT}1993~1996
+STR_REFIT_METRO_LINE_4_1_2_NAME                            : (납작이 / 현 도색) {TINYFONT}1993~1996
+STR_REFIT_METRO_LINE_4_2_1_NAME                            : (동글이 - 한국철도차량 / 초기 도색) {TINYFONT}1999
+STR_REFIT_METRO_LINE_4_2_2_NAME                            : (동글이 - 한국철도차량 / 현 도색) {TINYFONT}1999
+STR_REFIT_METRO_LINE_4_2019_NAME                           : (주둥이 중기형 - 현대로템) {TINYFONT}2019~2020
+STR_REFIT_METRO_LINE_4_2021_NAME                           : (주둥이 후기형 - 현대로템) {TINYFONT}2021~2024
+
+# Refit (Seoul Metro Line 5-8, Seoul Metro Line9)
+STR_REFIT_METRO_SMETRO_SR0X_NAME                           : (서울교통공사 SR0x VVVF)
+
+STR_REFIT_METRO_SMETRO_5K_1ST_2ND_NAME                     : (서울교통공사 5k VVVF 1·2차분)
+STR_REFIT_METRO_SMETRO_5K_3RD_NAME                         : (서울교통공사 5k VVVF 3차분)
+STR_REFIT_METRO_SMETRO_5K_4TH_NAME                         : (서울교통공사 5k VVVF 4차분)
+
+STR_REFIT_METRO_SMETRO_6K_1ST_NAME                         : (서울교통공사 6k VVVF)
+STR_REFIT_METRO_SMETRO_7K_1ST_2ND_NAME                     : (서울교통공사 7k VVVF 1·2차)
+STR_REFIT_METRO_SMETRO_7K_4TH_NAME                         : (서울교통공사 7k VVVF 4차)
+STR_REFIT_METRO_SMETRO_7K_5TH_NAME                         : (서울교통공사 7k VVVF 5차)
+STR_REFIT_METRO_SMETRO_8K_1ST_2ND_NAME                     : (서울교통공사 8k VVVF 1·2차)
+STR_REFIT_METRO_SMETRO_8K_3RD_NAME                         : (서울교통공사 8k VVVF 3차)
+STR_REFIT_METRO_SMETRO_9K_1ST_NAME                         : (서울교통공사9 9k VVVF)
+
+# Refit (Suin-Bungdang Line)
+STR_REFIT_METRO_351K_VVVF_1ST_1_NAME                       : (Korail 351k VVVF 1세대 / 구 도색)
+STR_REFIT_METRO_351K_VVVF_1ST_2_NAME                       : (Korail 351k VVVF 1세대 / 현 도색)
+STR_REFIT_METRO_351K_VVVF_2ND_NAME                         : (Korail 351k VVVF 2세대)
+STR_REFIT_METRO_351K_VVVF_3RD_NAME                         : (Korail 351k VVVF 3세대)
+STR_REFIT_METRO_351K_2021_NAME                             : (Korail 351k 2021년 도입분)
+
+# Refit (Gyeongchun Line)
+STR_REFIT_METRO_361K_VVVF_NAME                             : (Korail 361k VVVF)
+STR_REFIT_METRO_361K_2024_NAME                             : (Korail 361k 2024년 2차 도입분)
+
+# Refit (Incheon intertional Airport Line (A'REX)
+STR_REFIT_METRO_AREX_1K_NONSTOP_NAME                       : (기본)
+STR_REFIT_METRO_AREX_1K_NONSTOP_ORANGE_NAME                : (2020년 도색)
+
+# Refit (Seohae Line)
+STR_REFIT_METRO_391K_1ST_NAME                              : (Korail 391k 1차)
+STR_REFIT_METRO_391K_2ND_NAME                              : (Korail 391k 2차)
+
+# 코레일
+STR_REFIT_METRO_321K_BIKE_NAME                             : (Korail 321k 자전거 열차 도색)
+STR_REFIT_METRO_331K_2024_NAME                             : (Korail 331k, 경의중앙선 2024년 도입분)
+STR_REFIT_METRO_371K_BLANK_NAME                            : (Korail 371k / 무도색)
+STR_REFIT_METRO_371K_CC_NAME                               : (Korail 371k / 회사 색상)
+STR_REFIT_METRO_371K_381K_1ST_NAME                         : (Korail 371k, 381k 1차)
+STR_REFIT_METRO_381K_2ND_NAME                              : (Korail 381k 2차)
+
+# Refit (Other Lines)
+STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_1ST_NAME             : (인천교통공사 1k VVVF 1세대)
+STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_1ST_2022_NAME        : (인천교통공사 1k VVVF 1세대 / 2022년 도색)
+STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_2ND_NAME             : (인천교통공사 1k VVVF 2세대)
+STR_REFIT_METRO_DAEGU_METRO_3K_1_NAME                      : (전기형)
+STR_REFIT_METRO_DAEGU_METRO_3K_2_NAME                      : (후기형)
+STR_REFIT_METRO_BUSAN_METRO_1K_1ST_NAME                    : (부산교통공사 1k 1세대)
+STR_REFIT_METRO_BUSAN_METRO_1K_2ND_NAME                    : (부산교통공사 1k 2세대)
+STR_REFIT_METRO_BUSAN_METRO_1K_3RD_NAME                    : (부산교통공사 1k 3세대)
+STR_REFIT_METRO_DAEJEON_METRO_1K_NAME                      : (대전도시철도공사 1k)
+STR_REFIT_METRO_GWANGJU_METRO_1K_NAME                      : (광주도시철도공사 1k)
+
+# Buffer Object
+STR_OBJ_BUFFER_KTSR                                         :차막이
+
+# Errors
+STR_ERROR_NO_ATTACH                                        :여기에 이 차량을 붙일 수 없습니다
+STR_ERROR_NOT_ENOUGH_LENGTH4                               :열차 길이가 너무 짧습니다. 최소한 4량 이상을 연결해야 합니다.
+STR_ERROR_TOO_LONG_LENGTH2                                 :열차 길이가 너무 깁니다. 최대 2량까지만 연결할 수 있습니다.
+STR_ERROR_TOO_LONG_LENGTH4                                 :열차 길이가 너무 깁니다. 최대 4량까지만 연결할 수 있습니다.
+STR_ERROR_TOO_LONG_LENGTH6                                 :열차 길이가 너무 깁니다. 최대 6량까지만 연결할 수 있습니다.
+STR_ERROR_TOO_LONG_LENGTH8                                 :열차 길이가 너무 깁니다. 최대 8량까지만 연결할 수 있습니다.
+STR_ERROR_TOO_LONG_LENGTH10                                :열차 길이가 너무 깁니다. 최대 10량까지만 연결할 수 있습니다.
+
+# Refit (Additional text)
+STR_REFIT_ADDITIONAL_ABLE                                  :{BLACK}도색/모델 변경: {GREEN}가능
+STR_REFIT_ADDITIONAL_UNABLE                                :{BLACK}도색/모델 변경: {RED}불가능
+STR_REFIT_ADDITIONAL_AMBIGUOUS                             :{BLACK}도색/모델 변경: {ORANGE}경우에 따라 다름
+
+
+#   Japan
+STR_SHIN_E5_NAME                                            :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}신칸센 E5·H5계 전동차
+STR_SHIN_E6_NAME                                            :{PUSH_COLOUR}{GREEN}[7량] {POP_COLOUR}신칸센 E6계 전동차
+STR_group_N700_NAME                                         :신칸센 N700계 전동차
+STR_SHIN_N700_8_NAME                                        :{PUSH_COLOUR}{GREEN}[8량] {POP_COLOUR}신칸센 N700계 전동차 {TINYFONT}{PUSH_COLOUR}({RED}JR 큐슈{POP_COLOUR})
+STR_SHIN_N700_16_NAME                                       :{PUSH_COLOUR}{GREEN}[16량] {POP_COLOUR}신칸센 N700계 전동차 {TINYFONT}{PUSH_COLOUR}({ORANGE}JR 도카이{POP_COLOUR}·{PUSH_COLOUR}{BLUE}JR 서일본{POP_COLOUR})
+STR_group_N700S_NAME                                        :신칸센 N700S계 전동차
+STR_SHIN_N700S_6_NAME                                       :{PUSH_COLOUR}{GREEN}[6량] {POP_COLOUR}신칸센 N700S계 전동차 {TINYFONT}{PUSH_COLOUR}({RED}JR 큐슈{POP_COLOUR})
+STR_SHIN_N700S_16_NAME                                      :{PUSH_COLOUR}{GREEN}[16량] {POP_COLOUR}신칸센 N700S계 전동차 {TINYFONT}{PUSH_COLOUR}({ORANGE}JR 도카이{POP_COLOUR}·{PUSH_COLOUR}{BLUE}JR 서일본{POP_COLOUR})
+
+STR_KSEI_AE_2_NAME                                          :{PUSH_COLOUR}{GREEN}[8량] {POP_COLOUR}케이세이 AE형 2대 전동차
+
+STR_REFIT_SHIN_E5_NAME                                      : (JR 동일본)
+STR_REFIT_SHIN_H5_NAME                                      : (JR 홋카이도)
+
+#   China
+STR_group_CR400AF_NAME                                      :중국고속열차 CR400AF
+STR_CR400AF_8CAR_NAME                                       :{PUSH_COLOUR}{GREEN}[8량] {POP_COLOUR}중국고속열차 CR400AF
+STR_CR400AF_16CAR_NAME                                      :{PUSH_COLOUR}{GREEN}[16량] {POP_COLOUR}중국고속열차 CR400AF-A
+STR_CR400AF_17CAR_NAME                                      :{PUSH_COLOUR}{GREEN}[17량] {POP_COLOUR}중국고속열차 CR400AF-B
+
+STR_REFIT_CR400AF_NAME                                      : (일반형)
+STR_REFIT_CR400AF_Z_NAME                                    : (지능형)

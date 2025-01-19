@@ -1,0 +1,35 @@
+/*--------------------------------------------------------------------
+  8x00호대 전기 기관차
+--------------------------------------------------------------------*/
+
+#include "group_8x00_graphic.pnml"
+
+/*--------------------------------------------------------------------
+열차정보 그룹
+--------------------------------------------------------------------*/
+item(FEAT_TRAINS, group_8x00, 4811) {
+    property {
+        name:                           string(STR_group_8x00_NAME);
+        climates_available:             NO_CLIMATE;
+        track_type:                     ELRL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        power:                          1 kW;
+        
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
+        bitmask_vehicle_info:           0;
+    }
+
+    graphics {
+        purchase:                       sw_8x00_group;
+    }
+}
+
+/*--------------------------------------------------------------------
+열차 리스트
+--------------------------------------------------------------------*/
+#include "8000/8000.pnml"
+#include "8x00/8x00.pnml"
+#include "8500/8500.pnml"

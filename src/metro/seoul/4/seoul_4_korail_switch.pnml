@@ -1,0 +1,104 @@
+/*------------------------------------------------------------------------------
+    SEOUL - LINE 4
+    Korail Switches
+------------------------------------------------------------------------------*/
+
+// Cargo Subtypes
+switch(FEAT_TRAINS, SELF, sw_SEOUL_4_KORAIL_cargo_subtype_text, cargo_subtype) {
+    1: return string(STR_REFIT_METRO_LINE_4_1_1_NAME);
+    2: return string(STR_REFIT_METRO_LINE_4_1_2_NAME);
+    3: return string(STR_REFIT_METRO_LINE_4_2_1_NAME);
+    4: return string(STR_REFIT_METRO_LINE_4_2_2_NAME);
+    5: return string(STR_REFIT_METRO_LINE_1_2019_NAME);
+    6: return string(STR_REFIT_METRO_LINE_1_2021_NAME);
+    return string(STR_REFIT_METRO_LINE_4_1_1_NAME);
+}
+
+switch(FEAT_TRAINS, SELF, sw_SEOUL_4_KORAIL_engineH, cargo_subtype) {
+    1: return set_SEOUL_4_VVVF_1ST_1_engineH;
+    2: return set_SEOUL_4_VVVF_1ST_2_engineH;
+    3: return set_SEOUL_4_VVVF_2ND_1_engineH;
+    4: return set_SEOUL_4_VVVF_2ND_2_engineH;
+    5: return set_SEOUL_4_VVVF_2019_engineH;
+    6: return set_SEOUL_4_VVVF_2021_engineH;
+    return set_SEOUL_4_VVVF_1ST_1_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_SEOUL_4_KORAIL_wagon, cargo_subtype) {
+    1: return set_SEOUL_4_VVVF_1ST_1_wagon;
+    2: return set_SEOUL_4_VVVF_1ST_2_wagon;
+    3: return set_SEOUL_4_VVVF_2ND_1_wagon;
+    4: return set_SEOUL_4_VVVF_2ND_2_wagon;
+    5: return set_SEOUL_4_VVVF_2019_wagon;
+    6: return set_SEOUL_4_VVVF_2021_wagon;
+    return set_SEOUL_4_VVVF_1ST_1_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_SEOUL_4_KORAIL_wagon_panto, cargo_subtype) {
+    1: return set_SEOUL_4_VVVF_1ST_1_wagon_panto;
+    2: return set_SEOUL_4_VVVF_1ST_2_wagon_panto;
+    3: return set_SEOUL_4_VVVF_2ND_1_wagon_panto;
+    4: return set_SEOUL_4_VVVF_2ND_2_wagon_panto;
+    5: return set_SEOUL_4_VVVF_2019_wagon_panto;
+    6: return set_SEOUL_4_VVVF_2021_wagon_panto;
+    return set_SEOUL_4_VVVF_1ST_1_wagon_panto;
+}
+switch(FEAT_TRAINS, SELF, sw_SEOUL_4_KORAIL_engineT, cargo_subtype) {
+    1: return set_SEOUL_4_VVVF_1ST_1_engineT;
+    2: return set_SEOUL_4_VVVF_1ST_2_engineT;
+    3: return set_SEOUL_4_VVVF_2ND_1_engineT;
+    4: return set_SEOUL_4_VVVF_2ND_2_engineT;
+    5: return set_SEOUL_4_VVVF_2019_engineT;
+    6: return set_SEOUL_4_VVVF_2021_engineT;
+    return set_SEOUL_4_VVVF_1ST_1_engineT;
+}
+
+
+// Train Composition
+switch (FEAT_TRAINS, SELF, sw_SEOUL_4_korail, position_in_vehid_chain % 10) {
+    1:sw_SEOUL_4_KORAIL_wagon;
+    2:sw_SEOUL_4_KORAIL_wagon_panto;
+    3:sw_SEOUL_4_KORAIL_wagon;
+    4:sw_SEOUL_4_KORAIL_wagon_panto;
+    5:sw_SEOUL_4_KORAIL_wagon;
+    6:sw_SEOUL_4_KORAIL_wagon;
+    7:sw_SEOUL_4_KORAIL_wagon;
+    8:sw_SEOUL_4_KORAIL_wagon_panto;
+    9:sw_SEOUL_4_KORAIL_engineT;
+    sw_SEOUL_4_KORAIL_engineH;
+}
+switch (FEAT_TRAINS, SELF, sw_SEOUL_4_korail_r, position_in_vehid_chain % 10) {
+    1:sw_SEOUL_4_KORAIL_wagon_panto;
+    2:sw_SEOUL_4_KORAIL_wagon;
+    3:sw_SEOUL_4_KORAIL_wagon;
+    4:sw_SEOUL_4_KORAIL_wagon;
+    5:sw_SEOUL_4_KORAIL_wagon_panto;
+    6:sw_SEOUL_4_KORAIL_wagon;
+    7:sw_SEOUL_4_KORAIL_wagon_panto;
+    8:sw_SEOUL_4_KORAIL_wagon;
+    9:sw_SEOUL_4_KORAIL_engineT;
+    sw_SEOUL_4_KORAIL_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_SEOUL_4_korail_flipped, vehicle_is_flipped){
+    0: sw_SEOUL_4_korail_r;
+    sw_SEOUL_4_korail;
+}
+switch(FEAT_TRAINS, PARENT, sw_SEOUL_4_korail_reversed, vehicle_is_reversed){
+    0: sw_SEOUL_4_korail;
+    sw_SEOUL_4_korail_flipped;
+}
+
+// to set length of composition
+switch (FEAT_TRAINS, SELF, sw_articulated_SEOUL_4_korail, extra_callback_info1) {
+    1..9: SEOUL_4_korail;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Sounds
+switch(FEAT_TRAINS, SELF, sw_SEOUL_4_korail_sound_by_supplier, cargo_subtype) {
+    1..4: return sound("sounds/TOSHIBAGTOKStart.wav");
+    5..6: return sound("sounds/HYUNDAIROTEMPMSMstart.wav");
+    return sound("sounds/TOSHIBAGTOKStart.wav");
+}
+switch(FEAT_TRAINS, SELF, sw_SEOUL_4_korail_sound, extra_callback_info1) {
+    SOUND_EVENT_START: sw_SEOUL_4_korail_sound_by_supplier;
+    return CB_RESULT_NO_SOUND;
+}

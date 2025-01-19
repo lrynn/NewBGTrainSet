@@ -1,0 +1,29 @@
+/*------------------------------------------------------------------------------
+  lnx-simjung Graphics
+------------------------------------------------------------------------------*/
+
+// simjung
+spriteset(set_simjung_purchase, "./src/lnx/simjung/simjung.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_simjung_engineH, "./src/lnx/simjung/simjung.png") {
+    tmpl_standard(80, 0)
+}
+spriteset(set_simjung_engineH_r, "./src/lnx/simjung/simjung.png") {
+    tmpl_standard_r(80, 0)
+}
+spriteset(set_simjung_wagon_panto1, "./src/lnx/simjung/simjung.png") {
+    tmpl_standard(80, 30)
+}
+spriteset(set_simjung_wagon, "./src/lnx/simjung/simjung.png") {
+    tmpl_standard(80, 60)
+}
+spriteset(set_simjung_wagon_panto2, "./src/lnx/simjung/simjung.png") {
+    tmpl_standard(80, 90)
+}
+spriteset(set_simjung_engineT, "./src/lnx/simjung/simjung.png") {
+    tmpl_standard(80, 120)
+}
+spriteset(set_simjung_engineT_r, "./src/lnx/simjung/simjung.png") {
+    tmpl_standard_r(80, 120)
+}

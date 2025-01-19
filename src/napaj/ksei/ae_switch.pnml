@@ -1,0 +1,37 @@
+/*--------------------------------------------------------------------
+    KEISEI AE Series - Switches
+--------------------------------------------------------------------*/
+
+switch (FEAT_TRAINS, SELF, sw_KSEI_AE, position_in_vehid_chain % 8) {
+    1:set_KSEI_AE_2car_wagon;
+    2:set_KSEI_AE_3car_wagon;
+    3:set_KSEI_AE_4car_wagon;
+    4:set_KSEI_AE_5car_wagon;
+    5:set_KSEI_AE_2car_wagon;
+    6:set_KSEI_AE_3car_wagon;
+    7:set_KSEI_AE_engineT;
+    set_KSEI_AE_engineH;
+}
+switch (FEAT_TRAINS, SELF, sw_KSEI_AE_r, position_in_vehid_chain % 8) {
+    1:set_KSEI_AE_3car_wagon;
+    2:set_KSEI_AE_2car_wagon;
+    3:set_KSEI_AE_5car_wagon;
+    4:set_KSEI_AE_4car_wagon;
+    5:set_KSEI_AE_3car_wagon;
+    6:set_KSEI_AE_2car_wagon;
+    7:set_KSEI_AE_engineT;
+    set_KSEI_AE_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_KSEI_AE_flipped, vehicle_is_flipped){
+    0: sw_KSEI_AE_r;
+    sw_KSEI_AE;
+}
+switch(FEAT_TRAINS, PARENT, sw_KSEI_AE_reversed, vehicle_is_reversed){
+    0: sw_KSEI_AE;
+    sw_KSEI_AE_flipped;
+}
+
+switch (FEAT_TRAINS, SELF, sw_articulated_KSEI_AE, extra_callback_info1) {
+    1..7: KSEI_AE;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}

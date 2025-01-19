@@ -1,0 +1,29 @@
+/*------------------------------------------------------------------------------
+  RTX-A Graphics
+------------------------------------------------------------------------------*/
+
+spriteset(set_RTX_A_engineH, "./src/metro/rtx/a/rtx_a.png") {
+    tmpl_standard_longnose(80, 0)
+}
+spriteset(set_RTX_A_wagon_panto1, "./src/metro/rtx/a/rtx_a.png") {   // T'1
+    tmpl_standard(80, 30)
+}
+spriteset(set_RTX_A_wagon_panto1_r, "./src/metro/rtx/a/rtx_a.png") {   // T'1
+    tmpl_standard_r(80, 30)
+}
+spriteset(set_RTX_A_wagon, "./src/metro/rtx/a/rtx_a.png") {   // M
+    tmpl_standard(80, 60)
+}
+spriteset(set_RTX_A_wagon_panto2, "./src/metro/rtx/a/rtx_a.png") {   // T'2
+    tmpl_standard(80, 90)
+}
+spriteset(set_RTX_A_wagon_panto2_r, "./src/metro/rtx/a/rtx_a.png") {   // T'2
+    tmpl_standard_r(80, 90)
+}
+spriteset(set_RTX_A_engineT, "./src/metro/rtx/a/rtx_a.png") {
+    tmpl_standard_longnose_r(80, 120)
+}
+
+spriteset(set_RTX_A_purchase, "./src/metro/rtx/a/rtx_a.png") {
+    tmpl_purchase_common(0, 0)
+}

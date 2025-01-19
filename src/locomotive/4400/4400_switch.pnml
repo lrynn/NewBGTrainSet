@@ -1,0 +1,36 @@
+/*------------------------------------------------------------------------------
+    4400 Switches
+------------------------------------------------------------------------------*/
+
+// Refit Paintings
+switch(FEAT_TRAINS, SELF, sw_4400_loco, cargo_subtype) {
+    1:    set_4400_1_loco;
+    10:   set_4400_V_TRAIN_loco;
+    set_4400_2_loco;
+}
+switch(FEAT_TRAINS, SELF, sw_4400_cargo_subtype_text, cargo_subtype) {
+    1:    return string(STR_REFIT_LIVERY_GREEN_YELLOW);
+    10:   return string(STR_REFIT_LIVERY_V_TRAIN);
+    return string(STR_REFIT_LIVERY_THESEDAYS);
+}
+
+// Graphic - V-train
+switch(FEAT_TRAINS, SELF, sw_V_TRAIN_wagon, position_in_consist % 3) {
+    1: set_V_TRAIN_wagon_1;
+    2: set_V_TRAIN_wagon_2;
+    0: set_V_TRAIN_wagon_3;
+    set_V_TRAIN_wagon_1;
+}
+
+// Capacity - V-train
+switch(FEAT_TRAINS, SELF, sw_V_TRAIN_capacity, position_in_consist % 3) {
+    2: return 46 * sw_cargo_capacity_factor;
+    return 56 * sw_cargo_capacity_factor;
+}
+
+// Sound Effects
+switch(FEAT_TRAINS, SELF, sw_4400_sound, extra_callback_info1) {
+    SOUND_EVENT_START: sound("sounds/GT26CWDieselStart.wav");
+    SOUND_EVENT_STOPPED: sound("sounds/GT26CWDIESELIdle.wav");
+    return CB_RESULT_NO_SOUND;
+}

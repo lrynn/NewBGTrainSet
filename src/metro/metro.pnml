@@ -1,0 +1,25 @@
+/*------------------------------------------------------------------------------
+  Metro
+------------------------------------------------------------------------------*/
+
+LOADING(METRO)
+CAPACITY_PURCHASE(METRO_4CAR)
+CAPACITY_PURCHASE(METRO_6CAR)
+CAPACITY_PURCHASE(METRO_8CAR)
+CAPACITY_PURCHASE(METRO_10CAR)
+
+// Seoul
+#include "seoul/1/seoul_1.pnml"
+#include "seoul/2/seoul_2.pnml"
+#include "seoul/3/seoul_3.pnml"
+#include "seoul/4/seoul_4.pnml"
+#include "seoul/5/seoul_5.pnml"
+#include "seoul/6/seoul_6.pnml"
+// #include "seoul/7/seoul_7.pnml"
+// #include "seoul/8/seoul_8.pnml"
+// #include "seoul/9/seoul_9.pnml"
+
+#include "arex/arex.pnml"
+
+// rtx
+#include "rtx/a/rtx_a.pnml"

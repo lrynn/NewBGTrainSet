@@ -1,0 +1,57 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// DHC
+spriteset(set_DHC_1_purchase, "./src/locomotive/dhc/dhc.png") {
+    tmpl_purchase_common_dualhead(0, 0)
+}
+spriteset(set_DHC_1_engineH, "./src/locomotive/dhc/dhc.png") {
+    tmpl_standard(80, 0)
+}
+spriteset(set_DHC_1_engineT, "./src/locomotive/dhc/dhc.png") {
+    tmpl_standard(80, 30)
+}
+
+spriteset(set_DHC_2_purchase, "./src/locomotive/dhc/dhc.png") {
+    tmpl_purchase_common_dualhead(0, 60)
+}
+spriteset(set_DHC_2_engineH, "./src/locomotive/dhc/dhc.png") {
+    tmpl_standard(80, 60)
+}
+spriteset(set_DHC_2_engineT, "./src/locomotive/dhc/dhc.png") {
+    tmpl_standard(80, 90)
+}
+
+spriteset(set_DHC_3_purchase, "./src/locomotive/dhc/dhc.png") {
+    tmpl_purchase_common_dualhead(0, 120)
+}
+spriteset(set_DHC_3_engineH, "./src/locomotive/dhc/dhc.png") {
+    tmpl_standard(80, 120)
+}
+spriteset(set_DHC_3_engineT, "./src/locomotive/dhc/dhc.png") {
+    tmpl_standard(80, 150)
+}
+
+spriteset(set_DHC_NEWMAEUL_engineH, "./src/lnx/newmaeul/NEWMAEUL.png") {
+    [80+0,     0,     8,    21,     -3,     -13]
+    [80+20,    0,    21,    15,    -14,      -6]
+    [80+50,    0,    31,    12,    -15,      -8]
+    [80+90,    0,    20,    16,     -6,      -8]
+    [80+120,   0,     8,    21,     -3,     -13]
+    [80+140,   0,    20,    16,    -14,      -7]
+    [80+170,   0,    31,    12,    -15,      -8]
+    [80+210,   0,    21,    15,     -7,      -7]
+}
+spriteset(set_DHC_NEWMAEUL_engineT, "./src/lnx/newmaeul/NEWMAEUL.png") {
+    [80+120,   120,     8,    21,     -3,   -13]
+    [80+140,   120,    21,    15,    -14,    -6]
+    [80+170,   120,    31,    12,    -15,    -8]
+    [80+210,   120,    20,    16,     -6,    -8]
+    [80+0,     120,     8,    21,     -3,   -13]
+    [80+20,    120,    20,    16,    -14,    -7]
+    [80+50,    120,    31,    12,    -15,    -8]
+    [80+90,    120,    21,    15,     -7,    -7]
+}

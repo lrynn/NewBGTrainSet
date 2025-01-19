@@ -1,0 +1,155 @@
+/*------------------------------------------------------------------------------
+    lnx-simjung
+------------------------------------------------------------------------------*/
+
+// Graphics
+#include "simjung_graphic.pnml"
+
+// Switch
+#include "simjung_switch.pnml"
+
+/*--------------------------------------------------------------------
+열차정보 그룹
+--------------------------------------------------------------------*/
+spriteset(set_simjung_logo, "src/lnx/simjung/logo.png") {
+    tmpl_purchase_common(0, 0)
+}
+
+item(FEAT_TRAINS, group_simjung, 2201) {
+    property {
+        name:                           string(STR_group_SIMJUNG_NAME);
+        climates_available:             NO_CLIMATE;
+        track_type:                     ELRL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        power:                          1 kW;
+        
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
+        bitmask_vehicle_info:           0;
+    }
+
+    graphics {
+        purchase:                       set_simjung_logo;
+    }
+}
+
+/*--------------------------------------------------------------------
+열차 리스트
+--------------------------------------------------------------------*/
+
+item(FEAT_TRAINS, SIMJUNG_4car, 2204) {
+    property {
+        // Common properties
+        name:                           string(STR_SIMJUNG_4CAR_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_SIMJUNG4_INTRODUCTION;
+        track_type:                     ELRL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        variant_group:                  group_simjung;
+
+        // Spec
+        power:                          var_SIMJUNG4_POWER;
+        weight:                         var_SIMJUNG4_WEIGHT;
+        tractive_effort_coefficient:    0.25;
+        air_drag_coefficient:           0.01;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 1;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+
+        // Costs
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_2CC, TRAIN_FLAG_SPRITE_STACK);
+    }
+    graphics {
+        default:                        sw_SIMJUNG_4car_reversed;
+        articulated_part:               sw_articulated_SIMJUNG_4car;
+        purchase:                       set_simjung_purchase;
+
+        speed:                          var_SIMJUNG4_SPEED;
+        cost_factor:                    var_SIMJUNG4_COST;
+        running_cost_factor:            var_SIMJUNG4_RUNNINGCOST;
+        cargo_capacity:                 var_SIMJUNG4_CAPACITY;
+        purchase_cargo_capacity:        var_SIMJUNG4_CAPACITY;
+        loading_speed:                  var_SIMJUNG4_LOADINGSPEED;
+
+        can_attach_wagon:               sw_SIMJUNG_attach;
+        start_stop:                     sw_ko_train_start_stop_global;
+        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+
+        sound_effect:                   sw_SIMJUNG_sound;
+    }
+}
+
+item(FEAT_TRAINS, SIMJUNG_6car, 2206) {
+    property {
+        // Common properties
+        name:                           string(STR_SIMJUNG_6CAR_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_SIMJUNG6_INTRODUCTION;
+        track_type:                     ELRL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        variant_group:                  group_simjung;
+
+        // Spec
+        power:                          var_SIMJUNG6_POWER;
+        weight:                         var_SIMJUNG6_WEIGHT;
+        tractive_effort_coefficient:    0.25;
+        air_drag_coefficient:           0.01;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 1;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+
+        // Costs
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_2CC, TRAIN_FLAG_SPRITE_STACK);
+    }
+    graphics {
+        default:                        sw_SIMJUNG_6car_reversed;
+        articulated_part:               sw_articulated_SIMJUNG_6car;
+        purchase:                       set_simjung_purchase;
+
+        speed:                          var_SIMJUNG6_SPEED;
+        cost_factor:                    var_SIMJUNG6_COST;
+        running_cost_factor:            var_SIMJUNG6_RUNNINGCOST;
+        cargo_capacity:                 var_SIMJUNG6_CAPACITY;
+        purchase_cargo_capacity:        var_SIMJUNG6_CAPACITY;
+        loading_speed:                  var_SIMJUNG6_LOADINGSPEED;
+
+        can_attach_wagon:               sw_SIMJUNG_attach;
+        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+
+        sound_effect:                   sw_SIMJUNG_sound;
+    }
+}

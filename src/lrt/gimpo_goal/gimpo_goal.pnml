@@ -1,0 +1,69 @@
+/*------------------------------------------------------------------------------
+    GIMPO GOALKICK
+------------------------------------------------------------------------------*/
+
+// Graphics
+#include "gimpo_goal_graphic.pnml"
+
+// Switch
+#include "gimpo_goal_switch.pnml"
+
+// Item
+item(FEAT_TRAINS, GIMPO_GOAL, 7302) {
+    property {
+        // Common properties
+        name:                           string(STR_GIMPO_GOAL_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(2018, 1, 1);
+        track_type:                     KR_3RD_RAIL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        dual_headed:                    1;
+
+        // Spec
+        power:                          var_LRT_2CAR_POWER;
+        weight:                         var_LRT_2CAR_WEIGHT;
+        tractive_effort_coefficient:    0.25;
+        air_drag_coefficient:           0.01;
+        length:                         5;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 var_LRT_CAPACITY;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+
+        // Costs
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
+        bitmask_vehicle_info:           0;
+    }
+    graphics {
+        default:                        sw_GIMPO_GOAL;
+        articulated_part:               sw_articulated_GIMPO_GOAL;
+        purchase:                       set_GIMPO_1K_purchase;
+
+        speed:                          var_LRT_SPEED;
+        cost_factor:                    var_LRT_2CAR_COST;
+        running_cost_factor:            var_LRT_2CAR_RUNNINGCOST;
+        cargo_capacity:                 var_LRT_CAPACITY;
+        purchase_cargo_capacity:        var_LRT_CAPACITY;
+        loading_speed:                  var_LRT_LOADINGSPEED;
+
+        can_attach_wagon:               sw_METRO_attach_global;
+        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+
+        sound_effect:                   sw_GIMPO_GOAL_sound;
+    }
+}

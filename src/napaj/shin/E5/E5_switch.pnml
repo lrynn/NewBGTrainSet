@@ -1,0 +1,106 @@
+/*--------------------------------------------------------------------
+    Shinkansen E5, H5 - Switches
+--------------------------------------------------------------------*/
+
+// Cargo Subtypes
+switch(FEAT_TRAINS, SELF, sw_SHIN_E5_cargo_subtype_text, cargo_subtype) {
+    1: return string(STR_REFIT_SHIN_H5_NAME);
+    return string(STR_REFIT_SHIN_E5_NAME);
+}
+
+// 도색
+// 10량
+switch(FEAT_TRAINS, SELF, sw_SHIN_E5_engineH, cargo_subtype) {
+    1: set_Shinkansen_H5_engineH;   // H5
+    set_Shinkansen_E5_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_SHIN_E5_panto_wagon_A, cargo_subtype) {
+    1: set_Shinkansen_H5_panto_wagon_A; // H5
+    set_Shinkansen_E5_panto_wagon_A;
+}
+switch(FEAT_TRAINS, SELF, sw_SHIN_E5_wagon, cargo_subtype) {
+    1: set_Shinkansen_H5_wagon;   // H5
+    set_Shinkansen_E5_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_SHIN_E5_green_wagon, cargo_subtype) {
+    1: set_Shinkansen_H5_green_wagon; // H5
+    set_Shinkansen_E5_green_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_SHIN_E5_panto_wagon_B, cargo_subtype) {
+    1: set_Shinkansen_H5_panto_wagon_B; // H5
+    set_Shinkansen_E5_panto_wagon_B;
+}
+switch(FEAT_TRAINS, SELF, sw_SHIN_E5_engineT, cargo_subtype) {
+    1: set_Shinkansen_H5_engineT;   // H5
+    set_Shinkansen_E5_engineT;
+}
+
+// 10량 뒤집힘
+switch(FEAT_TRAINS, SELF, sw_SHIN_E5_engineH_r, cargo_subtype) {
+    1: set_Shinkansen_H5_engineH_r;   // H5
+    set_Shinkansen_E5_engineH_r;
+}
+switch(FEAT_TRAINS, SELF, sw_SHIN_E5_panto_wagon_A_r, cargo_subtype) {
+    1: set_Shinkansen_H5_panto_wagon_A_r; // H5
+    set_Shinkansen_E5_panto_wagon_A_r;
+}
+switch(FEAT_TRAINS, SELF, sw_SHIN_E5_wagon_r, cargo_subtype) {
+    1: set_Shinkansen_H5_wagon_r;   // H5
+    set_Shinkansen_E5_wagon_r;
+}
+switch(FEAT_TRAINS, SELF, sw_SHIN_E5_green_wagon_r, cargo_subtype) {
+    1: set_Shinkansen_H5_green_wagon_r; // H5
+    set_Shinkansen_E5_green_wagon_r;
+}
+switch(FEAT_TRAINS, SELF, sw_SHIN_E5_panto_wagon_B_r, cargo_subtype) {
+    1: set_Shinkansen_H5_panto_wagon_B_r; // H5
+    set_Shinkansen_E5_panto_wagon_B_r;
+}
+switch(FEAT_TRAINS, SELF, sw_SHIN_E5_engineT_r, cargo_subtype) {
+    1: set_Shinkansen_H5_engineT_r;   // H5
+    set_Shinkansen_E5_engineT_r;
+}
+
+// 편성
+switch (FEAT_TRAINS, SELF, sw_SHIN_E5, position_in_vehid_chain % 10) {
+    1:sw_SHIN_E5_wagon;
+    2:sw_SHIN_E5_panto_wagon_A;
+    3:sw_SHIN_E5_wagon;
+    4:sw_SHIN_E5_wagon;
+    5:sw_SHIN_E5_wagon;
+    6:sw_SHIN_E5_panto_wagon_B;
+    7:sw_SHIN_E5_green_wagon;
+    8:sw_SHIN_E5_wagon;
+    9:sw_SHIN_E5_engineT;
+    sw_SHIN_E5_engineH; //default
+    }
+
+switch (FEAT_TRAINS, SELF, sw_SHIN_E5_r, position_in_vehid_chain % 10) {
+    1:sw_SHIN_E5_wagon_r;
+    2:sw_SHIN_E5_green_wagon_r;
+    3:sw_SHIN_E5_panto_wagon_B_r;
+    4:sw_SHIN_E5_wagon_r;
+    5:sw_SHIN_E5_wagon_r;
+    6:sw_SHIN_E5_wagon_r;
+    7:sw_SHIN_E5_panto_wagon_A_r;
+    8:sw_SHIN_E5_wagon_r;
+    9:sw_SHIN_E5_engineH_r;
+    sw_SHIN_E5_engineT_r; //default
+    }
+
+switch(FEAT_TRAINS, SELF, sw_SHIN_E5_flipped, vehicle_is_flipped){
+    0: sw_SHIN_E5_r;
+    sw_SHIN_E5;
+}
+
+switch(FEAT_TRAINS, PARENT, sw_SHIN_E5_reversed, vehicle_is_reversed){
+    0: sw_SHIN_E5;
+    sw_SHIN_E5_flipped;
+}
+
+// to set length of composition
+
+switch (FEAT_TRAINS, SELF, sw_articulated_SHIN_E5, extra_callback_info1) {
+    1..9: SHIN_E5;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}

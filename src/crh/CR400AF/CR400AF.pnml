@@ -1,0 +1,192 @@
+/*--------------------------------------------------------------------
+  CR400AF
+--------------------------------------------------------------------*/
+// Graphics
+#include "CR400AF_graphic.pnml"
+
+// Switch
+#include "CR400AF_switch.pnml"
+
+/*--------------------------------------------------------------------
+  열차정보 그룹
+--------------------------------------------------------------------*/
+spriteset(set_crh_logo, "src/crh/logo.png") {
+    tmpl_purchase_common(0, 0)
+}
+
+item(FEAT_TRAINS, group_CR400AF, 6641){
+    property {
+        name:                           string(STR_group_CR400AF_NAME);
+        climates_available:             NO_CLIMATE;
+        track_type:                     ELRL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        power:                          1 kW;
+    }
+
+    graphics {
+        purchase:                       set_crh_logo;
+    }
+}
+
+/*--------------------------------------------------------------------
+  CR400AF
+--------------------------------------------------------------------*/
+item(FEAT_TRAINS, CR400AF_8CAR, 6648){
+    property {
+        name:                           string(STR_CR400AF_8CAR_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_CR400AF_8CAR_INTRODUCTION;
+        track_type:                     ELRL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        variant_group:                  group_CR400AF;
+        
+        //spec
+        speed:                          var_CR400AF_8CAR_SPEED;
+        power:                          var_CR400AF_8CAR_POWER;
+        weight:                         var_CR400AF_8CAR_WEIGHT;
+        tractive_effort_coefficient:    0.3;
+        
+        //Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+        
+        //Cargo
+        cargo_capacity:                 var_CR400AF_8CAR_CAPACITY;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+        
+        //Costs
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
+        
+        //Flags
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
+    }
+        
+    graphics {
+        default:                        sw_CR400AF_8car;
+        articulated_part:               sw_articulated_CR400AF_8car;
+        purchase:                       set_CR400AF_purchase;
+        speed:                          var_CR400AF_8CAR_SPEED;
+        loading_speed:                  var_CR400AF_8CAR_LOADINGSPEED;
+        cost_factor:                    var_CR400AF_8CAR_COST;
+        running_cost_factor:            var_CR400AF_8CAR_RUNNINGCOST;
+
+        cargo_subtype_text:             sw_CR400AF_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
+    }
+}
+
+/*--------------------------------------------------------------------
+  CR400AF-A
+--------------------------------------------------------------------*/
+item(FEAT_TRAINS, CR400AF_16CAR, 6646){
+    property {
+        name:                           string(STR_CR400AF_16CAR_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_CR400AF_16CAR_INTRODUCTION;
+        track_type:                     ELRL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        variant_group:                  group_CR400AF;
+        
+        //spec
+        speed:                          var_CR400AF_16CAR_SPEED;
+        power:                          var_CR400AF_16CAR_POWER;
+        weight:                         var_CR400AF_16CAR_WEIGHT;
+        tractive_effort_coefficient:    0.3;
+        
+        //Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+        
+        //Cargo
+        cargo_capacity:                 var_CR400AF_16CAR_CAPACITY;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+        
+        //Costs
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
+        
+        //Flags
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
+    }
+        
+    graphics {
+        default:                        sw_CR400AF_16car;
+        articulated_part:               sw_articulated_CR400AF_16car;
+        purchase:                       set_CR400AF_purchase;
+        speed:                          var_CR400AF_16CAR_SPEED;
+        loading_speed:                  var_CR400AF_16CAR_LOADINGSPEED;
+        cost_factor:                    var_CR400AF_16CAR_COST;
+        running_cost_factor:            var_CR400AF_16CAR_RUNNINGCOST;
+
+        cargo_subtype_text:             sw_CR400AF_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
+    }
+}
+
+/*--------------------------------------------------------------------
+  CR400AF-B
+--------------------------------------------------------------------*/
+item(FEAT_TRAINS, CR400AF_17CAR, 6647){
+    property {
+        name:                           string(STR_CR400AF_17CAR_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_CR400AF_17CAR_INTRODUCTION;
+        track_type:                     ELRL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        variant_group:                  group_CR400AF;
+        
+        //spec
+        speed:                          var_CR400AF_17CAR_SPEED;
+        power:                          var_CR400AF_17CAR_POWER;
+        weight:                         var_CR400AF_17CAR_WEIGHT;
+        tractive_effort_coefficient:    0.3;
+        
+        //Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+        
+        //Cargo
+        cargo_capacity:                 var_CR400AF_17CAR_CAPACITY;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+        
+        //Costs
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
+        
+        //Flags
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
+    }
+        
+    graphics {
+        default:                        sw_CR400AF_17car;
+        articulated_part:               sw_articulated_CR400AF_17car;
+        purchase:                       set_CR400AF_purchase;
+        speed:                          var_CR400AF_17CAR_SPEED;
+        loading_speed:                  var_CR400AF_17CAR_LOADINGSPEED;
+        cost_factor:                    var_CR400AF_17CAR_COST;
+        running_cost_factor:            var_CR400AF_17CAR_RUNNINGCOST;
+
+        cargo_subtype_text:             sw_CR400AF_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
+    }
+}

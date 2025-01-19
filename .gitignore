@@ -1,0 +1,5 @@
+/.nmlcache
+/generated
+/sounds/*.wav
+
+spec copy.py
