@@ -9,6 +9,9 @@ spriteset(set_8000_BLUE_WHITE_purchase, "./src/locomotive/8x00/8000/8000.png") {
 spriteset(set_8000_BLUE_WHITE, "./src/locomotive/8x00/8000/8000.png") {
     tmpl_standard(80, 0)
 }
+spriteset(set_8000_BLUE_WHITE_r, "./src/locomotive/8x00/8000/8000.png") {
+    tmpl_standard_r(80, 0)
+}
 
 // Green & Yellow
 spriteset(set_8000_GREEN_YELLOW_purchase, "./src/locomotive/8x00/8000/8000.png") {
@@ -17,6 +20,9 @@ spriteset(set_8000_GREEN_YELLOW_purchase, "./src/locomotive/8x00/8000/8000.png")
 spriteset(set_8000_GREEN_YELLOW, "./src/locomotive/8x00/8000/8000.png") {
     tmpl_standard(80, 30)
 }
+spriteset(set_8000_GREEN_YELLOW_r, "./src/locomotive/8x00/8000/8000.png") {
+    tmpl_standard_r(80, 30)
+}
 
 // Red & White & Blue
 spriteset(set_8000_RED_WHITE_BLUE_purchase, "./src/locomotive/8x00/8000/8000.png") {
@@ -24,4 +30,7 @@ spriteset(set_8000_RED_WHITE_BLUE_purchase, "./src/locomotive/8x00/8000/8000.png
 }
 spriteset(set_8000_RED_WHITE_BLUE, "./src/locomotive/8x00/8000/8000.png") {
     tmpl_standard(80, 60)
+}
+spriteset(set_8000_RED_WHITE_BLUE_r, "./src/locomotive/8x00/8000/8000.png") {
+    tmpl_standard_r(80, 60)
 }

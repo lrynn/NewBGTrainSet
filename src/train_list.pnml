@@ -11,9 +11,7 @@
 #include "wagon/cafe_car/cafe_car.pnml"
 #include "wagon/sleeping_car/sleeping_car.pnml"
 
-#include "locomotive/4400/4400.pnml"
-#include "locomotive/7x00/group_7x00.pnml"
-#include "locomotive/8x00/group_8x00.pnml"
+#include "locomotive/loco.pnml"
 
 #include "locomotive/dhc/dhc.pnml"
 

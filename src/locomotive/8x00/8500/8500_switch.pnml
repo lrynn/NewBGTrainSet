@@ -2,8 +2,13 @@
     8500 Switches
 ------------------------------------------------------------------------------*/
 
-switch(FEAT_TRAINS, SELF, sw_8500_loco, cargo_subtype) {
-    set_8500;
+// Switch
+// None
+
+// Locomotive facing
+switch (FEAT_TRAINS, SELF, sw_8500_reverse, position_in_consist) {
+    0..2: set_8500;
+    set_8500_r;
 }
 
 // Sounds

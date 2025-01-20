@@ -2,16 +2,27 @@
     4400 Switches
 ------------------------------------------------------------------------------*/
 
-// Refit Paintings
+// Switch
+switch(FEAT_TRAINS, SELF, sw_4400_cargo_subtype_text, cargo_subtype) {
+    1:    return string(STR_REFIT_LIVERY_GREEN_YELLOW);
+    10:   return string(STR_REFIT_LIVERY_V_TRAIN);
+    return string(STR_REFIT_LIVERY_THESEDAYS);
+}
 switch(FEAT_TRAINS, SELF, sw_4400_loco, cargo_subtype) {
     1:    set_4400_1_loco;
     10:   set_4400_V_TRAIN_loco;
     set_4400_2_loco;
 }
-switch(FEAT_TRAINS, SELF, sw_4400_cargo_subtype_text, cargo_subtype) {
-    1:    return string(STR_REFIT_LIVERY_GREEN_YELLOW);
-    10:   return string(STR_REFIT_LIVERY_V_TRAIN);
-    return string(STR_REFIT_LIVERY_THESEDAYS);
+switch(FEAT_TRAINS, SELF, sw_4400_loco_r, cargo_subtype) {
+    1:    set_4400_1_loco_r;
+    10:   set_4400_V_TRAIN_loco_r;
+    set_4400_2_loco_r;
+}
+
+// Locomotive facing
+switch (FEAT_TRAINS, SELF, sw_4400_loco_reverse, position_in_consist) {
+    0..2: sw_4400_loco;
+    sw_4400_loco_r;
 }
 
 // Graphic - V-train

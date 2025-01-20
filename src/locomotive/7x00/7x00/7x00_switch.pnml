@@ -1,7 +1,25 @@
 /*------------------------------------------------------------------------------
   7x00 Switches
 ------------------------------------------------------------------------------*/
+
 // Cargo subtype
+switch(FEAT_TRAINS, SELF, sw_7x00_cargo_subtype_text, cargo_subtype) {
+    0:    return string(STR_REFIT_LIVERY_THESEDAYS);
+    1:    return string(STR_REFIT_LIVERY_7x00_CARGO);
+    2:    return string(STR_REFIT_LIVERY_GREEN_YELLOW);
+    3:    return string(STR_REFIT_LIVERY_7x00_FIRST_KORAIL);
+    4:    return string(STR_REFIT_LIVERY_7x00_BLACK_ORANGE);
+    5:    return string(STR_REFIT_LIVERY_KWANKWANG);
+    // 6:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
+    // 8:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
+    // 9:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
+    20:    return string(STR_REFIT_LIVERY_HAERANG);
+    21:   return string(STR_REFIT_LIVERY_S_TRAIN1);
+    22:   return string(STR_REFIT_LIVERY_S_TRAIN2);
+    23:   return string(STR_REFIT_LIVERY_G_TRAIN);
+    return string(STR_REFIT_LIVERY_THESEDAYS);
+}
+
 switch(FEAT_TRAINS, SELF, sw_7x00_loco, cargo_subtype) {
     0:    set_7x00_RED_WHITE_BLUE;
     1:    set_7x00_CARGO;
@@ -18,21 +36,27 @@ switch(FEAT_TRAINS, SELF, sw_7x00_loco, cargo_subtype) {
     23:   set_7x00_G_TRAIN;
     set_7x00_RED_WHITE_BLUE;
 }
-switch(FEAT_TRAINS, SELF, sw_7x00_cargo_subtype_text, cargo_subtype) {
-    0:    return string(STR_REFIT_LIVERY_THESEDAYS);
-    1:    return string(STR_REFIT_LIVERY_7x00_CARGO);
-    2:    return string(STR_REFIT_LIVERY_GREEN_YELLOW);
-    3:    return string(STR_REFIT_LIVERY_7x00_FIRST_KORAIL);
-    4:    return string(STR_REFIT_LIVERY_7x00_BLACK_ORANGE);
-    5:    return string(STR_REFIT_LIVERY_KWANKWANG);
-    // 6:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
-    // 8:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
-    // 9:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
-    20:    return string(STR_REFIT_LIVERY_HAERANG);
-    21:   return string(STR_REFIT_LIVERY_S_TRAIN1);
-    22:   return string(STR_REFIT_LIVERY_S_TRAIN2);
-    23:   return string(STR_REFIT_LIVERY_G_TRAIN);
-    return string(STR_REFIT_LIVERY_THESEDAYS);
+switch(FEAT_TRAINS, SELF, sw_7x00_loco_r, cargo_subtype) {
+    0:    set_7x00_RED_WHITE_BLUE_r;
+    1:    set_7x00_CARGO_r;
+    2:    set_7x00_GREEN_YELLOW_r;
+    3:    set_7x00_BLUE_WHITE_r;
+    4:    set_7x00_BLACK_ORANGE_r;
+    5:    set_7x00_KWANKWANG_r;
+    // 6:    set_ERRSPRITE;    // RESERVED
+    // 8:    set_ERRSPRITE;    // RESERVED
+    // 9:    set_ERRSPRITE;    // RESERVED
+    20:   set_7x00_HAERANG_r;
+    21:   set_7x00_S_TRAIN_r;
+    22:   set_7x00_S_TRAIN_r;
+    23:   set_7x00_G_TRAIN_r;
+    set_7x00_RED_WHITE_BLUE_r;
+}
+
+// Locomotive facing
+switch (FEAT_TRAINS, SELF, sw_7x00_loco_reverse, position_in_consist) {
+    0..2: sw_7x00_loco;
+    sw_7x00_loco_r;
 }
 
 // MUGUNGHWA_CAR

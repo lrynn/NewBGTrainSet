@@ -3,9 +3,12 @@
 ------------------------------------------------------------------------------*/
 
 // Red & White & Blue (current)
+spriteset(set_8500_purchase, "./src/locomotive/8x00/8500/8500.png") {
+    tmpl_purchase_common(0, 0)
+}
 spriteset(set_8500, "./src/locomotive/8x00/8500/8500.png") {
     tmpl_standard(80, 0)
 }
-spriteset(set_8500_purchase, "./src/locomotive/8x00/8500/8500.png") {
-    tmpl_purchase_common(0, 0)
+spriteset(set_8500_r, "./src/locomotive/8x00/8500/8500.png") {
+    tmpl_standard_r(80, 0)
 }

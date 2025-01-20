@@ -21,6 +21,9 @@ spriteset(set_4400_1_purchase, "./src/locomotive/4400/4400.png") {
 spriteset(set_4400_1_loco, "./src/locomotive/4400/4400.png") {   // Green & Yellow
     tmpl_4400(80, 0)
 }
+spriteset(set_4400_1_loco_r, "./src/locomotive/4400/4400_r.png") {   // Green & Yellow
+    tmpl_4400(80, 0)
+}
 
 spriteset(set_4400_2_purchase, "./src/locomotive/4400/4400.png") {
     tmpl_purchase_common(0, 30)
@@ -28,10 +31,16 @@ spriteset(set_4400_2_purchase, "./src/locomotive/4400/4400.png") {
 spriteset(set_4400_2_loco, "./src/locomotive/4400/4400.png") {   // Red & White & Blue print
     tmpl_4400(80, 30)
 }
+spriteset(set_4400_2_loco_r, "./src/locomotive/4400/4400_r.png") {   // Red & White & Blue print
+    tmpl_4400(80, 30)
+}
 
 spriteset(set_4400_V_TRAIN_purchase, "./src/locomotive/4400/4400.png") {
     tmpl_purchase_common(0, 60)
 }
 spriteset(set_4400_V_TRAIN_loco, "./src/locomotive/4400/4400.png") {   // V-train
+    tmpl_4400(80, 60)
+}
+spriteset(set_4400_V_TRAIN_loco_r, "./src/locomotive/4400/4400_r.png") {   // V-train
     tmpl_4400(80, 60)
 }

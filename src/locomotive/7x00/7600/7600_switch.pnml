@@ -3,13 +3,23 @@
 ------------------------------------------------------------------------------*/
 
 // Cargo subtype
+switch(FEAT_TRAINS, SELF, sw_7600_cargo_subtype_text, cargo_subtype) {
+    13: return string(STR_REFIT_LIVERY_7600_A_TRAIN);
+    return string(STR_REFIT_LIVERY_7x00_CARGO);
+}
 switch(FEAT_TRAINS, SELF, sw_7600_loco, cargo_subtype) {
     13: set_7600_A_TRAIN;
     set_7600_CARGO;
 }
-switch(FEAT_TRAINS, SELF, sw_7600_cargo_subtype_text, cargo_subtype) {
-    13: return string(STR_REFIT_LIVERY_7600_A_TRAIN);
-    return string(STR_REFIT_LIVERY_7x00_CARGO);
+switch(FEAT_TRAINS, SELF, sw_7600_loco_r, cargo_subtype) {
+    13: set_7600_A_TRAIN_r;
+    set_7600_CARGO_r;
+}
+
+// Locomotive facing
+switch (FEAT_TRAINS, SELF, sw_7600_loco_reverse, position_in_consist) {
+    0..2: sw_7600_loco;
+    sw_7600_loco_r;
 }
 
 // MUGUNGHWA_CAR

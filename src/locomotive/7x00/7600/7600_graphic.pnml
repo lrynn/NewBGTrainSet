@@ -9,6 +9,9 @@ spriteset(set_7600_CARGO_purchase, "./src/locomotive/7x00/7600/7600.png") {
 spriteset(set_7600_CARGO, "./src/locomotive/7x00/7600/7600.png") {
     tmpl_standard(80, 0)
 }
+spriteset(set_7600_CARGO_r, "./src/locomotive/7x00/7600/7600.png") {
+    tmpl_standard_r(80, 0)
+}
 
 // A-train (Jeongseon Arirang)
 spriteset(set_7600_A_TRAIN_purchase, "./src/locomotive/7x00/7600/7600.png") {
@@ -16,6 +19,9 @@ spriteset(set_7600_A_TRAIN_purchase, "./src/locomotive/7x00/7600/7600.png") {
 }
 spriteset(set_7600_A_TRAIN, "./src/locomotive/7x00/7600/7600.png") {
     tmpl_standard(80, 30)
+}
+spriteset(set_7600_A_TRAIN_r, "./src/locomotive/7x00/7600/7600.png") {
+    tmpl_standard_r(80, 30)
 }
 
 // Alias of purchase image

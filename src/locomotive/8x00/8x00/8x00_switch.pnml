@@ -2,14 +2,26 @@
   8x00 Switches
 ------------------------------------------------------------------------------*/
 // Refit Paintings
-switch(FEAT_TRAINS, SELF, sw_8x00_loco, cargo_subtype) {
-    1:    set_8x00_GREEN_YELLOW;
-    set_8x00_RED_WHITE_BLUE;
-}
 switch(FEAT_TRAINS, SELF, sw_8x00_cargo_subtype_text, cargo_subtype) {
     1:    return string(STR_REFIT_LIVERY_GREEN_YELLOW);
     return string(STR_REFIT_LIVERY_THESEDAYS);
 }
+
+switch(FEAT_TRAINS, SELF, sw_8x00_loco, cargo_subtype) {
+    1:    set_8x00_GREEN_YELLOW;
+    set_8x00_RED_WHITE_BLUE;
+}
+switch(FEAT_TRAINS, SELF, sw_8x00_loco_r, cargo_subtype) {
+    1:    set_8x00_GREEN_YELLOW_r;
+    set_8x00_RED_WHITE_BLUE_r;
+}
+
+// Locomotive facing
+switch (FEAT_TRAINS, SELF, sw_8x00_loco_reverse, position_in_consist) {
+    0..2: sw_8x00_loco;
+    sw_8x00_loco_r;
+}
+
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_8x00_purchase, cargo_subtype) {
     set_8x00_RED_WHITE_BLUE_purchase;
