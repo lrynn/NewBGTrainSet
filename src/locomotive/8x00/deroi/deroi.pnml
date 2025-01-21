@@ -1,26 +1,29 @@
 /*------------------------------------------------------------------------------
-    Seoul - Line 7
+    DEROI
 ------------------------------------------------------------------------------*/
 
 // Graphics
-#include "seoul_7_graphic.pnml"
+#include "deroi_graphic.pnml"
 
 // Switch
-#include "seoul_7_switch.pnml"
+#include "deroi_switch.pnml"
 
-item(FEAT_TRAINS, SEOUL_7, 3700) {
+// item
+item(FEAT_TRAINS, deroi, 4190) {
     property {
         // Common properties
-        name:                           string(STR_SEOUL_7_NAME);
+        name:                           string(STR_DEROI_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              date(1995, 1, 1);
-        track_type:                     ELRL;
+        introduction_date:              var_DEROI_INTRODUCTION;
+        track_type:                     RAIL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        variant_group:                  group_8x00;
 
         // Spec
-        power:                          var_METRO_8CAR_POWER;
-        weight:                         var_METRO_8CAR_WEIGHT;
+        speed:                          var_DEROI_SPEED km/h;
+        power:                          var_DEROI_POWER;
+        weight:                         var_DEROI_WEIGHT;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.01;
 
@@ -44,23 +47,22 @@ item(FEAT_TRAINS, SEOUL_7, 3700) {
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
         misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
+        bitmask_vehicle_info:           0;
     }
     graphics {
-        default:                        sw_SEOUL_7_reversed;
-        articulated_part:               sw_articulated_SEOUL_7;
-        purchase:                       set_SMETRO_7K_5TH_purchase;
+        default:                        sw_DEROI_reverse;
+        purchase:                       set_deroi_purchase;
 
-        speed:                          var_METRO_SPEED;
-        cost_factor:                    var_METRO_8CAR_COST;
-        running_cost_factor:            var_METRO_8CAR_RUNNINGCOST;
-        cargo_capacity:                 var_METRO_CAPACITY;
-        purchase_cargo_capacity:        var_METRO_CAPACITY;
-        loading_speed:                  sw_METRO_loadingspeed;
+        speed:                          var_DEROI_SPEED;
+        cost_factor:                    var_DEROI_COST;
+        running_cost_factor:            var_DEROI_RUNNINGCOST;
+        cargo_capacity:                 0;
 
-        can_attach_wagon:               sw_METRO_attach_global;
-        cargo_subtype_text:             sw_SEOUL_7_cargo_subtype_text;
-        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
+        can_attach_wagon:               sw_Kxxxx_attach_global;
+        // cargo_subtype_text:             sw_DEROI_cargo_subtype_text;
+        // additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
+        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
 
-        sound_effect:                   sw_SEOUL_7_sound;
+        // sound_effect:                   sw_DEROI_sound;
     }
 }

@@ -1,0 +1,13 @@
+/*------------------------------------------------------------------------------
+  DEROI Graphics
+------------------------------------------------------------------------------*/
+
+spriteset(set_deroi_purchase, "./src/locomotive/8x00/deroi/deroi.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_deroi, "./src/locomotive/8x00/deroi/deroi.png") {
+    tmpl_standard(80, 0)
+}
+spriteset(set_deroi_r, "./src/locomotive/8x00/deroi/deroi.png") {
+    tmpl_standard_r(80, 0)
+}

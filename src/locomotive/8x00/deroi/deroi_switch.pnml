@@ -1,0 +1,11 @@
+/*------------------------------------------------------------------------------
+    DEROI Switches
+------------------------------------------------------------------------------*/
+// Switch
+// None
+
+// Locomotive facing
+switch (FEAT_TRAINS, SELF, sw_DEROI_reverse, position_in_consist) {
+    0..2: set_deroi;
+    set_deroi_r;
+}

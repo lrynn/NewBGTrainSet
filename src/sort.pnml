@@ -34,11 +34,13 @@
 // Sort
 sort(FEAT_TRAINS, [
     ko_train_4400,                    // 4440
+    MSB,                              // 4410
     group_7x00,                       // 4711
     ko_train_7000,                    // 4700
     ko_train_7x00,                    // 4710
     ko_train_7600,                    // 4720
     group_8x00,                       // 4811
+    deroi,                            // 4190
     ko_train_8000,                    // 4800
     ko_train_8x00,                    // 4810
     ko_train_8500,                    // 4820
@@ -89,14 +91,11 @@ sort(FEAT_TRAINS, [
     SEOUL_4_korail,                   // 3410
 
     SEOUL_5,                          // 3500
-
     SEOUL_6,                          // 3600
+    SEOUL_7,                          // 3700
+    SEOUL_8,                          // 3800
 
-    // SEOUL_7,                          // 3700
-
-    // SEOUL_8,                          // 3800
-
-    // SEOUL_9,                          // 3900
+    SEOUL_9,                          // 3900
 
     group_arex,                       // 8101
     AREX_1000,                        // 8111

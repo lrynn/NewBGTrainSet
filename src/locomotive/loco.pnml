@@ -3,5 +3,6 @@
 --------------------------------------------------------------------*/
 
 #include "4400/4400.pnml"
+#include "MSB/MSB_Speeder.pnml"
 #include "7x00/group_7x00.pnml"
 #include "8x00/group_8x00.pnml"
