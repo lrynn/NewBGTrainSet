@@ -19,8 +19,9 @@ switch(FEAT_TRAINS, SELF, sw_8000_r, cargo_subtype) {
 }
 
 // Locomotive facing
-switch (FEAT_TRAINS, SELF, sw_8000_reverse, position_in_consist) {
-    0..2: sw_8000;
+switch (FEAT_TRAINS, SELF, sw_8000_reverse, position_in_consist % 2) {
+    0: sw_8000;
+    1: sw_8000_r;
     sw_8000_r;
 }
 

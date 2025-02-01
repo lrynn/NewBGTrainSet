@@ -136,7 +136,7 @@ STR_REFIT_LIVERY_7x00_FIRST_KORAIL                         : (철도청 초기 �
 STR_REFIT_LIVERY_BLACK_ORANGE                              : (철도청 구 도색: 검정 & 주황)
 STR_REFIT_LIVERY_GREEN_YELLOW                              : (철도청 구 도색: 녹색 & 황색)
 STR_REFIT_LIVERY_BLUE_WHITE                                : (철도청 구 도색: 청색 & 백색)
-STR_REFIT_LIVERY_KWANKWANG                                 : (관광호)
+STR_REFIT_LIVERY_KWANKWANG                                 : (관광호) {TINYFONT}1969~1974
 STR_REFIT_LIVERY_HAERANG                                   : (해랑)
 STR_REFIT_LIVERY_S_TRAIN1                                  : (S-train - 파랑)
 STR_REFIT_LIVERY_S_TRAIN2                                  : (S-train - 분홍)
@@ -163,11 +163,14 @@ STR_REFIT_PASSWAGON_NORMALCAR                              : (일반 객차)
 STR_REFIT_PASSWAGON_FIRSTCAR                               : (특실 객차)
 
 # Refit (Saemaeul car)
-STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_SILVER_BLUE            : (철도청 구 도색 특실, 1970~1983년)
-STR_REFIT_LIVERY_SAEMAEUL_1970_1983                        : (1970~1983년 도색, 적색 & 은색)
-STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_GREEN_YELLOW           : (철도청 구 도색 특실, 녹색 & 황색)
-STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_THESEDAYS              : (Korail 현 도색 특실)
-STR_REFIT_LIVERY_SAEMAEUL_ITX                              : (lnx-새로운마을 도색)
+STR_REFIT_LIVERY_SAEMAEUL_1970_1983                        : (고추장 도색) {TINYFONT}1970~1994
+STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_SILVER_BLUE            : (특실 고추장 도색) {TINYFONT}1970~1994
+STR_REFIT_LIVERY_SAEMAEUL_GREEN_YELLOW                     : (철도청 도색) {TINYFONT}1994~2003
+STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_GREEN_YELLOW           : (특실 철도청 도색) {TINYFONT}1994~2003
+STR_REFIT_LIVERY_SAEMAEUL_RACKRAIL                         : (랙레일 도색) {TINYFONT}2003~
+STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_RACKRAIL               : (특실 랙레일 도색) {TINYFONT}2003~
+STR_REFIT_LIVERY_SAEMAEUL_LIMIT                            : (새로운마을호 리미트 객차) {TINYFONT}2018~
+STR_REFIT_LIVERY_GYEONGBOK                                 : (경복호 새로운마을 도색)
 
 # Refit (Mugunghwa car)
 STR_REFIT_LIVERY_MUGUNGHWA_1970_1983                       : (우등 녹색 / 1970~1983년 도색)

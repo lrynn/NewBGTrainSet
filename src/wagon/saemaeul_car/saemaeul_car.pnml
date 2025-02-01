@@ -59,14 +59,14 @@ item(FEAT_TRAINS, ko_train_SAEMAEUL_CAR, 5601) {
     }
     graphics {
         default:                        sw_SAEMAEUL_CAR_wagon;
-        purchase:                       sw_SAEMAEUL_CAR_purchase;
+        purchase:                       set_SAEMAEUL_CAR_3_purchase;
 
         cost_factor:                    var_SAEMAEUL_CAR_COST;
         running_cost_factor:            var_SAEMAEUL_CAR_RUNNINGCOST;
         cargo_capacity:                 var_SAEMAEUL_CAR_CAPACITY;
         loading_speed:                  var_SAEMAEUL_CAR_LOADINGSPEED;
 
-        can_attach_wagon:               sw_SAEMAEUL_CAR_attach_global;
+        can_attach_wagon:               sw_SAEMAEUL_CAR_attach;
 
         cargo_subtype_text:             sw_SAEMAEUL_CAR_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);

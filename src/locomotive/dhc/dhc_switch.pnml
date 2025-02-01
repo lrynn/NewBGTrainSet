@@ -5,23 +5,26 @@
 // Cargo subtype
 // Same as sw_SAEMAEUL_CAR_subtype_text
 switch(FEAT_TRAINS, SELF, sw_DHC_subtype_text, cargo_subtype) {
-    1: return string(STR_REFIT_LIVERY_SAEMAEUL_1970_1983);
-    2: return string(STR_REFIT_LIVERY_GREEN_YELLOW);
-    6: return string(STR_REFIT_LIVERY_SAEMAEUL_ITX);
-    return string(STR_REFIT_LIVERY_THESEDAYS);
+    2: return string(STR_REFIT_LIVERY_SAEMAEUL_1970_1983);
+    4: return string(STR_REFIT_LIVERY_SAEMAEUL_GREEN_YELLOW);
+    6: return string(STR_REFIT_LIVERY_SAEMAEUL_RACKRAIL);
+    8: return string(STR_REFIT_LIVERY_GYEONGBOK);
+    return string(STR_REFIT_LIVERY_SAEMAEUL_RACKRAIL);
 }
 
 // Refit Paintings
 switch(FEAT_TRAINS, SELF, sw_DHC_engineH, cargo_subtype) {
-    1: set_DHC_1_engineH;
-    2: set_DHC_2_engineH;
-    6: set_NEWMAEUL_engineH;
+    2: set_DHC_1_engineH;
+    4: set_DHC_2_engineH;
+    6: set_DHC_3_engineH;
+    8: set_DHC_NEWMAEUL_engineH;
     set_DHC_3_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_DHC_engineT, cargo_subtype) {
-    1: set_DHC_1_engineT;
-    2: set_DHC_2_engineT;
-    6: set_NEWMAEUL_engineT;
+    2: set_DHC_1_engineT;
+    4: set_DHC_2_engineT;
+    6: set_DHC_3_engineT;
+    8: set_DHC_NEWMAEUL_engineT;
     set_DHC_3_engineT;
 }
 switch(FEAT_TRAINS, SELF, sw_DHC_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {

@@ -54,8 +54,9 @@ switch(FEAT_TRAINS, SELF, sw_7x00_loco_r, cargo_subtype) {
 }
 
 // Locomotive facing
-switch (FEAT_TRAINS, SELF, sw_7x00_loco_reverse, position_in_consist) {
-    0..2: sw_7x00_loco;
+switch (FEAT_TRAINS, SELF, sw_7x00_loco_reverse, position_in_consist % 2) {
+    0: sw_7x00_loco;
+    1: sw_7x00_loco_r;
     sw_7x00_loco_r;
 }
 

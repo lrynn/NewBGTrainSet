@@ -6,8 +6,9 @@
 // None
 
 // Locomotive facing
-switch (FEAT_TRAINS, SELF, sw_8500_reverse, position_in_consist) {
-    0..2: set_8500;
+switch (FEAT_TRAINS, SELF, sw_8500_reverse, position_in_consist % 2) {
+    0: set_8500;
+    1: set_8500_r;
     set_8500_r;
 }
 

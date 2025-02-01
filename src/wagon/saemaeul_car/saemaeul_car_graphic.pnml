@@ -1,10 +1,14 @@
 /*------------------------------------------------------------------------------
-  한국 열차 세트(Korean Train Set)
-  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
-  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+    Saemaeul Graphics
 ------------------------------------------------------------------------------*/
 
-// Graphic
+spriteset(set_SAEMAEUL_CAR_wagon_KWANKWANG_purchase, "./src/wagon/saemaeul_car/KWANKWANG_CAR.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_SAEMAEUL_CAR_wagon_KWANKWANG, "./src/wagon/saemaeul_car/KWANKWANG_CAR.png") {
+    tmpl_standard(80, 0)
+}
+
 spriteset(set_SAEMAEUL_CAR_1_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
     tmpl_purchase_common(0, 0)
 }
@@ -47,21 +51,9 @@ spriteset(set_SAEMAEUL_CAR_executive_3, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.p
     tmpl_standard(80, 150)
 }
 
-spriteset(set_SAEMAEUL_CAR_ITX_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+spriteset(set_SAEMAEUL_CAR_limit_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
     tmpl_purchase_common(0, 180)
 }
-spriteset(set_SAEMAEUL_CAR_ITX, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+spriteset(set_SAEMAEUL_CAR_limit, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
     tmpl_standard(80, 180)
-}
-
-spriteset(set_SAEMAEUL_CAR_wagon_KWANKWANG_purchase, "./src/wagon/saemaeul_car/KWANKWANG_CAR.png") {
-    tmpl_purchase_common(0, 0)
-}
-spriteset(set_SAEMAEUL_CAR_wagon_KWANKWANG, "./src/wagon/saemaeul_car/KWANKWANG_CAR.png") {
-    tmpl_standard(80, 0)
-}
-
-// Alias of purchase image
-switch(FEAT_TRAINS, SELF, sw_SAEMAEUL_CAR_purchase, cargo_subtype) {
-    set_SAEMAEUL_CAR_3_purchase;
 }
