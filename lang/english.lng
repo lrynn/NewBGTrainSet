@@ -41,7 +41,7 @@ STR_SIMJUNG_4CAR_NAME                                       :{PUSH_COLOUR}{GREEN
 STR_SIMJUNG_6CAR_NAME                                       :{PUSH_COLOUR}{GREEN}[6량] {POP_COLOUR}lnx-심정
 STR_NORIRO_NAME                                             :{PUSH_COLOUR}{GREEN}[4량] {POP_COLOUR}노리로
 
-#   Metro
+#   Metro - SEOUL
 STR_group_seoul_1_NAME                                      :수도권 전철 1호선
 STR_SEOUL_1_RESIST_NAME                                     :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}랙레일 1000호대 저항제어 전동차
 STR_SEOUL_1_4CAR_NAME                                       :{PUSH_COLOUR}{GREEN}[4량] {POP_COLOUR}랙레일 319000호대 전동차
@@ -88,6 +88,9 @@ STR_AREX_2K_1_NAME                                          :{PUSH_COLOUR}{GREEN
 STR_AREX_2K_4_NAME                                          :{PUSH_COLOUR}{GREEN}[6량] {POP_COLOUR}공항철도주식회사 2000호대 전동차 4차분
 
 STR_RTX_A_NAME                                              :{PUSH_COLOUR}{GREEN}[8량] {POP_COLOUR}RTX-A
+
+#   Metro - DAEJEON
+STR_DAEJEON_1_NAME                                          :{PUSH_COLOUR}{GREEN}[4량] {POP_COLOUR}대전교통공사 1000호대 전동차
 
 #   LRT
 STR_SILLIM_NAME                                             :{PUSH_COLOUR}{GREEN}[3량] {POP_COLOUR}신림선 SL000호대 전동차
@@ -368,7 +371,7 @@ STR_REFIT_METRO_LINE_5_4_NAME                              : (4차분 - 우진�
 # Refit (Seoul metropolitan 7)
 STR_REFIT_METRO_LINE_7_1_NAME                              : (1차분 - 대우중공업) {TINYFONT}1995~1996
 STR_REFIT_METRO_LINE_7_2_NAME                              : (2차분) {TINYFONT}1999~2000
-STR_REFIT_METRO_LINE_7_3_NAME                              : (3차분) {TINYFONT}2010, 2012
+STR_REFIT_METRO_LINE_7_3_NAME                              : (3차분 SR000호대) {TINYFONT}2010, 2012
 STR_REFIT_METRO_LINE_7_4_NAME                              : (4차분 - 다원시스) {TINYFONT}2020
 STR_REFIT_METRO_LINE_7_5_NAME                              : (5차분 - 우진산전) {TINYFONT}2021~2022
 

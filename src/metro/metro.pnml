@@ -21,5 +21,7 @@ CAPACITY_PURCHASE(METRO_10CAR)
 
 #include "arex/arex.pnml"
 
-// rtx
 #include "rtx/a/rtx_a.pnml"
+
+// Daejeon
+#include "daejeon/1/daejeon_1.pnml"

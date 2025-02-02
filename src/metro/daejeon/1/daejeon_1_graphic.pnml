@@ -1,0 +1,19 @@
+/*------------------------------------------------------------------------------
+    DAEJEON - Line 1 Graphics
+------------------------------------------------------------------------------*/
+
+spriteset(set_DAEJEON_1_engineH, "./src/metro/daejeon/1/DAEJEON_1.png") {
+    tmpl_standard(80, 0)
+}
+spriteset(set_DAEJEON_1_wagon_panto, "./src/metro/daejeon/1/DAEJEON_1.png") {
+    tmpl_standard(80, 30)
+}
+// spriteset(set_DAEJEON_1_wagon, "./src/metro/daejeon/1/DAEJEON_1.png") {
+//     tmpl_standard(80, 60)
+// }
+spriteset(set_DAEJEON_1_engineT, "./src/metro/daejeon/1/DAEJEON_1.png") {
+    tmpl_standard(80, 90)
+}
+spriteset(set_DAEJEON_1_purchase, "./src/metro/daejeon/1/DAEJEON_1.png") {
+    tmpl_purchase_common(0, 0)
+}

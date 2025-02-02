@@ -104,6 +104,8 @@ sort(FEAT_TRAINS, [
 
     RTX_A,                            // 2400
 
+    DAEJEON_1,                        // 3130
+
     // 왜국                            : 61xx
 
     SHIN_E5,                          // 6125
