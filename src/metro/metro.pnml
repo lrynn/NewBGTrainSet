@@ -25,3 +25,6 @@ CAPACITY_PURCHASE(METRO_10CAR)
 
 // Daejeon
 #include "daejeon/1/daejeon_1.pnml"
+
+// Daegu
+#include "daegu/daegyeong/daegyeong.pnml"

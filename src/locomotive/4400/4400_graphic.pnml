@@ -13,15 +13,22 @@ template tmpl_4400(x, y) {
     [x+170,    y,    23,    12,   -16,   -8]
     [x+210,    y,    18,    14,    -7,   -7]
 }
+template tmpl_4400_r(x, y) {
+    [x+120,    y,     8,    20,    -3,   -9]
+    [x+140,    y,    18,    15,   -15,   -5]
+    [x+170,    y,    23,    12,   -16,   -8]
+    [x+210,    y,    18,    14,    -7,   -7]
+    [x+0,      y,     8,    19,    -3,   -9]
+    [x+20,     y,    18,    14,    -9,   -8]
+    [x+50,     y,    23,    12,    -8,   -8]
+    [x+90,     y,    18,    15,    -2,   -6]
+}
 
 // 4400
 spriteset(set_4400_1_purchase, "./src/locomotive/4400/4400.png") {
     tmpl_purchase_common(0, 0)
 }
 spriteset(set_4400_1_loco, "./src/locomotive/4400/4400.png") {   // Green & Yellow
-    tmpl_4400(80, 0)
-}
-spriteset(set_4400_1_loco_r, "./src/locomotive/4400/4400_r.png") {   // Green & Yellow
     tmpl_4400(80, 0)
 }
 
@@ -31,9 +38,6 @@ spriteset(set_4400_2_purchase, "./src/locomotive/4400/4400.png") {
 spriteset(set_4400_2_loco, "./src/locomotive/4400/4400.png") {   // Red & White & Blue print
     tmpl_4400(80, 30)
 }
-spriteset(set_4400_2_loco_r, "./src/locomotive/4400/4400_r.png") {   // Red & White & Blue print
-    tmpl_4400(80, 30)
-}
 
 spriteset(set_4400_V_TRAIN_purchase, "./src/locomotive/4400/4400.png") {
     tmpl_purchase_common(0, 60)
@@ -41,6 +45,10 @@ spriteset(set_4400_V_TRAIN_purchase, "./src/locomotive/4400/4400.png") {
 spriteset(set_4400_V_TRAIN_loco, "./src/locomotive/4400/4400.png") {   // V-train
     tmpl_4400(80, 60)
 }
-spriteset(set_4400_V_TRAIN_loco_r, "./src/locomotive/4400/4400_r.png") {   // V-train
-    tmpl_4400(80, 60)
+
+spriteset(set_4400_GYOOE_purchase, "./src/locomotive/4400/4400_GYOOE.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_4400_GYOOE_loco, "./src/locomotive/4400/4400_GYOOE.png") {   // Red & White & Blue print
+    tmpl_4400(80, 0)
 }

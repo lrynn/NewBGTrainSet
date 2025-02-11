@@ -127,6 +127,14 @@ spriteset(set_GENERATOR_CAR_A_TRAIN, "./src/wagon/generator_car/generator_car.pn
     tmpl_standard(80, 450)
 }
 
+// Gyooe Line
+spriteset(set_GENERATOR_CAR_GYOOE_purchase, "./src/wagon/generator_car/generator_GYOOE.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_GENERATOR_CAR_GYOOE, "./src/wagon/generator_car/generator_GYOOE.png") {
+    tmpl_standard(80, 0)
+}
+
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_GENERATOR_CAR_purchase, cargo_subtype) {
     set_GENERATOR_CAR_LONG_MUGUNGHWA_BLUE_RED_purchase;

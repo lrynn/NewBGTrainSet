@@ -32,6 +32,8 @@
 
 #include "crh/CR400AF/CR400AF.pnml"
 
+#include "tgv/duplex/TGV_duplex.pnml"
+
 // Wagons
 #include "wagon/flat_car/flat_car.pnml"
 #include "wagon/mail_car/mail_car.pnml"

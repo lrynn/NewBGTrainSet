@@ -50,7 +50,7 @@ item(FEAT_TRAINS, ko_train_7x00, 4710) {
         bitmask_vehicle_info:           0;
     }
     graphics {
-        default:                        sw_7x00_loco_reverse;
+        default:                        sw_7x00_loco;
         purchase:                       sw_7x00_purchase;
 
         speed:                          var_7x00_SPEED;

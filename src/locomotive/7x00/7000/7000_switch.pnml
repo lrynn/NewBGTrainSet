@@ -13,18 +13,6 @@ switch(FEAT_TRAINS, SELF, sw_7000_loco, cargo_subtype) {
     2:    set_7000_SILVER_BLUE;
     set_7000_RED_WHITE_BLUE;
 }
-switch(FEAT_TRAINS, SELF, sw_7000_loco_r, cargo_subtype) {
-    1:    set_7000_GREEN_YELLOW_r;
-    2:    set_7000_SILVER_BLUE_r;
-    set_7000_RED_WHITE_BLUE_r;
-}
-
-// Locomotive facing
-switch (FEAT_TRAINS, SELF, sw_7000_loco_reverse, position_in_consist % 2) {
-    0: sw_7000_loco;
-    1: sw_7000_loco_r;
-    sw_7000_loco_r;
-}
 
 // Sound Effects
 switch(FEAT_TRAINS, SELF, sw_7000_sound, extra_callback_info1) {

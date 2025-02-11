@@ -9,9 +9,6 @@ spriteset(set_8x00_RED_WHITE_BLUE_purchase, "./src/locomotive/8x00/8x00.png") {
 spriteset(set_8x00_RED_WHITE_BLUE, "./src/locomotive/8x00/8x00.png") {
     tmpl_standard(80, 0)
 }
-spriteset(set_8x00_RED_WHITE_BLUE_r, "./src/locomotive/8x00/8x00.png") {
-    tmpl_standard_r(80, 0)
-}
 
 // Green & Yellow
 spriteset(set_8x00_GREEN_YELLOW_purchase, "./src/locomotive/8x00/8x00.png") {
@@ -20,7 +17,11 @@ spriteset(set_8x00_GREEN_YELLOW_purchase, "./src/locomotive/8x00/8x00.png") {
 spriteset(set_8x00_GREEN_YELLOW, "./src/locomotive/8x00/8x00.png") {
     tmpl_standard(80, 30)
 }
-spriteset(set_8x00_GREEN_YELLOW_r, "./src/locomotive/8x00/8x00.png") {
-    tmpl_standard_r(80, 30)
-}
 
+// Deutsche Bahn
+// spriteset(set_8x00_DB_purchase, "./src/locomotive/8x00/8x00/eurosprinter.png") {
+//     tmpl_purchase_common(0, 0)
+// }
+// spriteset(set_8x00_DB, "./src/locomotive/8x00/8x00/eurosprinter.png") {
+//     tmpl_standard(80, 0)
+// }

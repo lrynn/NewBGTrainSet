@@ -1,0 +1,16 @@
+/*------------------------------------------------------------------------------
+    DAEGYEONG Graphics
+------------------------------------------------------------------------------*/
+
+spriteset(set_DAEGYEONG_engineH, "./src/metro/daegu/daegyeong/DAEGYEONG_1.png") {
+    tmpl_standard(80, 0)
+}
+// spriteset(set_DAEGYEONG_wagon, "./src/metro/daegu/daegyeong/DAEGYEONG_1.png") {
+//     tmpl_standard(80, 60)
+// }
+spriteset(set_DAEGYEONG_engineT, "./src/metro/daegu/daegyeong/DAEGYEONG_1.png") {
+    tmpl_standard_r(80, 60)
+}
+spriteset(set_DAEGYEONG_purchase, "./src/metro/daegu/daegyeong/DAEGYEONG_1.png") {
+    tmpl_purchase_common(0, 0)
+}

@@ -1,0 +1,148 @@
+/*--------------------------------------------------------------------
+    TGV Duplex Graphics
+--------------------------------------------------------------------*/
+
+
+// TGV Duplex
+
+spriteset(set_TGV_duplex_purchase, "src/tgv/duplex/TGV_duplex.png"){
+    tmpl_purchase(0, 0)
+}
+spriteset(set_TGV_duplex_engineH, "src/tgv/duplex/TGV_duplex.png"){
+    DTS_temp(80, 0)
+}
+spriteset(set_TGV_duplex_engineH_r, "src/tgv/duplex/TGV_duplex.png"){
+    DTS_temp(80, 27)
+}
+spriteset(set_TGV_duplex_wagon_F1, "src/tgv/duplex/TGV_duplex.png"){
+    DTS_temp(80, 54)
+}
+spriteset(set_TGV_duplex_wagon_F1_r, "src/tgv/duplex/TGV_duplex.png"){
+    DTS_temp_r(80, 54)
+}
+spriteset(set_TGV_duplex_wagon_C, "src/tgv/duplex/TGV_duplex.png") {
+    DTS_temp(80, 108)
+}
+spriteset(set_TGV_duplex_wagon_C_r, "src/tgv/duplex/TGV_duplex.png") {
+    DTS_temp_r(80, 108)
+}
+spriteset(set_TGV_duplex_wagon_T1, "src/tgv/duplex/TGV_duplex.png") {
+    DTS_temp(80, 135)
+}
+spriteset(set_TGV_duplex_wagon_T1_r, "src/tgv/duplex/TGV_duplex.png") {
+    DTS_temp_r(80, 135)
+}
+spriteset(set_TGV_duplex_engineT_r, "src/tgv/duplex/TGV_duplex.png"){
+    DTS_temp(80, 189)
+}
+spriteset(set_TGV_duplex_engineT, "src/tgv/duplex/TGV_duplex.png"){
+    DTS_temp(80, 216)
+}
+
+// TGV Carmillon
+
+spriteset(set_TGV_duplex_carmillon_purchase, "src/tgv/duplex/TGV_duplex_carmillon.png"){
+    tmpl_purchase(0, 0)
+}
+spriteset(set_TGV_duplex_carmillon_engineH, "src/tgv/duplex/TGV_duplex_carmillon.png"){
+    DTS_temp(80, 0)
+}
+spriteset(set_TGV_duplex_carmillon_engineH_r, "src/tgv/duplex/TGV_duplex_carmillon.png"){
+    DTS_temp(80, 27)
+}
+spriteset(set_TGV_duplex_carmillon_wagon_F1, "src/tgv/duplex/TGV_duplex_carmillon.png"){
+    DTS_temp(80, 54)
+}
+spriteset(set_TGV_duplex_carmillon_wagon_F1_r, "src/tgv/duplex/TGV_duplex_carmillon.png"){
+    DTS_temp_r(80, 54)
+}
+spriteset(set_TGV_duplex_carmillon_wagon_C, "src/tgv/duplex/TGV_duplex_carmillon.png") {
+    DTS_temp(80, 108)
+}
+spriteset(set_TGV_duplex_carmillon_wagon_C_r, "src/tgv/duplex/TGV_duplex_carmillon.png") {
+    DTS_temp_r(80, 108)
+}
+spriteset(set_TGV_duplex_carmillon_wagon_T1, "src/tgv/duplex/TGV_duplex_carmillon.png") {
+    DTS_temp(80, 135)
+}
+spriteset(set_TGV_duplex_carmillon_wagon_T1_r, "src/tgv/duplex/TGV_duplex_carmillon.png") {
+    DTS_temp_r(80, 135)
+}
+spriteset(set_TGV_duplex_carmillon_engineT_r, "src/tgv/duplex/TGV_duplex_carmillon.png"){
+    DTS_temp(80, 189)
+}
+spriteset(set_TGV_duplex_carmillon_engineT, "src/tgv/duplex/TGV_duplex_carmillon.png"){
+    DTS_temp(80, 216)
+}
+
+// TGV Lyria
+
+spriteset(set_TGV_duplex_lyria_purchase, "src/tgv/duplex/TGV_duplex_lyria.png"){
+    tmpl_purchase(0, 0)
+}
+spriteset(set_TGV_duplex_lyria_engineH, "src/tgv/duplex/TGV_duplex_lyria.png"){
+    DTS_temp(80, 0)
+}
+spriteset(set_TGV_duplex_lyria_engineH_r, "src/tgv/duplex/TGV_duplex_lyria.png"){
+    DTS_temp(80, 27)
+}
+spriteset(set_TGV_duplex_lyria_wagon_F1, "src/tgv/duplex/TGV_duplex_lyria.png"){
+    DTS_temp(80, 54)
+}
+spriteset(set_TGV_duplex_lyria_wagon_F1_r, "src/tgv/duplex/TGV_duplex_lyria.png"){
+    DTS_temp_r(80, 54)
+}
+spriteset(set_TGV_duplex_lyria_wagon_C, "src/tgv/duplex/TGV_duplex_lyria.png") {
+    DTS_temp(80, 108)
+}
+spriteset(set_TGV_duplex_lyria_wagon_C_r, "src/tgv/duplex/TGV_duplex_lyria.png") {
+    DTS_temp_r(80, 108)
+}
+spriteset(set_TGV_duplex_lyria_wagon_T1, "src/tgv/duplex/TGV_duplex_lyria.png") {
+    DTS_temp(80, 135)
+}
+spriteset(set_TGV_duplex_lyria_wagon_T1_r, "src/tgv/duplex/TGV_duplex_lyria.png") {
+    DTS_temp_r(80, 135)
+}
+spriteset(set_TGV_duplex_lyria_engineT_r, "src/tgv/duplex/TGV_duplex_lyria.png"){
+    DTS_temp(80, 189)
+}
+spriteset(set_TGV_duplex_lyria_engineT, "src/tgv/duplex/TGV_duplex_lyria.png"){
+    DTS_temp(80, 216)
+}
+
+// Ouigo
+
+spriteset(set_TGV_duplex_ouigo_purchase, "src/tgv/duplex/TGV_duplex_ouigo.png"){
+    tmpl_purchase(0, 0)
+}
+spriteset(set_TGV_duplex_ouigo_engineH, "src/tgv/duplex/TGV_duplex_ouigo.png"){
+    DTS_temp(80, 0)
+}
+spriteset(set_TGV_duplex_ouigo_engineH_r, "src/tgv/duplex/TGV_duplex_ouigo.png"){
+    DTS_temp(80, 27)
+}
+spriteset(set_TGV_duplex_ouigo_wagon_F1, "src/tgv/duplex/TGV_duplex_ouigo.png"){
+    DTS_temp(80, 54)
+}
+spriteset(set_TGV_duplex_ouigo_wagon_F1_r, "src/tgv/duplex/TGV_duplex_ouigo.png"){
+    DTS_temp_r(80, 54)
+}
+spriteset(set_TGV_duplex_ouigo_wagon_C, "src/tgv/duplex/TGV_duplex_ouigo.png") {
+    DTS_temp(80, 108)
+}
+spriteset(set_TGV_duplex_ouigo_wagon_C_r, "src/tgv/duplex/TGV_duplex_ouigo.png") {
+    DTS_temp_r(80, 108)
+}
+spriteset(set_TGV_duplex_ouigo_wagon_T1, "src/tgv/duplex/TGV_duplex_ouigo.png") {
+    DTS_temp(80, 135)
+}
+spriteset(set_TGV_duplex_ouigo_wagon_T1_r, "src/tgv/duplex/TGV_duplex_ouigo.png") {
+    DTS_temp_r(80, 135)
+}
+spriteset(set_TGV_duplex_ouigo_engineT_r, "src/tgv/duplex/TGV_duplex_ouigo.png"){
+    DTS_temp(80, 189)
+}
+spriteset(set_TGV_duplex_ouigo_engineT, "src/tgv/duplex/TGV_duplex_ouigo.png"){
+    DTS_temp(80, 216)
+}

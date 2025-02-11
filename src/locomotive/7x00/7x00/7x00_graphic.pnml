@@ -9,9 +9,6 @@ spriteset(set_7x00_RED_WHITE_BLUE_purchase, "./src/locomotive/7x00/7x00.png") {
 spriteset(set_7x00_RED_WHITE_BLUE, "./src/locomotive/7x00/7x00.png") {
     tmpl_standard(80, 0)
 }
-spriteset(set_7x00_RED_WHITE_BLUE_r, "./src/locomotive/7x00/7x00.png") {
-    tmpl_standard_r(80, 0)
-}
 
 // Blue & White
 spriteset(set_7x00_BLUE_WHITE_purchase, "./src/locomotive/7x00/7x00.png") {
@@ -19,9 +16,6 @@ spriteset(set_7x00_BLUE_WHITE_purchase, "./src/locomotive/7x00/7x00.png") {
 }
 spriteset(set_7x00_BLUE_WHITE, "./src/locomotive/7x00/7x00.png") {
     tmpl_standard(80, 90)
-}
-spriteset(set_7x00_BLUE_WHITE_r, "./src/locomotive/7x00/7x00.png") {
-    tmpl_standard_r(80, 90)
 }
 
 // Black & Orange
@@ -31,9 +25,6 @@ spriteset(set_7x00_BLACK_ORANGE_purchase, "./src/locomotive/7x00/7x00.png") {
 spriteset(set_7x00_BLACK_ORANGE, "./src/locomotive/7x00/7x00.png") {
     tmpl_standard(80, 60)
 }
-spriteset(set_7x00_BLACK_ORANGE_r, "./src/locomotive/7x00/7x00.png") {
-    tmpl_standard_r(80, 60)
-}
 
 // Kwangkwang-ho
 spriteset(set_7x00_KWANKWANG_purchase, "./src/locomotive/7x00/7x00.png") {
@@ -41,9 +32,6 @@ spriteset(set_7x00_KWANKWANG_purchase, "./src/locomotive/7x00/7x00.png") {
 }
 spriteset(set_7x00_KWANKWANG, "./src/locomotive/7x00/7x00.png") {
     tmpl_standard(80, 120)
-}
-spriteset(set_7x00_KWANKWANG_r, "./src/locomotive/7x00/7x00.png") {
-    tmpl_standard_r(80, 120)
 }
 
 // Green & Yellow
@@ -53,9 +41,6 @@ spriteset(set_7x00_GREEN_YELLOW_purchase, "./src/locomotive/7x00/7x00.png") {
 spriteset(set_7x00_GREEN_YELLOW, "./src/locomotive/7x00/7x00.png") {
     tmpl_standard(80, 150)
 }
-spriteset(set_7x00_GREEN_YELLOW_r, "./src/locomotive/7x00/7x00.png") {
-    tmpl_standard_r(80, 150)
-}
 
 // Cargo
 spriteset(set_7x00_CARGO_purchase, "./src/locomotive/7x00/7x00.png") {
@@ -63,9 +48,6 @@ spriteset(set_7x00_CARGO_purchase, "./src/locomotive/7x00/7x00.png") {
 }
 spriteset(set_7x00_CARGO, "./src/locomotive/7x00/7x00.png") {
     tmpl_standard(80, 180)
-}
-spriteset(set_7x00_CARGO_r, "./src/locomotive/7x00/7x00.png") {
-    tmpl_standard_r(80, 180)
 }
 
 // HAERANG
@@ -75,9 +57,6 @@ spriteset(set_7x00_HAERANG_purchase, "./src/locomotive/7x00/7x00.png") {
 spriteset(set_7x00_HAERANG, "./src/locomotive/7x00/7x00.png") {
     tmpl_standard(80, 210)
 }
-spriteset(set_7x00_HAERANG_r, "./src/locomotive/7x00/7x00.png") {
-    tmpl_standard_r(80, 210)
-}
 
 // G-train
 spriteset(set_7x00_G_TRAIN_purchase, "./src/locomotive/7x00/7x00.png") {
@@ -86,9 +65,6 @@ spriteset(set_7x00_G_TRAIN_purchase, "./src/locomotive/7x00/7x00.png") {
 spriteset(set_7x00_G_TRAIN, "./src/locomotive/7x00/7x00.png") {
     tmpl_standard(80, 240)
 }
-spriteset(set_7x00_G_TRAIN_r, "./src/locomotive/7x00/7x00.png") {
-    tmpl_standard_r(80, 240)
-}
 
 // S-train
 spriteset(set_7x00_S_TRAIN_purchase, "./src/locomotive/7x00/7x00.png") {
@@ -96,9 +72,6 @@ spriteset(set_7x00_S_TRAIN_purchase, "./src/locomotive/7x00/7x00.png") {
 }
 spriteset(set_7x00_S_TRAIN, "./src/locomotive/7x00/7x00.png") {
     tmpl_standard(80, 270)
-}
-spriteset(set_7x00_S_TRAIN_r, "./src/locomotive/7x00/7x00.png") {
-    tmpl_standard_r(80, 270)
 }
 
 // Alias of purchase image

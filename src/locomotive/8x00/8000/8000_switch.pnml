@@ -7,22 +7,10 @@ switch(FEAT_TRAINS, SELF, sw_8000_cargo_subtype_text, cargo_subtype) {
     2:    return string(STR_REFIT_LIVERY_GREEN_YELLOW);
     return string(STR_REFIT_LIVERY_THESEDAYS);
 }
-switch(FEAT_TRAINS, SELF, sw_8000, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_8000_loco, cargo_subtype) {
     1:    set_8000_BLUE_WHITE;
     2:    set_8000_GREEN_YELLOW;
     set_8000_RED_WHITE_BLUE;
-}
-switch(FEAT_TRAINS, SELF, sw_8000_r, cargo_subtype) {
-    1:    set_8000_BLUE_WHITE_r;
-    2:    set_8000_GREEN_YELLOW_r;
-    set_8000_RED_WHITE_BLUE_r;
-}
-
-// Locomotive facing
-switch (FEAT_TRAINS, SELF, sw_8000_reverse, position_in_consist % 2) {
-    0: sw_8000;
-    1: sw_8000_r;
-    sw_8000_r;
 }
 
 // SAEMAEUL_CAR

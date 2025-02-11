@@ -106,6 +106,13 @@ sort(FEAT_TRAINS, [
 
     DAEJEON_1,                        // 3130
 
+    DAEGYEONG,                        // 3922
+
+    // 여기서부터는 경전철입니다
+
+    SILLIM,                           // 7203
+    GIMPO_GOAL,                       // 7302
+
     // 왜국                            : 61xx
 
     SHIN_E5,                          // 6125
@@ -126,10 +133,13 @@ sort(FEAT_TRAINS, [
     CR400AF_16CAR,                    // 6646
     CR400AF_17CAR,                    // 6647
 
-    // 여기서부터는 경전철입니다
+    // 유럽                             : 67xx...68xx
 
-    SILLIM,                           // 7203
-    GIMPO_GOAL,                       // 7302
+    group_TGV_DUPLEX,                 // 6701
+    TGV_DUPLEX,                       // 6700
+    TGV_RESEAU_DUPLEX,                // 6703
+    TGV_DUPLEX_DASYE,                 // 6705
+    TGV_2N2,                          // 6707
 
     // 여기서부터는 객차입니다
 

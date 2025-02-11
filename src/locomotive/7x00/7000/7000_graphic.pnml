@@ -9,9 +9,6 @@ spriteset(set_7000_SILVER_BLUE_purchase, "./src/locomotive/7x00/7000/7000.png") 
 spriteset(set_7000_SILVER_BLUE, "./src/locomotive/7x00/7000/7000.png") {
     tmpl_standard(80, 0)
 }
-spriteset(set_7000_SILVER_BLUE_r, "./src/locomotive/7x00/7000/7000.png") {
-    tmpl_standard_r(80, 0)
-}
 
 
 // Green & Yellow
@@ -21,9 +18,6 @@ spriteset(set_7000_GREEN_YELLOW_purchase, "./src/locomotive/7x00/7000/7000.png")
 spriteset(set_7000_GREEN_YELLOW, "./src/locomotive/7x00/7000/7000.png") {
     tmpl_standard(80, 30)
 }
-spriteset(set_7000_GREEN_YELLOW_r, "./src/locomotive/7x00/7000/7000.png") {
-    tmpl_standard_r(80, 30)
-}
 
 // Red & White & Blue
 spriteset(set_7000_RED_WHITE_BLUE_purchase, "./src/locomotive/7x00/7000/7000.png") {
@@ -31,9 +25,6 @@ spriteset(set_7000_RED_WHITE_BLUE_purchase, "./src/locomotive/7x00/7000/7000.png
 }
 spriteset(set_7000_RED_WHITE_BLUE, "./src/locomotive/7x00/7000/7000.png") {
     tmpl_standard(80, 60)
-}
-spriteset(set_7000_RED_WHITE_BLUE_r, "./src/locomotive/7x00/7000/7000.png") {
-    tmpl_standard_r(80, 60)
 }
 
 // Alias of purchase image

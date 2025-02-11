@@ -11,17 +11,6 @@ switch(FEAT_TRAINS, SELF, sw_7600_loco, cargo_subtype) {
     13: set_7600_A_TRAIN;
     set_7600_CARGO;
 }
-switch(FEAT_TRAINS, SELF, sw_7600_loco_r, cargo_subtype) {
-    13: set_7600_A_TRAIN_r;
-    set_7600_CARGO_r;
-}
-
-// Locomotive facing
-switch (FEAT_TRAINS, SELF, sw_7600_loco_reverse, position_in_consist % 2) {
-    0: sw_7600_loco;
-    1: sw_7600_loco_r;
-    sw_7600_loco_r;
-}
 
 // MUGUNGHWA_CAR
 switch(FEAT_TRAINS, SELF, sw_7600_MUGUNGHWA_CAR_wagon, cargo_subtype) {

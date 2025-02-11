@@ -92,6 +92,9 @@ STR_RTX_A_NAME                                              :{PUSH_COLOUR}{GREEN
 #   Metro - DAEJEON
 STR_DAEJEON_1_NAME                                          :{PUSH_COLOUR}{GREEN}[4량] {POP_COLOUR}대전교통공사 1000호대 전동차
 
+#   Metro - DAEGU
+STR_DAEGYEONG_NAME                                          :{PUSH_COLOUR}{GREEN}[2량] {POP_COLOUR}랙레일 392000호대 전동차
+
 #   LRT
 STR_SILLIM_NAME                                             :{PUSH_COLOUR}{GREEN}[3량] {POP_COLOUR}신림선 SL000호대 전동차
 STR_GIMPO_GOAL_NAME                                         :{PUSH_COLOUR}{GREEN}[2량] {POP_COLOUR}김포 골때리는 전동차
@@ -136,6 +139,7 @@ STR_REFIT_LIVERY_7000_SILVER_BLUE                          : (철도청 구 도�
 STR_REFIT_LIVERY_7x00_CARGO                                : (화물 도색)
 STR_REFIT_LIVERY_7x00_BLACK_ORANGE                         : (철도청 초기 도색: 검정 & 주황)
 STR_REFIT_LIVERY_7x00_FIRST_KORAIL                         : (철도청 초기 도색: 청색 & 백색)
+STR_REFIT_LIVERY_DEUTSCHEBAHN                              : (독일철도)
 STR_REFIT_LIVERY_BLACK_ORANGE                              : (철도청 구 도색: 검정 & 주황)
 STR_REFIT_LIVERY_GREEN_YELLOW                              : (철도청 구 도색: 녹색 & 황색)
 STR_REFIT_LIVERY_BLUE_WHITE                                : (철도청 구 도색: 청색 & 백색)
@@ -146,6 +150,7 @@ STR_REFIT_LIVERY_S_TRAIN2                                  : (S-train - 분홍)
 STR_REFIT_LIVERY_G_TRAIN                                   : (G-train)
 STR_REFIT_LIVERY_7600_A_TRAIN                              : (정선 아리랑 열차)
 STR_REFIT_LIVERY_V_TRAIN                                   : (V-train)
+STR_REFIT_LIVERY_GYOOE                                     : (교외선)
 STR_REFIT_LIVERY_NURIRO                                    : (기본)
 STR_REFIT_LIVERY_O_TRAIN                                   : (O-train)
 STR_REFIT_LIVERY_NURIRO_KOREAN_WAVE                        : (한류관광열차)
@@ -461,3 +466,15 @@ STR_CR400AF_17CAR_NAME                                      :{PUSH_COLOUR}{GREEN
 
 STR_REFIT_CR400AF_NAME                                      : (일반형)
 STR_REFIT_CR400AF_Z_NAME                                    : (지능형)
+
+#   France
+STR_REFIT_TGV_ATLANTIC_BLUE_NAME                            : (아틀란틱 블루)
+STR_REFIT_TGV_CARMILLON_NAME                                : (카밀론)
+STR_REFIT_TGV_OUIGO_NAME                                    : (OUIGO)
+STR_REFIT_TGV_LYRIA_NAME                                    : (TGV Lyria)
+
+STR_group_TGV_DUPLEX_NAME                                   :TGV 듀플렉스
+STR_TGV_DUPLEX_NAME                                         :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}TGV 듀플렉스
+STR_TGV_RESEAU_DUPLEX_NAME                                  :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}TGV 레조 듀플렉스
+STR_TGV_DUPLEX_DASYE_NAME                                   :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}TGV 듀플렉스 다시
+STR_TGV_2N2_NAME                                            :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}TGV 2N2

@@ -1,29 +1,26 @@
 /*------------------------------------------------------------------------------
-  8500
+    Daegyeong Line
 ------------------------------------------------------------------------------*/
 
 // Graphics
-#include "8500_graphic.pnml"
+#include "daegyeong_graphic.pnml"
 
 // Switch
-#include "8500_switch.pnml"
+#include "daegyeong_switch.pnml"
 
-// Item
-item(FEAT_TRAINS, ko_train_8500, 4820) {
+item(FEAT_TRAINS, DAEGYEONG, 3922) {
     property {
         // Common properties
-        name:                           string(STR_8500_NAME);
+        name:                           string(STR_DAEGYEONG_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              var_8500_INTRODUCTION;
+        introduction_date:              date(2024, 1, 1);
         track_type:                     ELRL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
-        variant_group:                  group_8x00;
 
         // Spec
-        speed:                          var_8500_SPEED km/h;
-        power:                          var_8500_POWER;
-        weight:                         var_8500_WEIGHT;
+        power:                          var_DAEGYEONG_POWER;
+        weight:                         var_DAEGYEONG_WEIGHT;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.01;
 
@@ -34,10 +31,10 @@ item(FEAT_TRAINS, ko_train_8500, 4820) {
         reliability_decay:              0;
 
         // Cargo
-        cargo_capacity:                 0;
+        cargo_capacity:                 1;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [];
+        cargo_allow_refit:              [PASS];
         cargo_disallow_refit:           [];
 
         // Costs
@@ -47,21 +44,22 @@ item(FEAT_TRAINS, ko_train_8500, 4820) {
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
         misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
-        bitmask_vehicle_info:           0;
     }
     graphics {
-        default:                        sw_8500_loco;
-        purchase:                       set_8500_purchase;
+        default:                        sw_DAEGYEONG_reversed;
+        articulated_part:               sw_articulated_DAEGYEONG;
+        purchase:                       set_DAEGYEONG_purchase;
 
-        speed:                          var_8500_SPEED;
-        cost_factor:                    var_8500_COST;
-        running_cost_factor:            var_8500_RUNNINGCOST;
-        cargo_capacity:                 0;
+        speed:                          var_METRO_SPEED;
+        cost_factor:                    var_DAEGYEONG_COST;
+        running_cost_factor:            var_DAEGYEONG_RUNNINGCOST;
+        cargo_capacity:                 var_METRO_CAPACITY;
+        purchase_cargo_capacity:        var_METRO_CAPACITY;
+        loading_speed:                  sw_METRO_loadingspeed;
 
-        can_attach_wagon:               sw_Kxxxx_attach_global;
+        can_attach_wagon:               sw_METRO_attach_global;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
 
-        sound_effect:                   sw_8500_sound;
+        sound_effect:                   sw_DAEGYEONG_sound;
     }
 }
-// End of "8500"
