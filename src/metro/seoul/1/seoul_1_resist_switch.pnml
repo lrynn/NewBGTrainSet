@@ -24,7 +24,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_1_RESIST_engineH, cargo_subtype) {
     5:    set_1K_RHEO_SECOND_3_engineH;
     6:    set_1K_RHEO_LAST_1_engineH;
     7:    set_1K_RHEO_LAST_2_engineH;
-    set_1K_RHEO_LAST_2_engineH;
+    set_1K_RHEO_FIRST_1_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_SEOUL_1_RESIST_wagon, cargo_subtype) {
     1:   set_1K_RHEO_FIRST_1_wagon;
@@ -34,7 +34,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_1_RESIST_wagon, cargo_subtype) {
     5:    set_1K_RHEO_SECOND_3_wagon;
     6:    set_1K_RHEO_LAST_1_wagon;
     7:    set_1K_RHEO_LAST_2_wagon;
-    set_1K_RHEO_LAST_2_wagon;
+    set_1K_RHEO_FIRST_1_wagon;
 }
 switch(FEAT_TRAINS, SELF, sw_SEOUL_1_RESIST_wagon_panto, cargo_subtype) {
     1:   set_1K_RHEO_FIRST_1_wagon_panto;
@@ -44,7 +44,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_1_RESIST_wagon_panto, cargo_subtype) {
     5:    set_1K_RHEO_SECOND_3_wagon_panto;
     6:    set_1K_RHEO_LAST_1_wagon_panto;
     7:    set_1K_RHEO_LAST_2_wagon_panto;
-    set_1K_RHEO_LAST_2_wagon_panto;
+    set_1K_RHEO_FIRST_1_wagon_panto;
 }
 switch(FEAT_TRAINS, SELF, sw_SEOUL_1_RESIST_engineT_r, cargo_subtype) {
     1:   set_1K_RHEO_FIRST_1_engineT_r;
@@ -54,7 +54,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_1_RESIST_engineT_r, cargo_subtype) {
     5:    set_1K_RHEO_SECOND_3_engineT_r;
     6:    set_1K_RHEO_LAST_1_engineT_r;
     7:    set_1K_RHEO_LAST_2_engineT_r;
-    set_1K_RHEO_LAST_2_engineT_r;
+    set_1K_RHEO_FIRST_1_engineT_r;
 }
 
 // Train Composition

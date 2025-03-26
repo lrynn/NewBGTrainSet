@@ -42,7 +42,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_1_engineH, cargo_subtype) {
     22:   set_LINE_1_2019_engineH;
     23:   set_LINE_1_2021_engineH;
     24:   set_LINE_1_2022_W_engineH;
-    set_3XXK_AL_engineH;
+    set_311K_1_1_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_SEOUL_1_wagon, cargo_subtype) {
     1:    set_311K_1_1_wagon;
@@ -60,7 +60,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_1_wagon, cargo_subtype) {
     22:   set_LINE_1_2019_wagon;
     23:   set_LINE_1_2021_wagon;
     24:   set_LINE_1_2022_W_wagon;
-    set_3XXK_AL_wagon;
+    set_311K_1_1_wagon;
 }
 switch(FEAT_TRAINS, SELF, sw_SEOUL_1_wagon_panto, cargo_subtype) {
     1:    set_311K_1_1_wagon_panto;
@@ -78,7 +78,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_1_wagon_panto, cargo_subtype) {
     22:   set_LINE_1_2019_wagon_panto;
     23:   set_LINE_1_2021_wagon_panto;
     24:   set_LINE_1_2022_W_wagon_panto;
-    set_3XXK_AL_wagon_panto;
+    set_311K_1_1_wagon_panto;
 }
 switch(FEAT_TRAINS, SELF, sw_SEOUL_1_engineT_r, cargo_subtype) {
     1:    set_311K_1_1_engineT_r;
@@ -96,7 +96,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_1_engineT_r, cargo_subtype) {
     22:   set_LINE_1_2019_engineT_r;
     23:   set_LINE_1_2021_engineT_r;
     24:   set_LINE_1_2022_W_engineT_r;
-    set_3XXK_AL_engineT_r;
+    set_311K_1_1_engineT_r;
 }
 
 // Sounds

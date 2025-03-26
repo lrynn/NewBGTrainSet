@@ -1,0 +1,77 @@
+/*------------------------------------------------------------------------------
+    SUIN-BUNDANG LINE Graphics
+------------------------------------------------------------------------------*/
+
+// 납작이
+spriteset(set_SUIN_BUNDANG_1_1_engineH, "./src/metro/seoul/suin_bundang/suin_bundang_1_1.png") {
+    tmpl_standard(80, 0)
+}
+spriteset(set_SUIN_BUNDANG_1_1_wagon_panto, "./src/metro/seoul/suin_bundang/suin_bundang_1_1.png") {
+    tmpl_standard(80, 30)
+}
+spriteset(set_SUIN_BUNDANG_1_1_wagon, "./src/metro/seoul/suin_bundang/suin_bundang_1_1.png") {
+    tmpl_standard(80, 60)
+}
+spriteset(set_SUIN_BUNDANG_1_1_engineT, "./src/metro/seoul/suin_bundang/suin_bundang_1_1.png") {
+    tmpl_standard_r(80, 90)
+}
+
+spriteset(set_SUIN_BUNDANG_1_2_engineH, "./src/metro/seoul/suin_bundang/suin_bundang_1_2.png") {
+    tmpl_standard(80, 0)
+}
+spriteset(set_SUIN_BUNDANG_1_2_wagon_panto, "./src/metro/seoul/suin_bundang/suin_bundang_1_2.png") {
+    tmpl_standard(80, 30)
+}
+spriteset(set_SUIN_BUNDANG_1_2_wagon, "./src/metro/seoul/suin_bundang/suin_bundang_1_2.png") {
+    tmpl_standard(80, 60)
+}
+spriteset(set_SUIN_BUNDANG_1_2_engineT, "./src/metro/seoul/suin_bundang/suin_bundang_1_2.png") {
+    tmpl_standard_r(80, 90)
+}
+
+// 동글이
+spriteset(set_SUIN_BUNDANG_2_engineH, "./src/metro/seoul/suin_bundang/suin_bundang_2.png") {
+    tmpl_standard(80, 0)
+}
+spriteset(set_SUIN_BUNDANG_2_wagon_panto, "./src/metro/seoul/suin_bundang/suin_bundang_2.png") {
+    tmpl_standard(80, 30)
+}
+spriteset(set_SUIN_BUNDANG_2_wagon, "./src/metro/seoul/suin_bundang/suin_bundang_2.png") {
+    tmpl_standard(80, 60)
+}
+spriteset(set_SUIN_BUNDANG_2_engineT, "./src/metro/seoul/suin_bundang/suin_bundang_2.png") {
+    tmpl_standard_r(80, 90)
+}
+
+// 뱀눈이
+spriteset(set_SUIN_BUNDANG_3_engineH, "./src/metro/seoul/suin_bundang/suin_bundang_3.png") {
+    tmpl_standard(80, 0)
+}
+spriteset(set_SUIN_BUNDANG_3_wagon_panto, "./src/metro/seoul/suin_bundang/suin_bundang_3.png") {
+    tmpl_standard(80, 30)
+}
+spriteset(set_SUIN_BUNDANG_3_wagon, "./src/metro/seoul/suin_bundang/suin_bundang_3.png") {
+    tmpl_standard(80, 60)
+}
+spriteset(set_SUIN_BUNDANG_3_engineT, "./src/metro/seoul/suin_bundang/suin_bundang_3.png") {
+    tmpl_standard_r(80, 90)
+}
+
+// 주둥이
+spriteset(set_SUIN_BUNDANG_4_engineH, "./src/metro/seoul/suin_bundang/suin_bundang_4.png") {
+    tmpl_standard(80, 0)
+}
+spriteset(set_SUIN_BUNDANG_4_wagon_panto, "./src/metro/seoul/suin_bundang/suin_bundang_4.png") {
+    tmpl_standard(80, 30)
+}
+spriteset(set_SUIN_BUNDANG_4_wagon, "./src/metro/seoul/suin_bundang/suin_bundang_4.png") {
+    tmpl_standard(80, 60)
+}
+spriteset(set_SUIN_BUNDANG_4_engineT, "./src/metro/seoul/suin_bundang/suin_bundang_4.png") {
+    tmpl_standard_r(80, 90)
+}
+
+
+spriteset(set_SUIN_BUNDANG_purchase, "./src/metro/seoul/suin_bundang/suin_bundang_4.png") {
+    tmpl_purchase_common(0, 0)
+}

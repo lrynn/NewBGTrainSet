@@ -104,6 +104,8 @@ sort(FEAT_TRAINS, [
 
     RTX_A,                            // 2400
 
+    SUIN_BUNDANG,                     // 3516
+
     DAEJEON_1,                        // 3130
 
     DAEGYEONG,                        // 3922

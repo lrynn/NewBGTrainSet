@@ -23,6 +23,8 @@ CAPACITY_PURCHASE(METRO_10CAR)
 
 #include "rtx/a/rtx_a.pnml"
 
+#include "seoul/suin_bundang/suin_bundang.pnml"
+
 // Daejeon
 #include "daejeon/1/daejeon_1.pnml"
 
