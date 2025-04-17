@@ -50,7 +50,7 @@ item(FEAT_TRAINS, DAEGYEONG, 3922) {
         articulated_part:               sw_articulated_DAEGYEONG;
         purchase:                       set_DAEGYEONG_purchase;
 
-        speed:                          var_METRO_SPEED;
+        speed:                          var_DAEGYEONG_SPEED;
         cost_factor:                    var_DAEGYEONG_COST;
         running_cost_factor:            var_DAEGYEONG_RUNNINGCOST;
         cargo_capacity:                 var_METRO_CAPACITY;

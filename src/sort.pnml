@@ -58,7 +58,8 @@ sort(FEAT_TRAINS, [
     SIMJUNG_6car,                     // 2206
     NORIRO,                           // 2004
 
-    DHC,                              // 2090
+    DHC,                              // 5520 <- 냅둬
+    CDC,                              // 2070
 
     group_seoul_1,                    // 3111
     SEOUL_1_metro_resist,             // 3120
@@ -149,6 +150,7 @@ sort(FEAT_TRAINS, [
     ko_train_MUGUNGHWA_CAR,          // 5602
     ko_train_CAFE_CAR,               // 5603
     ko_train_TONGIL_CAR,             // 5604
+
     ko_train_BIDULGI_CAR,            // 5605
     ko_train_SLEEPING_CAR,           // 5606
     ko_train_GENERATOR_CAR,          // 5610

@@ -27,6 +27,8 @@ STR_8x00_NAME                                               :SIEMENS Eurosprinte
 STR_8500_NAME                                               :화물용 전기기관차 {GREEN}{TINYFONT}(8500호대 전기기관차)
 
 STR_DHC_NAME                                                :DHC 디젤동차
+STR_NDC_NAME                                                :NDC 디젤동차
+STR_CDC_NAME                                                :CDC 디젤동차
 
 STR_group_sux_NAME                                          :SUX (빌갤고속철도)
 STR_SUX1_NAME                                               :{PUSH_COLOUR}{GREEN}[20량] {POP_COLOUR}SUX-1
@@ -106,6 +108,7 @@ STR_SAEMAEUL_CAR_NAME                                      :새로운마을호 �
 STR_MUGUNGHWA_CAR_NAME                                     :무궁화호 객차
 STR_TONGIL_CAR_NAME                                        :통일호 객차
 STR_BIDULGI_CAR_NAME                                       :비둘기호 객차
+
 STR_GENERATOR_CAR_NAME                                     :발전차
 STR_CAFE_CAR_NAME                                          :카페/식당차
 STR_SLEEPING_CAR_NAME                                      :침대차
@@ -124,7 +127,7 @@ STR_CABOOSE_NAME                                           :차장차
 # Liveries
 STR_REFIT_LIVERY_SANCHEON                                  : (KTX-산천)
 STR_REFIT_LIVERY_SRT                                       : (SRT)
-STR_REFIT_LIVERY_THESEDAYS                                 : (현재 도색)
+STR_REFIT_LIVERY_THESEDAYS                                 : (코레일 도색)
 STR_REFIT_LIVERY_2x00_BLACK                                : (미군 도색: 검정)
 STR_REFIT_LIVERY_2x00_BLACK_ORANGE_1                       : (철도청 초기 도색: 검정 & 좁은 주황)
 STR_REFIT_LIVERY_2x00_BLACK_ORANGE_2                       : (철도청 초기 도색: 검정 & 넓은 주황)
@@ -160,17 +163,19 @@ STR_REFIT_LIVERY_NURIRO_SANTA                              : (동해산타열차
 STR_REFIT_LIVERY_NURIRO_2022                               : (2022년 도색)
 STR_REFIT_LIVERY_KTX2N                                     : (일반 도색)
 STR_REFIT_LIVERY_KTX2N_PYEONGCHANG                         : (2018 평창동계올림픽 도색)
-STR_REFIT_LIVERY_CDC_GARDEN                                : (꽃동산 테마)
-STR_REFIT_LIVERY_CDC_DOLPHIN                               : (돌고래 테마)
-STR_REFIT_LIVERY_CDC_SEASIDE_BLUE                          : (바다관광열차: 청색)
-STR_REFIT_LIVERY_CDC_SEASIDE_RED_WHITE                     : (바다관광열차: 적색 & 흰색)
-STR_REFIT_LIVERY_CDC_BAEKJE                                : (백제 왕관 기념 도색)
-STR_REFIT_LIVERY_CDC_DMZTRAIN                              : (DMZ-train)
-STR_REFIT_LIVERY_CDC_MUGUNGHWA                             : (RDC 무궁화 도색)
-STR_REFIT_LIVERY_CDC_GYEONGBUK1                            : (경북관광순환테마열차, 구 도색)
-STR_REFIT_LIVERY_CDC_GYEONGBUK2                            : (경북관광순환테마열차, 신 도색)
 STR_REFIT_PASSWAGON_NORMALCAR                              : (일반 객차)
 STR_REFIT_PASSWAGON_FIRSTCAR                               : (특실 객차)
+
+# Refit (CDC)
+STR_REFIT_LIVERY_CDC_GARDEN                                : (꽃동산 도색)
+STR_REFIT_LIVERY_CDC_DOLPHIN                               : (해변 도색)
+STR_REFIT_LIVERY_CDC_BAEKJE                                : (백제 유물 도색)
+STR_REFIT_LIVERY_CDC_SEASIDE_BLUE                          : (바다열차 구 도색)
+STR_REFIT_LIVERY_CDC_SEASIDE_RED_WHITE                     : (바다열차 신 도색)
+STR_REFIT_LIVERY_CDC_DMZTRAIN                              : (DMZ-train)
+STR_REFIT_LIVERY_CDC_MUGUNGHWA                             : (RDC 무궁화 도색)
+STR_REFIT_LIVERY_CDC_GYEONGBUK1                            : (경북관광순환테마열차)
+STR_REFIT_LIVERY_CDC_GYEONGBUK2                            : (경북나드리열차)
 
 # Refit (Saemaeul car)
 STR_REFIT_LIVERY_SAEMAEUL_1970_1983                        : (고추장 도색) {TINYFONT}1970~1994
@@ -439,6 +444,8 @@ STR_ERROR_TOO_LONG_LENGTH6                                 :열차 길이가 너
 STR_ERROR_TOO_LONG_LENGTH8                                 :열차 길이가 너무 깁니다. 최대 8량까지만 연결할 수 있습니다.
 STR_ERROR_TOO_LONG_LENGTH10                                :열차 길이가 너무 깁니다. 최대 10량까지만 연결할 수 있습니다.
 
+STR_ERROR_CDC_LENGTH                                        :이 열차에는 최소 3량, 최대 5량의 차량을 연결할 수 있습니다.
+
 # Refit (Additional text)
 STR_REFIT_ADDITIONAL_ABLE                                  :{BLACK}도색/모델 변경: {GREEN}가능
 STR_REFIT_ADDITIONAL_UNABLE                                :{BLACK}도색/모델 변경: {RED}불가능
@@ -446,8 +453,8 @@ STR_REFIT_ADDITIONAL_AMBIGUOUS                             :{BLACK}도색/모델
 
 
 #   Japan
-STR_SHIN_E5_NAME                                            :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}신칸센 E5·H5계 전동차
-STR_SHIN_E6_NAME                                            :{PUSH_COLOUR}{GREEN}[7량] {POP_COLOUR}신칸센 E6계 전동차
+STR_SHIN_E5_NAME                                            :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}신칸센 E5·H5계 전동차 {TINYFONT}{PUSH_COLOUR}({DKGREEN}JR 동일본{POP_COLOUR}·{PUSH_COLOUR}{GREEN}JR 홋카이도{POP_COLOUR})
+STR_SHIN_E6_NAME                                            :{PUSH_COLOUR}{GREEN}[7량] {POP_COLOUR}신칸센 E6계 전동차 {TINYFONT}{PUSH_COLOUR}({DKGREEN}JR 동일본{POP_COLOUR})
 STR_group_N700_NAME                                         :신칸센 N700계 전동차
 STR_SHIN_N700_8_NAME                                        :{PUSH_COLOUR}{GREEN}[8량] {POP_COLOUR}신칸센 N700계 전동차 {TINYFONT}{PUSH_COLOUR}({RED}JR 큐슈{POP_COLOUR})
 STR_SHIN_N700_16_NAME                                       :{PUSH_COLOUR}{GREEN}[16량] {POP_COLOUR}신칸센 N700계 전동차 {TINYFONT}{PUSH_COLOUR}({ORANGE}JR 도카이{POP_COLOUR}·{PUSH_COLOUR}{BLUE}JR 서일본{POP_COLOUR})
