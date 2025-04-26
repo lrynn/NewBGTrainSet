@@ -64,7 +64,7 @@ STR_SEOUL_2_10CAR_VVVF_NAME                                 :{PUSH_COLOUR}{GREEN
 
 STR_group_seoul_3_NAME                                      :수도권 전철 3호선
 STR_SEOUL_3_CHOPPER_WIDE_NAME                               :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}서울교통공사 3000호대 광폭형 GEC 초퍼제어 전동차
-STR_SEOUL_3_CHOPPER_MODIFIED_NAME                           :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}서울교통공사 3000호대 개조형 GEC 초퍼제어 전동차
+STR_SEOUL_3_CHOPPER_MODIFIED_NAME                           :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}서울교통공사 3000호대 광폭형 개조초퍼 전동차
 STR_SEOUL_3_VVVF_NAME                                       :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}서울교통공사 3000호대 VVVF 전동차
 STR_SEOUL_3_KORAIL_NAME                                     :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}랙레일 3000호대 전동차
 
