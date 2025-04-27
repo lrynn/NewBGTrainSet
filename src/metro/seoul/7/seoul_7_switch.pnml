@@ -104,8 +104,8 @@ switch (FEAT_TRAINS, SELF, sw_articulated_SEOUL_7, extra_callback_info1) {
 }
 
 switch (FEAT_TRAINS, SELF, sw_SEOUL_7_COMBINED_reversed, cargo_subtype) {
-    1..3: return sw_SEOUL_7_reversed;
-    4: return sw_SEOUL_7_5_reversed;
+    1..4: return sw_SEOUL_7_reversed;
+    5: return sw_SEOUL_7_5_reversed;
     return sw_SEOUL_7_reversed;
 }
 

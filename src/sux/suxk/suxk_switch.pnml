@@ -6,14 +6,14 @@
 // None
 
 // Train Composition
-switch (FEAT_TRAINS, SELF, sw_SUXK, position_in_vehid_chain % 10) {
+switch (FEAT_TRAINS, SELF, sw_SUXK, position_in_vehid_chain % 6) {
     1:set_SUXK_wagon_2;
     2..3:set_SUXK_wagon_3;
     4:set_SUXK_wagon_4;
     5:set_SUXK_engineT;
     set_SUXK_engineH;
     }
-switch (FEAT_TRAINS, SELF, sw_SUXK_r, position_in_vehid_chain % 10) {
+switch (FEAT_TRAINS, SELF, sw_SUXK_r, position_in_vehid_chain % 6) {
     1:set_SUXK_wagon_2;
     2..3:set_SUXK_wagon_3;
     4:set_SUXK_wagon_4;

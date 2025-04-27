@@ -55,10 +55,10 @@ trainList['DHC'] =                150,    3000,   50,     1625000100,   54010010
 trainList['NDC'] =                120,    600,    50,     450100100,    80100100,       64,         2,      (1984, 1, 1),   False
 trainList['CDC'] =                120,    600,    50,     400100100,    75100100,       52,         2,      (1996, 1, 1),   False
 
-trainList['SUX1']           =     300,    18177,  1000,   11900100100,  5450100100,     48,         2,      (2004, 1, 1),   True
-trainList['SUX2']           =     300,    11800,  500,    5460100100,   2750100100,     44,         2,      (2008, 1, 1),   True
-trainList['SUXK']           =     260,    8153,   300,    3270100100,   2300100100,     65,         2,      (2019, 1, 1),   True
-trainList['SUX3']           =     300,    12230,  400,    5680100100,   3450100100,     65,         2,      (2024, 1, 1),   True
+trainList['SUX1']           =     300,    18177,  1000,   11900100100,  2750100100,     48,         2,      (2004, 1, 1),   True
+trainList['SUX2']           =     300,    11800,  500,    5460100100,   1450100100,     44,         2,      (2008, 1, 1),   True
+trainList['SUXK']           =     260,    8153,   300,    3270100100,   1200100100,     65,         2,      (2019, 1, 1),   True
+trainList['SUX3']           =     300,    12230,  400,    5680100100,   1750100100,     65,         2,      (2024, 1, 1),   True
 
 trainList['MWONCHUN']       =     180,    5438,   400,    1970100100,   550100100,      42,         2,      (2011, 1, 1),   False
 trainList['NEWMAEUL']       =     150,    4078,   300,    1760100100,   600100100,      63,         2,      (2013, 1, 1),   False
@@ -86,55 +86,55 @@ trainList['LRT_4CAR']       =     None,   1080,   120,    1200100100,   35010010
 trainList['LRT_6CAR']       =     None,   1620,   180,    1600100100,   450100100,      900,        None,   None,           False
 trainList['SILLIM']         =     60,     815,    120,    600100100,    200100100,      100,        4,      (2020, 1, 1),   False
 
-trainList['SHIN_E5']        =     321,    13440,  500,    7470100100,   4200100100,     73,         2,      (2011, 1, 1),   False
-trainList['SHIN_E6']        =     321,    9408,   350,    5180100100,   3300100100,     72,         2,      (2013, 1, 1),   False
-trainList['SHIN_N700_8']    =     260,    10200,  400,    5110100100,   3950100100,     68,         2,      (2005, 1, 1),   False
-trainList['SHIN_N700_16']   =     300,    18600,  800,    14100100100,  6800100100,     82,         2,      (2005, 1, 1),   False
-trainList['SHIN_N700S_6']   =     260,    9000,   300,    3600100100,   3250100100,     68,         2,      (2013, 1, 1),   False
-trainList['SHIN_N700S_16']  =     300,    20400,  800,    15600100100,  7650100100,     82,         2,      (2013, 1, 1),   False
+trainList['SHIN_E5']        =     321,    13440,  500,    7470100100,   2200100100,     73,         2,      (2011, 1, 1),   False
+trainList['SHIN_E6']        =     321,    9408,   350,    5180100100,   1700100100,     72,         2,      (2013, 1, 1),   False
+trainList['SHIN_N700_8']    =     260,    10200,  400,    5110100100,   1950100100,     68,         2,      (2005, 1, 1),   False
+trainList['SHIN_N700_16']   =     300,    18600,  800,    14100100100,  3900100100,     82,         2,      (2005, 1, 1),   False
+trainList['SHIN_N700S_6']   =     260,    9000,   300,    3600100100,   1550100100,     68,         2,      (2013, 1, 1),   False
+trainList['SHIN_N700S_16']  =     300,    20400,  800,    15600100100,  3750100100,     82,         2,      (2013, 1, 1),   False
 
 trainList['KSEI_AE']        =     160,    4620,   400,    1920100100,   1200100100,     50,         2,      (2013, 1, 1),   False
 
-trainList['CR400AF_8CAR']   =     350,    8850,   400,    5590100100,   3300100100,     72,         2,      (2015, 1, 1),   False
-trainList['CR400AF_16CAR']  =     350,    17700,  800,    10500100100,  6000100100,     75,         2,      (2015, 1, 1),   False
-trainList['CR400AF_17CAR']  =     350,    18750,  850,    11100100100,  6300100100,     75,         2,      (2015, 1, 1),   False
+trainList['CR400AF_8CAR']   =     350,    8850,   400,    5590100100,   1800100100,     72,         2,      (2015, 1, 1),   False
+trainList['CR400AF_16CAR']  =     350,    17700,  800,    10500100100,  3000100100,     75,         2,      (2015, 1, 1),   False
+trainList['CR400AF_17CAR']  =     350,    18750,  850,    11100100100,  3200100100,     75,         2,      (2015, 1, 1),   False
 
-trainList['TGV_DUPLEX']     =     320,    10850,  500,    5490100100,   3700100100,     64,         1,      (1995, 1, 1),   False
-trainList['TGV_RESEAU_DUPLEX'] =  320,    10850,  500,    5490100100,   3700100100,     64,         1,      (2006, 1, 1),   False
-trainList['TGV_DUPLEX_DASYE'] =   320,    11315,  500,    5650100100,   3950100100,     64,         1,      (2013, 1, 1),   False
-trainList['TGV_2N2']        =     320,    11615,  500,    5850100100,   4100100100,     55,         1,      (2011, 1, 1),   False
+trainList['TGV_DUPLEX']     =     320,    10850,  500,    5490100100,   1900100100,     64,         1,      (1995, 1, 1),   False
+trainList['TGV_RESEAU_DUPLEX'] =  320,    10850,  500,    5490100100,   1900100100,     64,         1,      (2006, 1, 1),   False
+trainList['TGV_DUPLEX_DASYE'] =   320,    11315,  500,    5650100100,   1950100100,     64,         1,      (2013, 1, 1),   False
+trainList['TGV_2N2']        =     320,    11615,  500,    5850100100,   1800100100,     55,         1,      (2011, 1, 1),   False
 
 # wagon                           0       1       2       3              4        5             6       7
 #                                 speed1  speed2  cost    running_cost   capacity loading_speed weight  introduction
 
-trainList['SAEMAEUL_CAR']       = 150,    150,    5000,   50,            64,      10,           70,     (1969, 1, 1)
-trainList['MUGUNGHWA_CAR']      = 135,    135,    5000,   50,            72,      10,           90,     (1970, 1, 1)
-trainList['TONGIL_CAR']         = 120,    120,    5000,   50,            72,      10,           90,     (1963, 1, 1)
-trainList['BIDULGI_CAR']        = 110,    110,    5000,   80,            100,     10,           120,    (1927, 1, 1)
-trainList['GENERATOR_CAR']      = 120,    120,    100,    0,             0,       10,           50,     (1972, 1, 1)
-trainList['CAFE_CAR']           = 120,    120,    5000,   30,            50,      10,           50,     (1972, 1, 1)
-trainList['NARROW_GAUGE_WAGON'] = None,   None,   5000,   20,            90,      10,           30,     (1952, 1, 1)
+trainList['SAEMAEUL_CAR']       = 150,    150,    5000,   50,            64,      2,            64,     (1969, 1, 1)
+trainList['MUGUNGHWA_CAR']      = 135,    135,    5000,   50,            72,      2,            72,     (1970, 1, 1)
+trainList['TONGIL_CAR']         = 120,    120,    5000,   50,            72,      2,            72,     (1963, 1, 1)
+trainList['BIDULGI_CAR']        = 110,    110,    5000,   80,            100,     4,            100,    (1927, 1, 1)
+trainList['GENERATOR_CAR']      = 120,    120,    100,    0,             0,       10,           30,     (1972, 1, 1)
+trainList['CAFE_CAR']           = 120,    120,    5000,   30,            50,      2,            50,     (1972, 1, 1)
+trainList['NARROW_GAUGE_WAGON'] = None,   None,   5000,   20,            90,      4,            30,     (1952, 1, 1)
 trainList['NARROW_BOXCAR']      = None,   None,   80,     20,            12,      5,            25,     (1952, 1, 1)
 trainList['NARROW_HOPPERCAR']   = None,   None,   80,     20,            12,      5,            25,     (1952, 1, 1)
 trainList['FLAT_CAR']           = 120,    120,    5000,   40,            50,      5,            40,     (1950, 1, 1)
-trainList['HOPPER_CAR']         = 120,    120,    5000,   40,            50,      5,            50,     (1950, 1, 1)
+trainList['HOPPER_CAR']         = 120,    120,    5000,   40,            50,      5,            30,     (1950, 1, 1)
 trainList['BAGGAGE_CAR']        = 120,    120,    5000,   40,            35,      5,            50,     (1950, 1, 1)
-trainList['BOX_CAR']            = 120,    120,    5000,   40,            51,      5,            50,     (1966, 1, 1)
-trainList['BOX_CAR_2003']       = 120,    120,    None,   None,          51,      None,         50,     (2003, 1, 1)
-trainList['BOX_CAR_1998']       = 100,    100,    None,   None,          51,      None,         50,     (1998, 1, 1)
-trainList['BOX_CAR_1996']       = 90,     90,     None,   None,          48,      None,         50,     (1996, 1, 1)
-trainList['BOX_CAR_1972']       = 90,     90,     None,   None,          48,      None,         50,     (1972, 1, 1)
-trainList['BOX_CAR_1966']       = 90,     90,     None,   None,          48,      None,         50,     (1966, 1, 1)
-trainList['TANK_CAR']           = 120,    120,    5000,   40,            40,      5,            50,     (1950, 1, 1)
-trainList['BULK_CEMENT_CAR']    = 120,    120,    5000,   40,            32,      5,            50,     (1950, 1, 1)
-trainList['MAIL_CAR']           = None,   None,   5000,   40,            50,      5,            80,     (1950, 1, 1)
-trainList['SUX_MAIL_CAR']       = None,   None,   5000,   220,           50,      5,            50,     (1950, 1, 1)
-trainList['SLEEPING_CAR']       = None,   None,   6000,   20,            28,      5,            50,     (1966, 1, 1)
-trainList['STAKE_CAR']          = 120,    120,    5000,   40,            52,      5,            50,     (1950, 1, 1)
-trainList['CABOOSE']            = 120,    120,    3000,   0,             0,       5,            50,     (1999, 1, 1)
-trainList['CABOOSE_BAGGAGE']    = 120,    120,    3000,   None,          0,       None,         50,     (1999, 1, 1)
-trainList['CABOOSE_2AXLE']      = 120,    120,    3000,   None,          0,       None,         50,     (2000, 1, 1)
-trainList['CABOOSE_BOX']        = 90,     90,     3000,   None,          0,       None,         50,     (1992, 1, 1)
+trainList['BOX_CAR']            = 120,    120,    5000,   40,            51,      5,            30,     (1966, 1, 1)
+trainList['BOX_CAR_2003']       = 120,    120,    None,   None,          51,      None,         30,     (2003, 1, 1)
+trainList['BOX_CAR_1998']       = 100,    100,    None,   None,          51,      None,         30,     (1998, 1, 1)
+trainList['BOX_CAR_1996']       = 90,     90,     None,   None,          48,      None,         30,     (1996, 1, 1)
+trainList['BOX_CAR_1972']       = 90,     90,     None,   None,          48,      None,         30,     (1972, 1, 1)
+trainList['BOX_CAR_1966']       = 90,     90,     None,   None,          48,      None,         30,     (1966, 1, 1)
+trainList['TANK_CAR']           = 120,    120,    5000,   40,            40,      5,            30,     (1950, 1, 1)
+trainList['BULK_CEMENT_CAR']    = 120,    120,    5000,   40,            32,      5,            20,     (1950, 1, 1)
+trainList['MAIL_CAR']           = None,   None,   5000,   40,            50,      5,            30,     (1950, 1, 1)
+trainList['SUX_MAIL_CAR']       = None,   None,   5000,   220,           50,      5,            30,     (1950, 1, 1)
+trainList['SLEEPING_CAR']       = None,   None,   6000,   20,            28,      5,            30,     (1966, 1, 1)
+trainList['STAKE_CAR']          = 120,    120,    5000,   40,            52,      5,            30,     (1950, 1, 1)
+trainList['CABOOSE']            = 120,    120,    3000,   0,             0,       5,            30,     (1999, 1, 1)
+trainList['CABOOSE_BAGGAGE']    = 120,    120,    3000,   None,          0,       None,         30,     (1999, 1, 1)
+trainList['CABOOSE_2AXLE']      = 120,    120,    3000,   None,          0,       None,         30,     (2000, 1, 1)
+trainList['CABOOSE_BOX']        = 90,     90,     3000,   None,          0,       None,         30,     (1992, 1, 1)
 
 
 content = ""

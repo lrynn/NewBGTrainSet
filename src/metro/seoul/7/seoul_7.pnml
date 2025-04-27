@@ -46,7 +46,7 @@ item(FEAT_TRAINS, SEOUL_7, 3700) {
         misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
     }
     graphics {
-        default:                        sw_SEOUL_7_reversed;
+        default:                        sw_SEOUL_7_COMBINED_reversed;
         articulated_part:               sw_articulated_SEOUL_7;
         purchase:                       set_SMETRO_7K_5TH_purchase;
 
