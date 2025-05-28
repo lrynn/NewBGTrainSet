@@ -10,7 +10,7 @@ grf {
     name:  string(STR_GRF_NAME_WITH_VER);
     desc:  string(STR_GRF_DESC);
     url:   string(STR_GRF_URL);
-    version: 181;
+    version: 183;
     min_compatible_version: 250;
 }
 
@@ -35,8 +35,16 @@ cargotable {
     SAND, SCMT, SLAG, SASH, LYE_, STST, STSE, STSH, STWR, SULP, WDPR, TYRE, VBOD, VENG, VPTS, VEHI,
     WOOL, ZINC,
 
-    // FIRS 5
-    CCPR, FEAL, STBL // chuga baram
+    // FIRS (from 5.0.0)
+    CCPR, FEAL, FOCA, HWAR, N7__, PPWK, PUMP, RBAR, SEAL, STBL, STBR, STIG, STPP, STSL, STTB, TYCO,
+    WELD,
+
+    // AXIS (2.x)
+    ALO_, BAKE, BIOM, COCO, CHRO, CRAN, FURN, LFEQ, MEAT, NHNO, NICK, OLSD, PPAR, RAMT, SGCN, SWRP,
+    TEXT, TIN_, TINP, YARN,
+
+    // Improved Town Industries (based on 2.13)
+    WSTE, WDCH, SCPR
 }
 
 // Railtypetable

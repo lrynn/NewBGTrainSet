@@ -44,11 +44,15 @@ item(FEAT_TRAINS, ko_train_HOPPER_CAR, 5911) {
         cargo_capacity:                 25;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [COAL, IORE, WHEA, FRUT, MAIZ, CORE, CTCD, SUGR, TOFF, AORE, BEAN,
-                                         CLAY, COAL, CORE, FRUT, GOLD, GRAI, GRVL, IORE, POTA, LIME, MNO2,
-                                         PHOS, PORE, RCYC, SALT, SAND, SCMT, SLAG, FERT, NITR, CMNT, SASH,
-                                         SGBT, QLME, PLAS, FECR, CBLK, CASS, BDMT, PEAT, COKE, KAOL];
-        cargo_disallow_refit:           [];
+        cargo_allow_refit:              [
+                                            COAL, IORE, WHEA, FRUT, MAIZ, CORE, CTCD, SUGR, TOFF, AORE,
+                                            BEAN, CLAY, COAL, CORE, FRUT, GOLD, GRAI, GRVL, IORE, POTA,
+                                            LIME, MNO2, PHOS, PORE, RCYC, SALT, SAND, SCMT, SLAG, FERT,
+                                            NITR, CMNT, SASH, SGBT, QLME, PLAS, FECR, CBLK, CASS, BDMT,
+                                            PEAT, COKE, KAOL, WSTE, WDCH, FEAL, ALO_, NHNO, BIOM, COCO,
+                                            NICK, OLSD, RAMT, SGCN, TIN_
+                                        ];
+        cargo_disallow_refit:           [SCMT];
         loading_speed:                  5;
 
         // Costs

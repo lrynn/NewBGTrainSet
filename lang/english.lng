@@ -333,7 +333,7 @@ STR_REFIT_METRO_1K_RHEO_LAST_2_NAME                        : (신저항 / 자석
 
 STR_REFIT_METRO_311K_1_1_NAME                              : (납작이 - 현대로템 / 철도청 도색) {TINYFONT}1996~1999
 STR_REFIT_METRO_311K_1_2_NAME                              : (납작이 - 현대로템 / 자석 도색) {TINYFONT}1996~1999
-STR_REFIT_METRO_311K_2_1_NAME                              : (동글이 - 현대로템 / 초기 도색) {TINYFONT}2002~2004
+STR_REFIT_METRO_311K_2_1_NAME                              : (동글이 - 현대로템 / 메론 도색) {TINYFONT}2002~2004
 STR_REFIT_METRO_311K_2_2_NAME                              : (동글이 - 현대로템 / 자석 도색) {TINYFONT}2002~2004
 STR_REFIT_METRO_3XXK_ST_NAME                               : (뱀눈이 - 현대로템 스테인리스 스틸) {TINYFONT}2005~2016
 STR_REFIT_METRO_3XXK_AL_NAME                               : (뱀눈이 - 현대로템 알루미늄) {TINYFONT}2005~2016
