@@ -14,14 +14,14 @@ template tmpl_SUX2_engine(x, y) {
     [x+210,    y,    22,    16,    -6,    -7]
 }
 template tmpl_SUX2_engine_r(x, y) {
-    [x+120,    y,     8,    23,    -3,   -11]
-    [x+140,    y,    22,    16,   -15,    -7]
-    [x+170,    y,    32,    14,   -16,   -10]
-    [x+210,    y,    22,    18,    -5,    -9]
     [x+0,      y,     8,    23,    -3,   -11]
     [x+20,     y,    22,    18,   -16,    -9]
     [x+50,     y,    32,    14,   -17,   -10]
     [x+90,     y,    22,    16,    -6,    -7]
+    [x+120,    y,     8,    23,    -3,   -11]
+    [x+140,    y,    22,    16,   -15,    -7]
+    [x+170,    y,    32,    14,   -16,   -10]
+    [x+210,    y,    22,    18,    -5,    -9]
 }
 
 // SUX2 (KTX-Sancheon)
@@ -47,7 +47,7 @@ spriteset(set_SUX2_wagon_8, "./src/sux/sux2/SUX2.png") {   // T8
     tmpl_KTXloco_power(80, 120)
 }
 spriteset(set_SUX2_engineT, "./src/sux/sux2/SUX2.png") {   // PC2
-    tmpl_SUX2_engine(80, 150)
+    tmpl_SUX2_engine_r(80, 150)
 }
 
 // KTX-Sancheon for 2018 Pyeongchang Olympic
@@ -58,7 +58,7 @@ spriteset(set_SUX2_PYEONGCHANG_engineH, "./src/sux/sux2/sux2_pyeongchang.png") {
     tmpl_SUX2_engine(80, 0)
 }
 spriteset(set_SUX2_PYEONGCHANG_engineT, "./src/sux/sux2/sux2_pyeongchang.png") {   // PC2
-    tmpl_SUX2_engine(80, 30)
+    tmpl_SUX2_engine_r(80, 30)
 }
 
 // SRT
@@ -84,7 +84,7 @@ spriteset(set_SRT_wagon_8, "./src/sux/sux2/SRT.png") {   // T8
     tmpl_KTXloco_power(80, 120)
 }
 spriteset(set_SRT_engineT, "./src/sux/sux2/SRT.png") {   // PC2
-    tmpl_SUX2_engine(80, 150)
+    tmpl_SUX2_engine_r(80, 150)
 }
 
 // Enhanced graphic using 32bpp
@@ -110,5 +110,5 @@ alternative_sprites(set_SRT_wagon_8, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "./src/
     tmpl_KTXloco_power(80, 120)
 }
 alternative_sprites(set_SRT_engineT, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "./src/sux/sux2/SRT_32bpp.png") {   // PC2
-    tmpl_SUX2_engine(80, 150)
+    tmpl_SUX2_engine_r(80, 150)
 }
