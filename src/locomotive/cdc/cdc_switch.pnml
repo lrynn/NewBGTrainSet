@@ -86,7 +86,7 @@ switch(FEAT_TRAINS, SELF, sw_CDC_current, position_in_vehid_chain_from_end == 0 
 // Length Limits
 
 switch(FEAT_TRAINS, SELF, sw_CDC_length_limit, num_vehs_in_consist) {
-    3 .. 5: return CB_RESULT_NO_TEXT;
+    2 .. 5: return CB_RESULT_NO_TEXT;
     return string(STR_ERROR_CDC_LENGTH);
 }
 

@@ -1,0 +1,48 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * Narrow gauge passenger coach
+ */
+
+template tmpl_NARROW_GAUGE_WAGON(x, y) {
+    [x+0,    y,    6,     18,     -2,   -9]
+    [x+20,   y,    15,    13,    -13,   -5]
+    [x+50,   y,    24,     9,    -12,   -6]
+    [x+90,   y,    15,    13,      0,   -5]
+}
+
+// DC trailer (1965~1974)
+spriteset(set_NARROW_GAUGE_WAGON_DC_TRAILER_1_purchase, "./src/wagon/narrow/NARROW_GAUGE_WAGON.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_NARROW_GAUGE_WAGON_DC_TRAILER_1_wagon, "./src/wagon/narrow/NARROW_GAUGE_WAGON.png") {
+    tmpl_NARROW_GAUGE_WAGON(80, 0)
+}
+spriteset(set_NARROW_GAUGE_WAGON_DC_TRAILER_2_purchase, "./src/wagon/narrow/NARROW_GAUGE_WAGON.png") {
+    tmpl_purchase_common(0, 30)
+}
+spriteset(set_NARROW_GAUGE_WAGON_DC_TRAILER_2_wagon, "./src/wagon/narrow/NARROW_GAUGE_WAGON.png") {
+    tmpl_NARROW_GAUGE_WAGON(80, 30)
+}
+
+// Blue (1974~?)
+spriteset(set_NARROW_GAUGE_WAGON_BLUE_1_purchase, "./src/wagon/narrow/NARROW_GAUGE_WAGON.png") {
+    tmpl_purchase_common(0, 60)
+}
+spriteset(set_NARROW_GAUGE_WAGON_BLUE_1_wagon, "./src/wagon/narrow/NARROW_GAUGE_WAGON.png") {
+    tmpl_NARROW_GAUGE_WAGON(80, 60)
+}
+spriteset(set_NARROW_GAUGE_WAGON_BLUE_2_purchase, "./src/wagon/narrow/NARROW_GAUGE_WAGON.png") {
+    tmpl_purchase_common(0, 90)
+}
+spriteset(set_NARROW_GAUGE_WAGON_BLUE_2_wagon, "./src/wagon/narrow/NARROW_GAUGE_WAGON.png") {
+    tmpl_NARROW_GAUGE_WAGON(80, 90)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_NARROW_GAUGE_WAGON_purchase, cargo_subtype) {
+    set_NARROW_GAUGE_WAGON_BLUE_1_purchase;
+}

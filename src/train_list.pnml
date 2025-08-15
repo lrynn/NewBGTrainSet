@@ -13,8 +13,6 @@
 
 #include "locomotive/loco.pnml"
 
-#include "locomotive/dhc/dhc.pnml"
-
 #include "sux/sux.pnml"
 
 #include "lnx/mwonchun/mwonchun.pnml"
@@ -45,6 +43,7 @@
 #include "wagon/stake_car/stake_car.pnml"
 // #include "wagon/LRT_wagon/LRT_wagon.pnml"
 #include "wagon/caboose/caboose.pnml"
+#include "wagon/narrow/NARROW_GAUGE_WAGON.pnml"
 
 // Sorting
 #include "sort.pnml"

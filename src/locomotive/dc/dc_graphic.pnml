@@ -1,0 +1,56 @@
+/*------------------------------------------------------------------------------
+    DC Graphics
+------------------------------------------------------------------------------*/
+
+// Graphics
+spriteset(set_DC_TRAILER_purchase, "./src/locomotive/dc/dc.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_DC_TRAILER_engine, "./src/locomotive/dc/dc.png") {
+    tmpl_standard(80, 0)
+}
+
+// Blue, Bidulgi, 1980s
+spriteset(set_DC_BLUE_purchase, "./src/locomotive/dc/dc.png") {
+    tmpl_purchase_common(0, 30)
+}
+spriteset(set_DC_BLUE_engine, "./src/locomotive/dc/dc.png") {
+    tmpl_standard(80, 30)
+}
+
+// Light green, Bidulgi, 1990s
+spriteset(set_DC_LIGHT_GREEN_purchase, "./src/locomotive/dc/dc.png") {
+    tmpl_purchase_common(0, 60)
+}
+spriteset(set_DC_LIGHT_GREEN_engine, "./src/locomotive/dc/dc.png") {
+    tmpl_standard(80, 60)
+}
+
+// Green, Tongil, 1980s
+spriteset(set_DC_GREEN_purchase, "./src/locomotive/dc/dc.png") {
+    tmpl_purchase_common(0, 90)
+}
+spriteset(set_DC_GREEN_engine, "./src/locomotive/dc/dc.png") {
+    tmpl_standard(80, 90)
+}
+
+// Green, Tongil, 1990s
+spriteset(set_DC_TONGIL_GREEN_purchase, "./src/locomotive/dc/dc.png") {
+    tmpl_purchase_common(0, 120)
+}
+spriteset(set_DC_TONGIL_GREEN_engine, "./src/locomotive/dc/dc.png") {
+    tmpl_standard(80, 120)
+}
+
+// Red, Mugunghwa
+spriteset(set_DC_MUGUNGHWA_purchase, "./src/locomotive/dc/dc.png") {
+    tmpl_purchase_common(0, 150)
+}
+spriteset(set_DC_MUGUNGHWA_engine, "./src/locomotive/dc/dc.png") {
+    tmpl_standard(80, 150)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_DC_purchase, cargo_subtype) {
+    set_DC_BLUE_purchase;
+}

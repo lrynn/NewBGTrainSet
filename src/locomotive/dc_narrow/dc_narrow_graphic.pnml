@@ -1,0 +1,38 @@
+/*------------------------------------------------------------------------------
+    DC_NARROW Graphics
+------------------------------------------------------------------------------*/
+
+template tmpl_DC_NARROW(x, y) {
+    [x+0,    y,    6,     18,     -2,   -9]
+    [x+20,   y,    15,    13,    -13,   -5]
+    [x+50,   y,    24,     9,    -12,   -6]
+    [x+90,   y,    15,    13,      0,   -5]
+}
+
+// DC trailer (1965~1974)
+spriteset(set_DC_NARROW_DC_TRAILER_purchase, "./src/locomotive/dc_narrow/dc_narrow.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_DC_NARROW_DC_TRAILER_engine, "./src/locomotive/dc_narrow/dc_narrow.png") {
+    tmpl_DC_NARROW(80, 0)
+}
+
+// Blue (1974~?)
+spriteset(set_DC_NARROW_BLUE_purchase, "./src/locomotive/dc_narrow/dc_narrow.png") {
+    tmpl_purchase_common(0, 30)
+}
+spriteset(set_DC_NARROW_BLUE_engine, "./src/locomotive/dc_narrow/dc_narrow.png") {
+    tmpl_DC_NARROW(80, 30)
+}
+
+spriteset(set_DC_NARROW_GREEN_purchase, "./src/locomotive/dc_narrow/dc_narrow.png") {
+    tmpl_purchase_common(0, 60)
+}
+spriteset(set_DC_NARROW_GREEN_engine, "./src/locomotive/dc_narrow/dc_narrow.png") {
+    tmpl_DC_NARROW(80, 60)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_DC_NARROW_purchase, cargo_subtype) {
+    set_DC_NARROW_BLUE_purchase;
+}

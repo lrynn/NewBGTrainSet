@@ -27,8 +27,12 @@ STR_8x00_NAME                                               :SIEMENS Eurosprinte
 STR_8500_NAME                                               :화물용 전기기관차 {GREEN}{TINYFONT}(8500호대 전기기관차)
 
 STR_DHC_NAME                                                :DHC 디젤동차
+STR_EEC_NAME                                                :EEC 전기동차
+STR_DEC_NAME                                                :DEC 디젤동차
 STR_NDC_NAME                                                :NDC 디젤동차
 STR_CDC_NAME                                                :CDC 디젤동차
+STR_DC_NAME                                                 :DC 디젤동차
+STR_DC_NARROW_NAME                                          :DC 협궤 디젤동차
 
 STR_group_sux_NAME                                          :SUX (빌갤고속철도)
 STR_SUX1_NAME                                               :{PUSH_COLOUR}{GREEN}[20량] {POP_COLOUR}SUX-1
@@ -108,6 +112,8 @@ STR_SAEMAEUL_CAR_NAME                                      :새로운마을호 �
 STR_MUGUNGHWA_CAR_NAME                                     :무궁화호 객차
 STR_TONGIL_CAR_NAME                                        :통일호 객차
 STR_BIDULGI_CAR_NAME                                       :비둘기호 객차
+
+STR_NARROW_CAR_NAME                                        :협궤 객차
 
 STR_GENERATOR_CAR_NAME                                     :발전차
 STR_CAFE_CAR_NAME                                          :카페/식당차
