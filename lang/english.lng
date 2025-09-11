@@ -31,7 +31,7 @@ STR_EEC_NAME                                                :EEC 전기동차
 STR_DEC_NAME                                                :DEC 디젤동차
 STR_NDC_NAME                                                :NDC 디젤동차
 STR_CDC_NAME                                                :CDC 디젤동차
-STR_DC_NAME                                                 :DC 디젤동차
+STR_DC_NAME                                                 :통근형 디젤 액압 동차
 STR_DC_NARROW_NAME                                          :DC 협궤 디젤동차
 
 STR_group_sux_NAME                                          :SUX (빌갤고속철도)
@@ -52,7 +52,7 @@ STR_group_seoul_1_NAME                                      :수도권 전철 1�
 STR_SEOUL_1_RESIST_NAME                                     :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}랙레일 1000호대 저항제어 전동차
 STR_SEOUL_1_4CAR_NAME                                       :{PUSH_COLOUR}{GREEN}[4량] {POP_COLOUR}랙레일 319000호대 전동차
 STR_SEOUL_1_6CAR_NAME                                       :{PUSH_COLOUR}{GREEN}[6량] {POP_COLOUR}랙레일 319000호대 전동차
-STR_SEOUL_1_10CAR_NAME                                      :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}랙레일 31x000호대 VVVF 전동차
+STR_SEOUL_1_10CAR_NAME                                      :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}랙레일 31x000호대 전동차
 STR_SEOUL_1_METRO_RESIST_NAME                               :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}서울교통공사 1000호대 저항제어 전동차
 STR_SEOUL_1_METRO_VVVF_NAME                                 :{PUSH_COLOUR}{GREEN}[10량] {POP_COLOUR}서울교통공사 1000호대 VVVF 전동차
 
@@ -183,6 +183,21 @@ STR_REFIT_LIVERY_CDC_MUGUNGHWA                             : (RDC 무궁화 도�
 STR_REFIT_LIVERY_CDC_GYEONGBUK1                            : (경북관광순환테마열차)
 STR_REFIT_LIVERY_CDC_GYEONGBUK2                            : (경북나드리열차)
 
+# Refit (NDC)
+STR_REFIT_LIVERY_NDC_1                                     : (1984~1994) {TINYFONT}무궁화호
+STR_REFIT_LIVERY_NDC_2                                     : (1994~2009) {TINYFONT}무궁화호
+STR_REFIT_LIVERY_NDC_BUSINESS                              : {TINYFONT}비즈니스 동차
+
+# Refit (DEC)
+STR_REFIT_LIVERY_DEC_1                                     : (1980~1986) {TINYFONT}새마을호
+STR_REFIT_LIVERY_DEC_2                                     : (1986~1994) {TINYFONT}무궁화호
+STR_REFIT_LIVERY_DEC_3                                     : (1994~1999) {TINYFONT}무궁화호
+
+# Refit (EEC)
+STR_REFIT_LIVERY_EEC_1                                     : (1980~1994) {TINYFONT}우등.무궁화호
+STR_REFIT_LIVERY_EEC_2                                     : (1994~1998) {TINYFONT}무궁화호
+STR_REFIT_LIVERY_EEC_3                                     : (1998~2001) {TINYFONT}통일호
+
 # Refit (Saemaeul car)
 STR_REFIT_LIVERY_SAEMAEUL_1970_1983                        : (고추장 도색) {TINYFONT}1970~1994
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_SILVER_BLUE            : (특실 고추장 도색) {TINYFONT}1970~1994
@@ -284,21 +299,6 @@ STR_REFIT_LIVERY_SLEEPING_1977_GREEN                       : (1977~1983년 도�
 STR_REFIT_LIVERY_SLEEPING_1977_RED                         : (1983~1994년 도색 / 무궁화호 침대차)
 STR_REFIT_LIVERY_SLEEPING_1977_YELLOW_RED                  : (1994~2001년 도색 / 무궁화호 침대차)
 STR_REFIT_LIVERY_SLEEPING_2001_YELLOW_RED                  : (2001~2005년 도색 / 무궁화호 침대차)
-
-# Refit (NDC)
-STR_REFIT_LIVERY_NDC_1                                     : (1984~1994년 도색 / 무궁화호)
-STR_REFIT_LIVERY_NDC_2                                     : (1994~2009년 도색 / 무궁화호)
-STR_REFIT_LIVERY_NDC_BUSINESS                              : (비즈니스 동차)
-
-# Refit (DEC)
-STR_REFIT_LIVERY_DEC_1                                     : (1980~1986년 도색 / 새마을호)
-STR_REFIT_LIVERY_DEC_2                                     : (1986~1994년 도색 / 무궁화호)
-STR_REFIT_LIVERY_DEC_3                                     : (1994~1999년 도색 / 무궁화호)
-
-# Refit (EEC)
-STR_REFIT_LIVERY_EEC_1                                     : (1980~1994년 도색 / 우등 & 무궁화호)
-STR_REFIT_LIVERY_EEC_2                                     : (1994~1998년 도색 / 무궁화호)
-STR_REFIT_LIVERY_EEC_3                                     : (1998~2001년 도색 / 통일호)
 
 # Refit (Mail car)
 STR_REFIT_LIVERY_MAIL_CAR_1                                : (1973~1975년 도색)
@@ -451,6 +451,7 @@ STR_ERROR_TOO_LONG_LENGTH8                                 :열차 길이가 너
 STR_ERROR_TOO_LONG_LENGTH10                                :열차 길이가 너무 깁니다. 최대 10량까지만 연결할 수 있습니다.
 
 STR_ERROR_CDC_LENGTH                                        :이 열차에는 최소 3량, 최대 5량의 차량을 연결할 수 있습니다.
+STR_ERROR_NDC_LENGTH                                        :이 열차에는 최소 2량, 최대 4량의 차량을 연결할 수 있습니다.
 
 # Refit (Additional text)
 STR_REFIT_ADDITIONAL_ABLE                                  :{BLACK}도색/모델 변경: {GREEN}가능

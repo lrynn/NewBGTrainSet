@@ -1,0 +1,31 @@
+/*------------------------------------------------------------------------------
+    NDC Graphics
+------------------------------------------------------------------------------*/
+
+spriteset(set_NDC_1_engineH, "./src/locomotive/ndc/ndc.png") {
+    tmpl_NDC(80, 0)
+}
+spriteset(set_NDC_1_engineT, "./src/locomotive/ndc/ndc.png") {
+    tmpl_NDC_r(80, 30)
+}
+spriteset(set_NDC_1_wagon, "./src/locomotive/ndc/ndc.png") {
+    tmpl_wagon_by_coor(80, 60)
+}
+
+spriteset(set_NDC_2_engineH, "./src/locomotive/ndc/ndc.png") {
+    tmpl_NDC(80, 90)
+}
+spriteset(set_NDC_2_engineT, "./src/locomotive/ndc/ndc.png") {
+    tmpl_NDC_r(80, 120)
+}
+
+spriteset(set_NDC_business_engineH, "./src/locomotive/ndc/ndc.png") {
+    tmpl_NDC(80, 150)
+}
+spriteset(set_NDC_business_engineT, "./src/locomotive/ndc/ndc.png") {
+    tmpl_NDC_r(80, 180)
+}
+
+spriteset(set_NDC_purchase, "./src/locomotive/ndc/ndc.png") {
+    tmpl_purchase_common(0, 150)
+}

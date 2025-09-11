@@ -58,7 +58,10 @@ sort(FEAT_TRAINS, [
     SIMJUNG_6car,                     // 2206
     NORIRO,                           // 2004
 
+    DEC,                              // 2095
     DHC,                              // 5520 <- 냅둬
+    EEC,                              // 2090
+    NDC,                              // 2080
     CDC,                              // 2070
     DC,                               // 2060
     DC_NARROW,                        // 2065

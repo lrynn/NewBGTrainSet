@@ -1,0 +1,37 @@
+/*------------------------------------------------------------------------------
+    DEC Graphics
+------------------------------------------------------------------------------*/
+
+spriteset(set_DEC_1_engineH, "./src/locomotive/dec/dec.png") {
+    tmpl_NDC(80, 0)
+}
+spriteset(set_DEC_1_engineT, "./src/locomotive/dec/dec.png") {
+    tmpl_NDC_r(80, 30)
+}
+spriteset(set_DEC_1_wagon, "./src/locomotive/dec/dec.png") {
+    tmpl_wagon_by_coor(80, 60)
+}
+
+spriteset(set_DEC_2_engineH, "./src/locomotive/dec/dec.png") {
+    tmpl_NDC(80, 90)
+}
+spriteset(set_DEC_2_engineT, "./src/locomotive/dec/dec.png") {
+    tmpl_NDC_r(80, 120)
+}
+spriteset(set_DEC_2_wagon, "./src/locomotive/dec/dec.png") {
+    tmpl_wagon_by_coor(80, 150)
+}
+
+spriteset(set_DEC_3_engineH, "./src/locomotive/dec/dec.png") {
+    tmpl_NDC(80, 180)
+}
+spriteset(set_DEC_3_engineT, "./src/locomotive/dec/dec.png") {
+    tmpl_NDC_r(80, 210)
+}
+spriteset(set_DEC_3_wagon, "./src/locomotive/dec/dec.png") {
+    tmpl_wagon_by_coor(80, 240)
+}
+
+spriteset(set_DEC_purchase, "./src/locomotive/dec/dec.png") {
+    tmpl_purchase_common(0, 180)
+}

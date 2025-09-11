@@ -36,6 +36,15 @@ switch(FEAT_TRAINS, SELF, sw_Kxxxx_attach_global, 1) {
     sw_Kxxxx_attach;
 }
 
+// Attach for Diesel cars
+switch(FEAT_TRAINS, SELF, sw_XDC_attach, vehicle_type_id) {
+    CDC:           return CB_RESULT_ATTACH_ALLOW;
+    NDC:           return CB_RESULT_ATTACH_ALLOW;
+    DEC:           return CB_RESULT_ATTACH_ALLOW;
+    EEC:           return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}
+
 // Attach for Narrow gauge
 switch(FEAT_TRAINS, SELF, sw_NARROW_attach, vehicle_type_id) {
     DC_NARROW:                                        return CB_RESULT_ATTACH_ALLOW;

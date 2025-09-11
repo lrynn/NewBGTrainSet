@@ -1,0 +1,82 @@
+/*------------------------------------------------------------------------------
+    EEC Graphics
+------------------------------------------------------------------------------*/
+
+spriteset(set_EEC_1_engineH, "./src/locomotive/eec/eec.png") {   // Tc (front)
+    tmpl_NDC(80, 0)
+}
+spriteset(set_EEC_1_engineT, "./src/locomotive/eec/eec.png") {   // Tc (rear)
+    tmpl_NDC_r(80, 30)
+}
+spriteset(set_EEC_1_panto_wagon, "./src/locomotive/eec/eec.png") {   // M'<
+    tmpl_EEC_panto_wagon(80, 60)
+}
+spriteset(set_EEC_1_panto_wagon_r, "./src/locomotive/eec/eec.png") {   // M'>
+    tmpl_EEC_panto_wagon_r(80, 60)
+}
+spriteset(set_EEC_1_wagon_A, "./src/locomotive/eec/eec.png") {   // M (should be adjacent with M')
+    tmpl_wagon_by_coor(80, 90)
+}
+spriteset(set_EEC_1_wagon_cafe, "./src/locomotive/eec/eec.png") {   // Tb (Cafe car)
+    tmpl_EEC_cafe(80, 120)
+}
+spriteset(set_EEC_1_wagon_executive, "./src/locomotive/eec/eec.png") {   // Ts (Executive car)
+    tmpl_wagon_by_coor(80, 150)
+}
+spriteset(set_EEC_1_wagon_B, "./src/locomotive/eec/eec.png") {   // M
+    tmpl_wagon_by_coor(80, 180)
+}
+
+spriteset(set_EEC_2_engineH, "./src/locomotive/eec/eec.png") {
+    tmpl_NDC(80, 210)
+}
+spriteset(set_EEC_2_engineT, "./src/locomotive/eec/eec.png") {
+    tmpl_NDC_r(80, 240)
+}
+spriteset(set_EEC_2_panto_wagon, "./src/locomotive/eec/eec.png") {
+    tmpl_EEC_panto_wagon(80, 270)
+}
+spriteset(set_EEC_2_panto_wagon_r, "./src/locomotive/eec/eec.png") {
+    tmpl_EEC_panto_wagon_r(80, 270)
+}
+spriteset(set_EEC_2_wagon_A, "./src/locomotive/eec/eec.png") {
+    tmpl_wagon_by_coor(80, 300)
+}
+spriteset(set_EEC_2_wagon_cafe, "./src/locomotive/eec/eec.png") {
+    tmpl_EEC_cafe(80, 330)
+}
+spriteset(set_EEC_2_wagon_executive, "./src/locomotive/eec/eec.png") {
+    tmpl_wagon_by_coor(80, 360)
+}
+spriteset(set_EEC_2_wagon_B, "./src/locomotive/eec/eec.png") {
+    tmpl_wagon_by_coor(80, 390)
+}
+
+spriteset(set_EEC_3_engineH, "./src/locomotive/eec/eec.png") {
+    tmpl_NDC(80, 420)
+}
+spriteset(set_EEC_3_engineT, "./src/locomotive/eec/eec.png") {
+    tmpl_NDC_r(80, 450)
+}
+spriteset(set_EEC_3_panto_wagon, "./src/locomotive/eec/eec.png") {
+    tmpl_EEC_panto_wagon(80, 480)
+}
+spriteset(set_EEC_3_panto_wagon_r, "./src/locomotive/eec/eec.png") {
+    tmpl_EEC_panto_wagon_r(80, 480)
+}
+spriteset(set_EEC_3_wagon_A, "./src/locomotive/eec/eec.png") {
+    tmpl_wagon_by_coor(80, 510)
+}
+spriteset(set_EEC_3_wagon_cafe, "./src/locomotive/eec/eec.png") {
+    tmpl_EEC_cafe(80, 540)
+}
+spriteset(set_EEC_3_wagon_executive, "./src/locomotive/eec/eec.png") {
+    tmpl_wagon_by_coor(80, 570)
+}
+spriteset(set_EEC_3_wagon_B, "./src/locomotive/eec/eec.png") {
+    tmpl_wagon_by_coor(80, 600)
+}
+
+spriteset(set_EEC_purchase, "./src/locomotive/eec/eec.png") {
+    tmpl_purchase_common(0, 420)
+}

@@ -10,7 +10,7 @@ grf {
     name:  string(STR_GRF_NAME_WITH_VER);
     desc:  string(STR_GRF_DESC);
     url:   string(STR_GRF_URL);
-    version: 190;
+    version: 1100;
     min_compatible_version: 250;
 }
 
@@ -69,6 +69,7 @@ railtypetable {
     "KL3L",   // Third rail
 
     KR_3RD_RAIL:     ["3RDR", "KL3L", "KRLR"],
+
 }
 
 // Cost, running cost, capacity, loading speed coefficients

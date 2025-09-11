@@ -1,0 +1,111 @@
+/*------------------------------------------------------------------------------
+    EEC Switches
+------------------------------------------------------------------------------*/
+
+// Cargo subtype
+switch(FEAT_TRAINS, SELF, sw_EEC_cargo_subtype_text, cargo_subtype) {
+    1:    return string(STR_REFIT_LIVERY_EEC_1);
+    2:    return string(STR_REFIT_LIVERY_EEC_2);
+    3:    return string(STR_REFIT_LIVERY_EEC_3);
+    return string(STR_REFIT_LIVERY_EEC_1);
+}
+
+// Engine
+switch(FEAT_TRAINS, SELF, sw_EEC_engineH, cargo_subtype) {
+    1:  set_EEC_1_engineH;
+    2:  set_EEC_2_engineH;
+    3:  set_EEC_3_engineH;
+    set_EEC_1_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_EEC_engineT, cargo_subtype) {
+    1:  set_EEC_1_engineT;
+    2:  set_EEC_2_engineT;
+    3:  set_EEC_3_engineT;
+    set_EEC_1_engineT;
+}
+
+// Wagon (panto)
+switch(FEAT_TRAINS, SELF, sw_EEC_panto_wagon_cargo_subtype, cargo_subtype) {
+    1:  set_EEC_1_panto_wagon;
+    2:  set_EEC_2_panto_wagon;
+    3:  set_EEC_3_panto_wagon;
+    set_EEC_1_panto_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_EEC_panto_wagon_cargo_subtype_r, cargo_subtype) {
+    1:  set_EEC_1_panto_wagon_r;
+    2:  set_EEC_2_panto_wagon_r;
+    3:  set_EEC_3_panto_wagon_r;
+        set_EEC_1_panto_wagon_r;
+}
+
+// Wagon (A)
+switch(FEAT_TRAINS, SELF, sw_EEC_wagon_A_cargo_subtype, cargo_subtype) {
+    1:  set_EEC_1_wagon_A;
+    2:  set_EEC_2_wagon_A;
+    3:  set_EEC_3_wagon_A;
+        set_EEC_1_wagon_A;
+}
+
+// Wagon (Cafe car)
+switch(FEAT_TRAINS, SELF, sw_EEC_wagon_cafe_cargo_subtype, cargo_subtype) {
+    1:  set_EEC_1_wagon_cafe;
+    2:  set_EEC_2_wagon_cafe;
+    3:  set_EEC_3_wagon_cafe;
+        set_EEC_1_wagon_cafe;
+}
+
+// Wagon (Executive)
+switch(FEAT_TRAINS, SELF, sw_EEC_wagon_executive_cargo_subtype, cargo_subtype) {
+    1:  set_EEC_1_wagon_executive;
+    2:  set_EEC_2_wagon_executive;
+    3:  set_EEC_3_wagon_executive;
+        set_EEC_1_wagon_executive;
+}
+
+// Wagon (B)
+switch(FEAT_TRAINS, SELF, sw_EEC_wagon_B_cargo_subtype, cargo_subtype) {
+    1:  set_EEC_1_wagon_B;
+    2:  set_EEC_2_wagon_B;
+    3:  set_EEC_3_wagon_B;
+        set_EEC_1_wagon_B;
+}
+
+
+switch(FEAT_TRAINS, SELF, sw_EEC_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: sw_EEC_engineT;
+    sw_EEC_engineH;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EEC_wagon, (position_in_consist-1) % 8) {
+    0: sw_EEC_wagon_A_cargo_subtype;
+    1: sw_EEC_panto_wagon_cargo_subtype;
+    2: sw_EEC_wagon_A_cargo_subtype;
+    3: sw_EEC_panto_wagon_cargo_subtype;
+    4: sw_EEC_wagon_cafe_cargo_subtype;
+    5: sw_EEC_wagon_executive_cargo_subtype;
+    6: sw_EEC_panto_wagon_cargo_subtype_r;
+    7: sw_EEC_wagon_A_cargo_subtype;
+       sw_EEC_wagon_B_cargo_subtype;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EEC_current, position_in_vehid_chain_from_end == 0 || position_in_vehid_chain == 0) {
+    1: sw_EEC_engine;
+    0: sw_EEC_wagon;
+}
+
+// to set length of composition
+switch (FEAT_TRAINS, SELF, sw_articulated_EEC, extra_callback_info1) {
+    1..9: EEC;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Attach
+switch(FEAT_TRAINS, SELF, sw_EEC_attach, vehicle_type_id) {
+    return string(STR_ERROR_NO_ATTACH);
+}
+
+// Sounds
+switch(FEAT_TRAINS, SELF, sw_EEC_sound, extra_callback_info1) {
+    SOUND_EVENT_START: sound("sounds/DCMOTERBASICstart.wav");
+    return CB_RESULT_NO_SOUND;
+}

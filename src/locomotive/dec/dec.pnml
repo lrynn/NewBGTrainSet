@@ -1,28 +1,28 @@
 /*------------------------------------------------------------------------------
-    CDC
+    DEC
 ------------------------------------------------------------------------------*/
 
 // Graphics
-#include "cdc_graphic.pnml"
+#include "dec_graphic.pnml"
 
 // Switch
-#include "cdc_switch.pnml"
+#include "dec_switch.pnml"
 
 // Item
-item(FEAT_TRAINS, CDC, 2070) {
+item(FEAT_TRAINS, DEC, 2095) {
     property {
         // Common properties
-        name:                           string(STR_CDC_NAME);
+        name:                           string(STR_DEC_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              var_CDC_INTRODUCTION;
+        introduction_date:              var_DEC_INTRODUCTION;
         track_type:                     RAIL;
         engine_class:                   ENGINE_CLASS_DIESEL;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
 
         // Spec
-        speed:                          var_CDC_SPEED;
-        power:                          var_CDC_POWER;
-        weight:                         var_CDC_WEIGHT;
+        speed:                          var_DEC_SPEED;
+        power:                          var_DEC_POWER;
+        weight:                         var_DEC_WEIGHT;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.01;
 
@@ -50,22 +50,21 @@ item(FEAT_TRAINS, CDC, 2070) {
         visual_effect_and_powered:      VISUAL_EFFECT_DIESEL;
     }
     graphics {
-        default:                        sw_CDC_current;
-        purchase:                       set_CDC_purchase;
+        default:                        sw_DEC_current;
+        articulated_part:               sw_articulated_DEC;
+        purchase:                       set_DEC_purchase;
 
-        speed:                          var_CDC_SPEED;
-        cost_factor:                    var_CDC_COST;
-        running_cost_factor:            var_CDC_RUNNINGCOST;
-        cargo_capacity:                 var_CDC_CAPACITY;
-        purchase_cargo_capacity:        var_CDC_CAPACITY;
-        loading_speed:                  var_CDC_LOADINGSPEED;
+        speed:                          var_DEC_SPEED;
+        cost_factor:                    var_DEC_COST;
+        running_cost_factor:            var_DEC_RUNNINGCOST;
+        cargo_capacity:                 var_DEC_CAPACITY;
+        purchase_cargo_capacity:        var_DEC_CAPACITY;
+        loading_speed:                  var_DEC_LOADINGSPEED;
 
-        start_stop:                     sw_CDC_length_limit;
-
-        can_attach_wagon:               sw_XDC_attach;
-        cargo_subtype_text:             sw_CDC_cargo_subtype_text;
+        can_attach_wagon:               sw_DEC_attach;
+        cargo_subtype_text:             sw_DEC_cargo_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
 
-        sound_effect:                   sw_CDC_sound;
+        sound_effect:                   sw_DEC_sound;
     }
 }

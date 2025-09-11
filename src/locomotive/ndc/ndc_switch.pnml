@@ -1,0 +1,55 @@
+/*------------------------------------------------------------------------------
+    NDC Switches
+------------------------------------------------------------------------------*/
+
+// Cargo Subtypes
+switch(FEAT_TRAINS, SELF, sw_NDC_cargo_subtype_text, cargo_subtype) {
+    1:    return string(STR_REFIT_LIVERY_NDC_1);
+    2:    return string(STR_REFIT_LIVERY_NDC_2);
+    3:    return string(STR_REFIT_LIVERY_NDC_BUSINESS);
+    return string(STR_REFIT_LIVERY_NDC_1);
+}
+
+// Train Composition
+switch(FEAT_TRAINS, SELF, sw_NDC_engineH, cargo_subtype) {
+    1:  set_NDC_1_engineH;
+    2:  set_NDC_2_engineH;
+    3:  set_NDC_business_engineH;
+    set_NDC_1_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_NDC_engineT, cargo_subtype) {
+    1:  set_NDC_1_engineT;
+    2:  set_NDC_2_engineT;
+    3:  set_NDC_business_engineT;
+    set_NDC_1_engineT;
+}
+switch(FEAT_TRAINS, SELF, sw_NDC_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: sw_NDC_engineT;
+    sw_NDC_engineH;
+}
+
+switch(FEAT_TRAINS, SELF, sw_NDC_wagon, cargo_subtype) {
+    1: set_NDC_1_wagon;
+    2: set_MUGUNGHWA_CAR_D;
+    3: set_MUGUNGHWA_CAR_E;
+    set_NDC_1_wagon;
+}
+
+switch(FEAT_TRAINS, SELF, sw_NDC_current, position_in_vehid_chain_from_end == 0 || position_in_vehid_chain == 0) {
+    1: sw_NDC_engine;
+    0: sw_NDC_wagon;
+}
+
+// Length Limits
+
+switch(FEAT_TRAINS, SELF, sw_NDC_length_limit, num_vehs_in_consist) {
+    2 .. 4: return CB_RESULT_NO_TEXT;
+    return string(STR_ERROR_NDC_LENGTH);
+}
+
+// Sounds
+switch(FEAT_TRAINS, SELF, sw_NDC_sound, extra_callback_info1) {
+    SOUND_EVENT_START: sound("sounds/Cummins_DMU_start.wav");
+    SOUND_EVENT_STOPPED: sound("sounds/COMMINS_DMU_Idle.wav");
+    return CB_RESULT_NO_SOUND;
+}
