@@ -169,6 +169,8 @@ STR_REFIT_LIVERY_NURIRO_SANTA                              : (동해산타열차
 STR_REFIT_LIVERY_NURIRO_2022                               : (2022년 도색)
 STR_REFIT_LIVERY_KTX2N                                     : (일반 도색)
 STR_REFIT_LIVERY_KTX2N_PYEONGCHANG                         : (2018 평창동계올림픽 도색)
+STR_REFIT_LIVERY_KTX3N                                     : (초도분)
+STR_REFIT_LIVERY_KTX3N_2025                                : (2025년 도입분)
 STR_REFIT_PASSWAGON_NORMALCAR                              : (일반 객차)
 STR_REFIT_PASSWAGON_FIRSTCAR                               : (특실 객차)
 
@@ -385,6 +387,7 @@ STR_REFIT_METRO_LINE_4_2021_NAME                           : (주둥이 후기�
 STR_REFIT_METRO_LINE_5_1_NAME                              : (1, 2차분 - 현대정공) {TINYFONT}1995~1996
 STR_REFIT_METRO_LINE_5_3_NAME                              : (3차분 - 현대로템) {TINYFONT}2018~2019
 STR_REFIT_METRO_LINE_5_4_NAME                              : (4차분 - 우진산전) {TINYFONT}2021~2023
+STR_REFIT_METRO_LINE_5_5_NAME                              : (5차분 - 다원시스) {TINYFONT}2025~2027
 
 # Refit (Seoul metropolitan 7)
 STR_REFIT_METRO_LINE_7_1_NAME                              : (1차분 - 대우중공업) {TINYFONT}1995~1996
@@ -397,6 +400,7 @@ STR_REFIT_METRO_LINE_7_5_NAME                              : (5차분 - 우진�
 STR_REFIT_METRO_LINE_8_1_NAME                              : (1차분 - 대우중공업) {TINYFONT}1995~1996
 STR_REFIT_METRO_LINE_8_2_NAME                              : (2차분 - 한진중공업) {TINYFONT}1999
 STR_REFIT_METRO_LINE_8_3_NAME                              : (3차분 - 우진산전) {TINYFONT}2023~2024
+STR_REFIT_METRO_LINE_8_4_NAME                              : (4차분 - 다원시스) {TINYFONT}2026~2027
 
 # Refit (Suin-Bungdang Line)
 STR_REFIT_METRO_SUIN_BUNDANG_1_1_NAME                      : (납작이 / 초기 도색) {TINYFONT}1993~1999

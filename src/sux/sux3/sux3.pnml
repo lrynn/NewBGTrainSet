@@ -60,7 +60,8 @@ item(FEAT_TRAINS, SUX3, 1600) {
         loading_speed:                  var_SUX3_LOADINGSPEED;
 
         can_attach_wagon:               sw_SUX3_attach;
-        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+        cargo_subtype_text:             sw_SUX3_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
 
         sound_effect:                   sw_SUX3_sound;
     }

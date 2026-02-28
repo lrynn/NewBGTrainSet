@@ -7,25 +7,51 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_8_cargo_subtype_text, cargo_subtype) {
     1: return string(STR_REFIT_METRO_LINE_8_1_NAME);
     2: return string(STR_REFIT_METRO_LINE_8_2_NAME);
     3: return string(STR_REFIT_METRO_LINE_8_3_NAME);
+    4: return string(STR_REFIT_METRO_LINE_8_4_NAME);
     return string(STR_REFIT_METRO_LINE_8_1_NAME);
+}
+
+switch(FEAT_TRAINS, SELF, sw_SEOUL_8_engineH, cargo_subtype) {
+    1: return set_SEOUL_8_1_engineH;
+    // 3: return set_SEOUL_8_3_engineH;
+    4: return set_SEOUL_8_4_engineH;
+    return set_SEOUL_8_1_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_SEOUL_8_wagon, cargo_subtype) {
+    1: return set_SEOUL_8_1_wagon;
+    // 3: return set_SEOUL_8_3_wagon;
+    4: return set_SEOUL_8_4_wagon;
+    return set_SEOUL_8_1_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_SEOUL_8_wagon_panto, cargo_subtype) {
+    1: return set_SEOUL_8_1_wagon_panto;
+    // 3: return set_SEOUL_8_3_wagon_panto;
+    4: return set_SEOUL_8_4_wagon_panto;
+    return set_SEOUL_8_1_wagon_panto;
+}
+switch(FEAT_TRAINS, SELF, sw_SEOUL_8_engineT, cargo_subtype) {
+    1: return set_SEOUL_8_1_engineT;
+    // 3: return set_SEOUL_8_3_engineT;
+    4: return set_SEOUL_8_4_engineT;
+    return set_SEOUL_8_1_engineT;
 }
 
 // Train Composition
 switch (FEAT_TRAINS, SELF, sw_SEOUL_8, position_in_vehid_chain % 6) {
-    1:set_SEOUL_8_1_wagon_panto;
-    2:set_SEOUL_8_1_wagon;
-    3:set_SEOUL_8_1_wagon_panto;
-    4:set_SEOUL_8_1_wagon;
-    5:set_SEOUL_8_1_engineT;
-    set_SEOUL_8_1_engineH;
+    1:sw_SEOUL_8_wagon_panto;
+    2:sw_SEOUL_8_wagon;
+    3:sw_SEOUL_8_wagon_panto;
+    4:sw_SEOUL_8_wagon;
+    5:sw_SEOUL_8_engineT;
+    sw_SEOUL_8_engineH;
     }
 switch (FEAT_TRAINS, SELF, sw_SEOUL_8_r, position_in_vehid_chain % 6) {
-    1:set_SEOUL_8_1_wagon;
-    2:set_SEOUL_8_1_wagon_panto;
-    3:set_SEOUL_8_1_wagon;
-    4:set_SEOUL_8_1_wagon_panto;
-    5:set_SEOUL_8_1_engineT;
-    set_SEOUL_8_1_engineH;
+    1:sw_SEOUL_8_wagon;
+    2:sw_SEOUL_8_wagon_panto;
+    3:sw_SEOUL_8_wagon;
+    4:sw_SEOUL_8_wagon_panto;
+    5:sw_SEOUL_8_engineT;
+    sw_SEOUL_8_engineH;
     }
 switch(FEAT_TRAINS, SELF, sw_SEOUL_8_flipped, vehicle_is_flipped){
     0: sw_SEOUL_8_r;
@@ -69,7 +95,6 @@ switch (FEAT_TRAINS, SELF, sw_articulated_SEOUL_8, extra_callback_info1) {
 }
 
 switch (FEAT_TRAINS, SELF, sw_SEOUL_8_COMBINED_reversed, cargo_subtype) {
-    1..2: return sw_SEOUL_8_reversed;
     3: return sw_SEOUL_8_3_reversed;
     return sw_SEOUL_8_reversed;
 }
@@ -79,6 +104,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_8_sound_by_supplier, cargo_subtype) {
     1: return sound("sounds/ALSTOMGTOstart.wav");
     2: return sound("sounds/TOSHIBAIGBTKStart.wav");
     3: return sound("sounds/TOSHIBAIGBTPMSMstart.wav");
+    4: return sound("sounds/DAWONSYSIGBT2start.wav");
     return sound("sounds/ALSTOMGTOstart.wav");
 }
 switch(FEAT_TRAINS, SELF, sw_SEOUL_8_sound, extra_callback_info1) {

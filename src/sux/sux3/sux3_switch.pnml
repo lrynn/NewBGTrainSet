@@ -3,26 +3,68 @@
 ------------------------------------------------------------------------------*/
 
 // Cargo Subtypes
-// None
+switch(FEAT_TRAINS, SELF, sw_SUX3_cargo_subtype_text, cargo_subtype) {
+    1: return string(STR_REFIT_LIVERY_KTX3N);
+    2: return string(STR_REFIT_LIVERY_KTX3N_2025);
+    3: return string(STR_REFIT_LIVERY_SRT);
+    return string(STR_REFIT_LIVERY_KTX3N);
+}
 
 // Train Composition
-switch (FEAT_TRAINS, SELF, sw_SUX3, position_in_vehid_chain % 8) {
-    1:set_SUX3_wagon_4;
-    2:set_SUX3_wagon_3;
-    3:set_SUX3_wagon_3_without_panto;
-    4..5:set_SUX3_wagon_3;
-    6:set_SUX3_wagon_2;
-    7:set_SUX3_engineT;
+switch(FEAT_TRAINS, SELF, sw_SUX3_engineH, cargo_subtype) {
+    1: set_SUX3_engineH;
+    2: set_SUX3_2025_engineH;
+    3: set_SUX3_BRT_engineH;
     set_SUX3_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_SUX3_engineT, cargo_subtype) {
+    1: set_SUX3_engineT;
+    2: set_SUX3_2025_engineT;
+    3: set_SUX3_BRT_engineT;
+    set_SUX3_engineT;
+}
+switch(FEAT_TRAINS, SELF, sw_SUX3_wagon_2, cargo_subtype) {
+    1: set_SUX3_wagon_2;
+    2: set_SUX3_2025_wagon_2;
+    3: set_SUX3_BRT_wagon_2;
+    set_SUX3_wagon_2;
+}
+switch(FEAT_TRAINS, SELF, sw_SUX3_wagon_3, cargo_subtype) {
+    1: set_SUX3_wagon_3;
+    2: set_SUX3_2025_wagon_3;
+    3: set_SUX3_BRT_wagon_3;
+    set_SUX3_wagon_3;
+}
+switch(FEAT_TRAINS, SELF, sw_SUX3_wagon_3_without_panto, cargo_subtype) {
+    1: set_SUX3_wagon_3_without_panto;
+    2: set_SUX3_2025_wagon_3_without_panto;
+    3: set_SUX3_BRT_wagon_3_without_panto;
+    set_SUX3_wagon_3_without_panto;
+}
+switch(FEAT_TRAINS, SELF, sw_SUX3_wagon_4, cargo_subtype) {
+    1: set_SUX3_wagon_4;
+    2: set_SUX3_2025_wagon_4;
+    3: set_SUX3_BRT_wagon_4;
+    set_SUX3_wagon_4;
+}
+
+switch (FEAT_TRAINS, SELF, sw_SUX3, position_in_vehid_chain % 8) {
+    1:sw_SUX3_wagon_4;
+    2:sw_SUX3_wagon_3;
+    3:sw_SUX3_wagon_3_without_panto;
+    4..5:sw_SUX3_wagon_3;
+    6:sw_SUX3_wagon_2;
+    7:sw_SUX3_engineT;
+    sw_SUX3_engineH;
     }
 switch (FEAT_TRAINS, SELF, sw_SUX3_r, position_in_vehid_chain % 8) {
-    1:set_SUX3_wagon_4;
-    2:set_SUX3_wagon_3;
-    3:set_SUX3_wagon_3_without_panto;
-    4..5:set_SUX3_wagon_3;
-    6:set_SUX3_wagon_2;
-    7:set_SUX3_engineT;
-    set_SUX3_engineH;
+    1:sw_SUX3_wagon_4;
+    2:sw_SUX3_wagon_3;
+    3:sw_SUX3_wagon_3_without_panto;
+    4..5:sw_SUX3_wagon_3;
+    6:sw_SUX3_wagon_2;
+    7:sw_SUX3_engineT;
+    sw_SUX3_engineH;
     }
 switch(FEAT_TRAINS, SELF, sw_SUX3_flipped, vehicle_is_flipped){
     0: sw_SUX3_r;
